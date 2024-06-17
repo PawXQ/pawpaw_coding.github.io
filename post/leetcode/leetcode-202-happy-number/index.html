@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>[LeetCode] 202. Happy Number - Even - A super concise theme for Hugo</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="PawPaw" /><meta name="description" content="" /><meta name="keywords" content="Hugo, theme, even" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.108.0 with theme even" />
+
+
+<link rel="canonical" href="https://pawxq.github.io/pawpaw_coding.github.io/post/leetcode/leetcode-202-happy-number/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/pawpaw_coding.github.io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/pawpaw_coding.github.io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/pawpaw_coding.github.io/favicon-16x16.png">
+<link rel="manifest" href="/pawpaw_coding.github.io/manifest.json">
+<link rel="mask-icon" href="/pawpaw_coding.github.io/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/pawpaw_coding.github.io/sass/main.min.f92fd13721ddf72129410fd8250e73152cc6f2438082b6c0208dc24ee7c13fc4.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="[LeetCode] 202. Happy Number" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://pawxq.github.io/pawpaw_coding.github.io/post/leetcode/leetcode-202-happy-number/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2024-06-11T11:13:22+00:00" />
+<meta property="article:modified_time" content="2024-06-11T11:13:22+00:00" />
+<meta itemprop="name" content="[LeetCode] 202. Happy Number">
+<meta itemprop="description" content=""><meta itemprop="datePublished" content="2024-06-11T11:13:22+00:00" />
+<meta itemprop="dateModified" content="2024-06-11T11:13:22+00:00" />
+<meta itemprop="wordCount" content="1233">
+<meta itemprop="keywords" content="leetcode,C#," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="[LeetCode] 202. Happy Number"/>
+<meta name="twitter:description" content=""/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">PawPaw_coding</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/pawpaw_coding.github.io/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/pawpaw_coding.github.io/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/pawpaw_coding.github.io/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/pawpaw_coding.github.io/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">PawPaw_coding</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/pawpaw_coding.github.io/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/pawpaw_coding.github.io/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/pawpaw_coding.github.io/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/pawpaw_coding.github.io/categories/">Categories</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">[LeetCode] 202. Happy Number</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2024-06-11 </span>
+        <div class="post-category">
+            <a href="/pawpaw_coding.github.io/categories/leetcode/"> leetcode </a>
+            <a href="/pawpaw_coding.github.io/categories/c/"> C# </a>
+            <a href="/pawpaw_coding.github.io/categories/coding/"> coding </a>
+            </div>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#topic">Topic</a>
+      <ul>
+        <li><a href="#customize">Customize</a></li>
+        <li><a href="#leetcode">LeetCode</a></li>
+      </ul>
+    </li>
+    <li><a href="#code">Code</a>
+      <ul>
+        <li><a href="#c">C#</a>
+          <ul>
+            <li><a href="#dictionary">Dictionary</a></li>
+            <li><a href="#hashset">HashSet</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <p><a href="https://leetcode.com/problems/happy-number/description/">202. Happy Number</a></p>
+<p>這篇會使用 C# 和 python 來檢查數字 Happy Number(快樂數)</p>
+<p>什麼是快樂數!?</p>
+<p><a href="https://zh.wikipedia.org/zh-tw/%E5%BF%AB%E6%A8%82%E6%95%B8">wiki - Happy Number</a></p>
+<p>簡單說就是一個數字的所有位數的<code>&lt;數字平方和&gt;</code>相加等於 <code>1</code>, 如果相加沒有等於<code>1</code> , 就再次進行所有位數的<code>&lt;數字平方和&gt;</code>, 重複進行直至最後等於 <code>1</code></p>
+<p>e.g.</p>
+<p>28 -&gt; 2<sup>2</sup> + 8<sup>2</sup> = 68 -&gt; 6<sup>2</sup> + 8<sup>2</sup> = 100 -&gt; 1<sup>2</sup> + 0<sup>2</sup> + 0<sup>2</sup> = 1</p>
+<p>37 -&gt; 3<sup>2</sup> + 7<sup>2</sup> = 58 -&gt; 5<sup>2</sup> + 8<sup>2</sup> = 89 -&gt; 8<sup>2</sup> + 9<sup>2</sup> = 145 -&gt; 1<sup>2</sup> + 4<sup>2</sup> + 5<sup>2</sup> = 42 -&gt; 4<sup>2</sup> + 2<sup>2</sup> = 20 -&gt;  2<sup>2</sup> + 0<sup>2</sup> = 4 -&gt; 4<sup>2</sup> = 16 -&gt; 1<sup>2</sup> + 6<sup>2</sup> = 37&hellip;..</p>
+<p>因此 28 是 Happy Number, 37 則不是 Happy Number</p>
+<p>所有不是快樂數的所有的位數<code>&lt;數字平方和&gt;</code>都會進入 4 → 16 → 37 → 58 → 89 → 145 → 42 → 20 → 4 的循環</p>
+<h1 id="topic">Topic</h1>
+<h2 id="customize">Customize</h2>
+<p>範圍是 (1~100)</p>
+<p>在 Console App (.NETFramework 編寫)</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-C#" data-lang="C#"><span class="line"><span class="cl"><span class="k">namespace</span> <span class="err">&lt;</span><span class="nn">namespace_name</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">internal</span> <span class="k">class</span> <span class="nc">Program</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">static</span> <span class="k">void</span> <span class="n">Main</span><span class="p">(</span><span class="n">stringp</span><span class="p">[]</span> <span class="n">args</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="p">=</span> <span class="m">1</span><span class="p">;</span> <span class="n">i</span> <span class="p">&lt;=</span> <span class="m">100</span><span class="p">;</span> <span class="n">i</span><span class="p">++)</span> <span class="c1">// 範圍 1~100</span>
+</span></span><span class="line"><span class="cl">            <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="kt">bool</span> <span class="n">result</span> <span class="p">=</span> <span class="n">Check_Happy</span><span class="p">(</span><span class="n">i</span><span class="p">);</span> <span class="c1">// 確認是否為 Happy Number</span>
+</span></span><span class="line"><span class="cl">                <span class="k">if</span> <span class="p">(</span><span class="n">result</span><span class="p">)</span> <span class="p">{</span> <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">i</span><span class="p">);</span> <span class="p">}</span> <span class="c1">// Print 出 Number</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// static</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="leetcode">LeetCode</h2>
+<p>判斷 number 是否為 Happy Number</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-C#" data-lang="C#"><span class="line"><span class="cl"><span class="k">public</span> <span class="k">class</span> <span class="nc">Solution</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">public</span> <span class="kt">bool</span> <span class="n">IsHappy</span><span class="p">(</span><span class="kt">int</span> <span class="n">n</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="kt">bool</span> <span class="n">result</span> <span class="p">=</span> <span class="n">Check_Happy</span><span class="p">(</span><span class="n">n</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="n">result</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// static</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>檢查指定數是否為 Happy Number</p>
+<h1 id="code">Code</h1>
+<h2 id="c">C#</h2>
+<h3 id="dictionary">Dictionary</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-C#" data-lang="C#"><span class="line"><span class="cl"><span class="k">static</span> <span class="kt">bool</span> <span class="n">Check_Happy</span><span class="p">(</span><span class="kt">int</span> <span class="n">number</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Dictionary</span><span class="p">&lt;</span><span class="kt">int</span><span class="p">,</span> <span class="kt">int</span><span class="p">&gt;</span> <span class="n">d</span> <span class="p">=</span> <span class="k">new</span> <span class="n">Dictionary</span><span class="p">&lt;</span><span class="kt">int</span><span class="p">,</span> <span class="kt">int</span><span class="p">&gt;();</span> <span class="c1">// 設定 dict d, key 和 value type 皆為 int</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">bool</span> <span class="n">check</span> <span class="p">=</span> <span class="k">true</span><span class="p">;</span> 
+</span></span><span class="line"><span class="cl">    <span class="k">while</span> <span class="p">(</span><span class="n">check</span><span class="p">)</span> <span class="c1">// 當 chcek 為 Ture (持續檢查)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="kt">int</span> <span class="n">total</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">while</span> <span class="p">(</span><span class="n">number</span> <span class="p">!=</span> <span class="m">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="kt">int</span> <span class="n">num</span> <span class="p">=</span> <span class="n">number</span> <span class="p">%</span> <span class="m">10</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="n">total</span> <span class="p">+=</span> <span class="n">num</span> <span class="p">*</span> <span class="n">num</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="n">number</span> <span class="p">/=</span> <span class="m">10</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// int digit_100 = number / 100 % 10; // 取百位數</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// int digit_10 = number / 10 % 10; // 取十位數</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// int digit_1 = number / 1 % 10; // 取個位數</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// int total = digit_100 * digit_100 + digit_10 * digit_10 + digit_1 * digit_1; // 所有位數平方和</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="n">total</span> <span class="p">==</span> <span class="m">1</span><span class="p">)</span> <span class="c1">// 如果 = 1 就是 Happy Number</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">break</span><span class="p">;</span> <span class="c1">// 跳出迴圈</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// 如果 dict d 裡面沒有該 &lt;平方和&gt; 的 key 則存入 dict d</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(!</span><span class="n">d</span><span class="p">.</span><span class="n">ContainsKey</span><span class="p">(</span><span class="n">total</span><span class="p">))</span> <span class="c1">// 判斷 dict d 裡面沒有該 &lt;平方和&gt; 的 key</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">d</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="n">total</span><span class="p">,</span> <span class="n">i</span><span class="p">);</span> <span class="c1">// 沒有則存入 { total , i} </span>
+</span></span><span class="line"><span class="cl">            <span class="n">i</span><span class="p">++;</span>
+</span></span><span class="line"><span class="cl">            <span class="n">number</span> <span class="p">=</span> <span class="n">total</span><span class="p">;</span> <span class="c1">// 下一個數字為剛剛&lt;所有位數的平方和&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="k">continue</span><span class="p">;</span> <span class="c1">// 下一個迴圈</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="n">d</span><span class="p">.</span><span class="n">ContainsKey</span><span class="p">(</span><span class="n">total</span><span class="p">))</span> <span class="c1">// 判斷 dict d 裡面有&lt;所有位數的平方和&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">check</span> <span class="p">=</span> <span class="k">false</span><span class="p">;</span> <span class="c1">// 表示重複數字, 陷入循環一定不是 Happy Number, check = false 就不需再檢查</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">check</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="hashset">HashSet</h3>
+<p>檢查方法一樣, 只有改變存放 &lt;所有位數平方和&gt; 的 object container</p>
+<p><code>HashSet</code> 也是一種 object container, 特性就是<span style ="color:red">裡面的 value 不會重複</span></p>
+<p><span style ="color:red">如果存入重複的 value 不會報錯, 會直接忽略</span></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-C#" data-lang="C#"><span class="line"><span class="cl"><span class="k">static</span> <span class="kt">bool</span> <span class="n">Check_Happy</span><span class="p">(</span><span class="kt">int</span> <span class="n">number</span><span class="p">)</span> <span class="c1">// Function 設定返還 bool, input 限定為 int</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">HashSet</span><span class="p">&lt;</span><span class="kt">int</span><span class="p">&gt;</span> <span class="n">hash_int</span> <span class="p">=</span> <span class="k">new</span> <span class="n">HashSet</span><span class="p">&lt;</span><span class="kt">int</span><span class="p">&gt;();</span> <span class="c1">// 設定 HashSet hash_int, value type 為 int</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">bool</span> <span class="n">check</span> <span class="p">=</span> <span class="k">true</span><span class="p">;</span> 
+</span></span><span class="line"><span class="cl">    <span class="k">while</span> <span class="p">(</span><span class="n">check</span><span class="p">)</span> <span class="c1">// 當 chcek 為 Ture (持續檢查)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="kt">int</span> <span class="n">total</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">while</span> <span class="p">(</span><span class="n">number</span> <span class="p">!=</span> <span class="m">0</span><span class="p">)</span> <span class="c1">// 當輸入的 number 不為0</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="kt">int</span> <span class="n">num</span> <span class="p">=</span> <span class="n">number</span> <span class="p">%</span> <span class="m">10</span><span class="p">;</span> <span class="c1">// 當前數字取餘數(個位數)</span>
+</span></span><span class="line"><span class="cl">            <span class="n">total</span> <span class="p">+=</span> <span class="n">num</span> <span class="p">*</span> <span class="n">num</span><span class="p">;</span> <span class="c1">// 最後一個數的平方</span>
+</span></span><span class="line"><span class="cl">            <span class="n">number</span> <span class="p">/=</span> <span class="m">10</span><span class="p">;</span> <span class="c1">// 除法會自動去除小數點, 因此假如是 123 / 10 = 12, 因此 12 % 10 = 2 就是十位數, 以此類推</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// int digit_100 = number / 100 % 10; // 取百位數</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// int digit_10 = number / 10 % 10; // 取十位數</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// int digit_1 = number / 1 % 10; // 取個位數</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// int total = digit_100 * digit_100 + digit_10 * digit_10 + digit_1 * digit_1; // 所有位數平方和</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="n">total</span> <span class="p">==</span> <span class="m">1</span><span class="p">)</span> <span class="c1">// 如果 = 1 就是 Happy Number</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">break</span><span class="p">;</span> <span class="c1">// 跳出迴圈</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// 如果 HashSet hash_int 裡面沒有該 &lt;平方和&gt; 的 value 則存入</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(!</span><span class="n">hash_int</span><span class="p">.</span><span class="n">Contains</span><span class="p">(</span><span class="n">total</span><span class="p">))</span> <span class="c1">// 判斷 HashSet hash_int 裡面沒有該 &lt;平方和&gt; 的 value</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">hash_int</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="n">total</span><span class="p">);</span> <span class="c1">// 沒有則存入 { total } </span>
+</span></span><span class="line"><span class="cl">            <span class="n">number</span> <span class="p">=</span> <span class="n">total</span><span class="p">;</span> <span class="c1">// 下一個繼續運算的數字為剛剛&lt;所有位數的平方和&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="k">continue</span><span class="p">;</span> <span class="c1">// 下一個迴圈</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="n">hash_int</span><span class="p">.</span><span class="n">Contains</span><span class="p">(</span><span class="n">total</span><span class="p">))</span> <span class="c1">// 判斷 HashSet hash_int 裡面有&lt;所有位數的平方和&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">check</span> <span class="p">=</span> <span class="k">false</span><span class="p">;</span> <span class="c1">// 表示重複數字, 陷入循環一定不是 Happy Number, check = false 就不需再檢查</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">check</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>
+    </div>
+
+    
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/pawpaw_coding.github.io/tags/leetcode/">leetcode</a>
+          <a href="/pawpaw_coding.github.io/tags/c/">C#</a>
+          </div>
+      <nav class="post-nav">
+        
+        <a class="next" href="/pawpaw_coding.github.io/post/c-sharp/c-sharp-if-else-structure/">
+            <span class="next-text nav-default">[C#] If Else Structure</span>
+            <span class="next-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="https://github.com/PawXQ/pawpaw.github.io" class="iconfont icon-github" title="github"></a>
+  <a href="https://pawxq.github.io/pawpaw_coding.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2024<span class="heart"><i class="iconfont icon-heart"></i></span><span>PawPaw</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/pawpaw_coding.github.io/js/main.min.4ae89da218555efa0e7093a20b92017d2e1202b66fff9fc2edf4cb8d44b44c6e.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

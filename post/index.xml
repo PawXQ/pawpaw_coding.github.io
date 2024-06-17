@@ -6,13 +6,22 @@
     <description>Recent content in Posts on Even - A super concise theme for Hugo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 09 Jun 2024 16:46:55 +0000</lastBuildDate><atom:link href="https://pawxq.github.io/pawpaw_coding.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 11 Jun 2024 11:13:22 +0000</lastBuildDate><atom:link href="https://pawxq.github.io/pawpaw_coding.github.io/post/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[LeetCode] 202. Happy Number</title>
+      <link>https://pawxq.github.io/pawpaw_coding.github.io/post/leetcode/leetcode-202-happy-number/</link>
+      <pubDate>Tue, 11 Jun 2024 11:13:22 +0000</pubDate>
+      
+      <guid>https://pawxq.github.io/pawpaw_coding.github.io/post/leetcode/leetcode-202-happy-number/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>[C#] If Else Structure</title>
-      <link>https://pawxq.github.io/pawpaw_coding.github.io/post/c-sharp-if-else-structure/</link>
+      <link>https://pawxq.github.io/pawpaw_coding.github.io/post/c-sharp/c-sharp-if-else-structure/</link>
       <pubDate>Sun, 09 Jun 2024 16:46:55 +0000</pubDate>
       
-      <guid>https://pawxq.github.io/pawpaw_coding.github.io/post/c-sharp-if-else-structure/</guid>
+      <guid>https://pawxq.github.io/pawpaw_coding.github.io/post/c-sharp/c-sharp-if-else-structure/</guid>
       <description></description>
     </item>
     

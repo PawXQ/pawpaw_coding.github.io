@@ -5,6 +5,43 @@
     <link>https://pawxq.github.io/pawpaw_coding.github.io/categories/</link>
     <description>Recent content in Categories on Even - A super concise theme for Hugo</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language><atom:link href="https://pawxq.github.io/pawpaw_coding.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Tue, 11 Jun 2024 11:13:22 +0000</lastBuildDate><atom:link href="https://pawxq.github.io/pawpaw_coding.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>C#</title>
+      <link>https://pawxq.github.io/pawpaw_coding.github.io/categories/c#/</link>
+      <pubDate>Tue, 11 Jun 2024 11:13:22 +0000</pubDate>
+      
+      <guid>https://pawxq.github.io/pawpaw_coding.github.io/categories/c#/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>coding</title>
+      <link>https://pawxq.github.io/pawpaw_coding.github.io/categories/coding/</link>
+      <pubDate>Tue, 11 Jun 2024 11:13:22 +0000</pubDate>
+      
+      <guid>https://pawxq.github.io/pawpaw_coding.github.io/categories/coding/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>leetcode</title>
+      <link>https://pawxq.github.io/pawpaw_coding.github.io/categories/leetcode/</link>
+      <pubDate>Tue, 11 Jun 2024 11:13:22 +0000</pubDate>
+      
+      <guid>https://pawxq.github.io/pawpaw_coding.github.io/categories/leetcode/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>article</title>
+      <link>https://pawxq.github.io/pawpaw_coding.github.io/categories/article/</link>
+      <pubDate>Sun, 09 Jun 2024 16:46:55 +0000</pubDate>
+      
+      <guid>https://pawxq.github.io/pawpaw_coding.github.io/categories/article/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>
