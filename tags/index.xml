@@ -6,22 +6,58 @@
     <description>Recent content in Tags on Even - A super concise theme for Hugo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 21 Jun 2024 20:19:35 +0000</lastBuildDate><atom:link href="https://pawxq.github.io/pawpaw_coding.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 22 Jun 2024 17:40:57 +0000</lastBuildDate><atom:link href="https://pawxq.github.io/pawpaw_coding.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>C#</title>
       <link>https://pawxq.github.io/pawpaw_coding.github.io/tags/c#/</link>
-      <pubDate>Fri, 21 Jun 2024 20:19:35 +0000</pubDate>
+      <pubDate>Sat, 22 Jun 2024 17:40:57 +0000</pubDate>
       
       <guid>https://pawxq.github.io/pawpaw_coding.github.io/tags/c#/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>dict</title>
+      <link>https://pawxq.github.io/pawpaw_coding.github.io/tags/dict/</link>
+      <pubDate>Sat, 22 Jun 2024 17:40:57 +0000</pubDate>
+      
+      <guid>https://pawxq.github.io/pawpaw_coding.github.io/tags/dict/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>array</title>
+      <link>https://pawxq.github.io/pawpaw_coding.github.io/tags/array/</link>
+      <pubDate>Sat, 22 Jun 2024 11:59:59 +0000</pubDate>
+      
+      <guid>https://pawxq.github.io/pawpaw_coding.github.io/tags/array/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>leetcode</title>
       <link>https://pawxq.github.io/pawpaw_coding.github.io/tags/leetcode/</link>
-      <pubDate>Fri, 21 Jun 2024 20:19:35 +0000</pubDate>
+      <pubDate>Sat, 22 Jun 2024 11:59:59 +0000</pubDate>
       
       <guid>https://pawxq.github.io/pawpaw_coding.github.io/tags/leetcode/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>logic</title>
+      <link>https://pawxq.github.io/pawpaw_coding.github.io/tags/logic/</link>
+      <pubDate>Sat, 22 Jun 2024 05:47:10 +0000</pubDate>
+      
+      <guid>https://pawxq.github.io/pawpaw_coding.github.io/tags/logic/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>loop</title>
+      <link>https://pawxq.github.io/pawpaw_coding.github.io/tags/loop/</link>
+      <pubDate>Sat, 22 Jun 2024 05:47:10 +0000</pubDate>
+      
+      <guid>https://pawxq.github.io/pawpaw_coding.github.io/tags/loop/</guid>
       <description></description>
     </item>
     
