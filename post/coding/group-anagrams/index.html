@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>[C#] Group Anagrams - Even - A super concise theme for Hugo</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="PawPaw" /><meta name="description" content="" /><meta name="keywords" content="Hugo, theme, even" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.108.0 with theme even" />
+
+
+<link rel="canonical" href="https://pawxq.github.io/pawpaw_coding.github.io/post/coding/group-anagrams/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/pawpaw_coding.github.io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/pawpaw_coding.github.io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/pawpaw_coding.github.io/favicon-16x16.png">
+<link rel="manifest" href="/pawpaw_coding.github.io/manifest.json">
+<link rel="mask-icon" href="/pawpaw_coding.github.io/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/pawpaw_coding.github.io/sass/main.min.f92fd13721ddf72129410fd8250e73152cc6f2438082b6c0208dc24ee7c13fc4.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="[C#] Group Anagrams" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://pawxq.github.io/pawpaw_coding.github.io/post/coding/group-anagrams/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2024-06-23T18:03:59+00:00" />
+<meta property="article:modified_time" content="2024-06-23T18:03:59+00:00" />
+<meta itemprop="name" content="[C#] Group Anagrams">
+<meta itemprop="description" content=""><meta itemprop="datePublished" content="2024-06-23T18:03:59+00:00" />
+<meta itemprop="dateModified" content="2024-06-23T18:03:59+00:00" />
+<meta itemprop="wordCount" content="3597">
+<meta itemprop="keywords" content="C#,dict,List," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="[C#] Group Anagrams"/>
+<meta name="twitter:description" content=""/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">PawPaw_coding</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/pawpaw_coding.github.io/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/pawpaw_coding.github.io/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/pawpaw_coding.github.io/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/pawpaw_coding.github.io/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">PawPaw_coding</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/pawpaw_coding.github.io/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/pawpaw_coding.github.io/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/pawpaw_coding.github.io/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/pawpaw_coding.github.io/categories/">Categories</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">[C#] Group Anagrams</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2024-06-23 </span>
+        <div class="post-category">
+            <a href="/pawpaw_coding.github.io/categories/c/"> C# </a>
+            <a href="/pawpaw_coding.github.io/categories/dict/"> dict </a>
+            <a href="/pawpaw_coding.github.io/categories/list/"> List </a>
+            <a href="/pawpaw_coding.github.io/categories/coding/"> coding </a>
+            </div>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#topic">Topic</a></li>
+    <li><a href="#solution">Solution</a>
+      <ul>
+        <li><a href="#c">C#</a></li>
+      </ul>
+    </li>
+    <li><a href="#code">Code</a>
+      <ul>
+        <li><a href="#c-1">C#</a></li>
+      </ul>
+    </li>
+    <li><a href="#process">Process</a></li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <h1 id="topic">Topic</h1>
+<p>這次的題目為, 給定一串 list, 並對裡面的 string 進行分類, 將相同 char 數量的 string 分組.</p>
+<p>在我的解題過程中, 我會盡可能將 solution 拆成多個 Fuction 並組合, 可能不會是最佳解, 也不是最速解</p>
+<p>但這可以同時在解決問題, 寫出 solution 時, 同時習慣 <code>oop</code> 並習慣於拆解問題</p>
+</br>
+<p>規則：</p>
+<p>eat 和 ate, tea 為一樣, 字母和字母數量皆一樣</p>
+<p>eat 和 atee 不一樣, 雖然都是一樣字母 <code>a, e, t</code>, 但是在 <code>e</code> 的數量上不一樣</p>
+</br>
+<p>重點是分組的內容, 誰先誰後都可以</p>
+<p>Input: strs = [&ldquo;eat&rdquo;,&ldquo;tea&rdquo;,&ldquo;tan&rdquo;,&ldquo;ate&rdquo;,&ldquo;nat&rdquo;,&ldquo;bat&rdquo;]</p>
+<p>Output：[[&ldquo;eat&rdquo;,&ldquo;tea&rdquo;,&ldquo;ate&rdquo;],[&ldquo;tan&rdquo;,&ldquo;nat&rdquo;],[&ldquo;bat&rdquo;]]</p>
+<h1 id="solution">Solution</h1>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-shell" data-lang="shell"><span class="line"><span class="cl">Input List&lt;string&gt;: <span class="o">[</span><span class="s2">&#34;eat&#34;</span>,<span class="s2">&#34;tea&#34;</span>,<span class="s2">&#34;tan&#34;</span>,<span class="s2">&#34;ate&#34;</span>,<span class="s2">&#34;nat&#34;</span>,<span class="s2">&#34;bat&#34;</span><span class="o">]</span>
+</span></span><span class="line"><span class="cl">Output List&lt;string&gt;：<span class="o">[[</span><span class="s2">&#34;eat&#34;</span>,<span class="s2">&#34;tea&#34;</span>,<span class="s2">&#34;ate&#34;</span><span class="o">]</span>,<span class="o">[</span><span class="s2">&#34;tan&#34;</span>,<span class="s2">&#34;nat&#34;</span><span class="o">]</span>,<span class="o">[</span><span class="s2">&#34;bat&#34;</span><span class="o">]]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 建立一個 List&lt;List&lt;string&gt;&gt; 表示 List 裡面的 object 為 List&lt;string&gt;, 最後 output 用</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">result
+</span></span><span class="line"><span class="cl">List&lt;List&lt;string&gt;&gt; <span class="nv">result</span> <span class="o">=</span> new List&lt;List&lt;string&gt;&gt;<span class="o">()</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 建立 input 的 list_str_dict, key: vaule 為 str, bool, 全部設為 false, 表示還未經過判斷歸類</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">list_str_dict
+</span></span><span class="line"><span class="cl"><span class="o">{</span>
+</span></span><span class="line"><span class="cl">  <span class="o">{</span><span class="s2">&#34;eat&#34;</span>: false<span class="o">}</span>, <span class="o">{</span><span class="s2">&#34;tea&#34;</span>: false<span class="o">}</span>, <span class="o">{</span><span class="s2">&#34;tan&#34;</span>: false<span class="o">}</span>, <span class="o">{</span><span class="s2">&#34;ate&#34;</span>: false<span class="o">}</span>, <span class="o">{</span><span class="s2">&#34;nat&#34;</span>, false<span class="o">}</span>, <span class="o">{</span><span class="s2">&#34;bat&#34;</span>, false<span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 對 dict 裡面的第一個 value 為 false 進行 char 分類, 依序比對後方的 value 為 false 的 str, 並將比對一樣的 str 輸入到同一個 List&lt;str&gt;, 最後在 input 到 same_cahr List&lt;List&lt;string&gt;&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">char_dict
+</span></span><span class="line"><span class="cl"><span class="o">{</span>
+</span></span><span class="line"><span class="cl">  <span class="o">{</span><span class="s2">&#34;e&#34;</span>: 1<span class="o">}</span>, <span class="o">{</span><span class="s2">&#34;a&#34;</span>: 1<span class="o">}</span>, <span class="o">{</span><span class="s2">&#34;t&#34;</span>, 1<span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">same_char
+</span></span><span class="line"><span class="cl">List&lt;string&gt; <span class="nv">same_char</span> <span class="o">=</span> new List&lt;string&gt;<span class="o">()</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 第一次結果</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">result
+</span></span><span class="line"><span class="cl">List&lt;List&lt;string&gt;&gt; <span class="nv">result</span> <span class="o">=</span> <span class="o">[[</span><span class="s2">&#34;eat&#34;</span>, <span class="s2">&#34;tea&#34;</span>, <span class="s2">&#34;ate&#34;</span><span class="o">]]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">list_str_dict
+</span></span><span class="line"><span class="cl"><span class="o">{</span>
+</span></span><span class="line"><span class="cl">  <span class="o">{</span><span class="s2">&#34;eat&#34;</span>: true<span class="o">}</span>, <span class="o">{</span><span class="s2">&#34;tea&#34;</span>: true<span class="o">}</span>, <span class="o">{</span><span class="s2">&#34;tan&#34;</span>: false<span class="o">}</span>, <span class="o">{</span><span class="s2">&#34;ate&#34;</span>: true<span class="o">}</span>, <span class="o">{</span><span class="s2">&#34;nat&#34;</span>, false<span class="o">}</span>, <span class="o">{</span><span class="s2">&#34;bat&#34;</span>, false<span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 第二次循環, 因為 list_str_dict 前面的 &#34;eat&#34;, &#34;tea&#34; 都已經是 true, 因此會以 tan 去建立 char_dict 比較後方 value 還是 false 的 str</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">char_dict
+</span></span><span class="line"><span class="cl"><span class="o">{</span>
+</span></span><span class="line"><span class="cl">  <span class="o">{</span><span class="s2">&#34;t&#34;</span>: 1<span class="o">}</span>, <span class="o">{</span><span class="s2">&#34;a&#34;</span>: 1<span class="o">}</span>, <span class="o">{</span><span class="s2">&#34;n&#34;</span>, 1<span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 第二次結果</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">result
+</span></span><span class="line"><span class="cl">List&lt;List&lt;string&gt;&gt; <span class="nv">result</span> <span class="o">=</span> <span class="o">[[</span><span class="s2">&#34;eat&#34;</span>, <span class="s2">&#34;tea&#34;</span>, <span class="s2">&#34;ate&#34;</span><span class="o">]</span>, <span class="o">[</span><span class="s2">&#34;tan&#34;</span>, <span class="s2">&#34;nat&#34;</span><span class="o">]]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">list_str_dict
+</span></span><span class="line"><span class="cl"><span class="o">{</span>
+</span></span><span class="line"><span class="cl">  <span class="o">{</span><span class="s2">&#34;eat&#34;</span>: true<span class="o">}</span>, <span class="o">{</span><span class="s2">&#34;tea&#34;</span>: true<span class="o">}</span>, <span class="o">{</span><span class="s2">&#34;tan&#34;</span>: true<span class="o">}</span>, <span class="o">{</span><span class="s2">&#34;ate&#34;</span>: true<span class="o">}</span>, <span class="o">{</span><span class="s2">&#34;nat&#34;</span>, true<span class="o">}</span>, <span class="o">{</span><span class="s2">&#34;bat&#34;</span>, false<span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 之後就是接續循環</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="c">C#</h2>
+<p>在 Console App (.NET Framework 編寫)</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-C#" data-lang="C#"><span class="line"><span class="cl"><span class="k">namespace</span> <span class="err">&lt;</span><span class="nn">namespace_name</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">internal</span> <span class="k">class</span> <span class="nc">Program</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">static</span> <span class="k">void</span> <span class="n">Main</span><span class="p">(</span><span class="kt">string</span><span class="p">[]</span> <span class="n">args</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="c1">// Input: strs = [&#34;eat&#34;,&#34;tea&#34;,&#34;tan&#34;,&#34;ate&#34;,&#34;nat&#34;,&#34;bat&#34;]</span>
+</span></span><span class="line"><span class="cl">            <span class="c1">// Output: [[&#34;bat&#34;],[&#34;nat&#34;,&#34;tan&#34;],[&#34;ate&#34;,&#34;eat&#34;,&#34;tea&#34;]]</span>
+</span></span><span class="line"><span class="cl">            <span class="n">List</span><span class="p">&lt;</span><span class="kt">string</span><span class="p">&gt;</span> <span class="n">strs</span> <span class="p">=</span> <span class="k">new</span> <span class="n">List</span><span class="p">&lt;</span><span class="kt">string</span><span class="p">&gt;</span> <span class="p">{</span> <span class="s">&#34;eat&#34;</span><span class="p">,</span> <span class="s">&#34;tea&#34;</span><span class="p">,</span> <span class="s">&#34;tan&#34;</span><span class="p">,</span> <span class="s">&#34;ate&#34;</span><span class="p">,</span> <span class="s">&#34;nat&#34;</span><span class="p">,</span> <span class="s">&#34;bat&#34;</span> <span class="p">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="n">List</span><span class="p">&lt;</span><span class="n">List</span><span class="p">&lt;</span><span class="kt">string</span><span class="p">&gt;&gt;</span> <span class="n">result</span> <span class="p">=</span> <span class="n">GroupStrings</span><span class="p">(</span><span class="n">strs</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="k">foreach</span> <span class="p">(</span><span class="n">List</span><span class="p">&lt;</span><span class="kt">string</span><span class="p">&gt;</span> <span class="k">group</span> <span class="k">in</span> <span class="n">result</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="n">Console</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="kt">string</span><span class="p">.</span><span class="n">Join</span><span class="p">(</span><span class="s">&#34;,&#34;</span><span class="p">,</span> <span class="k">group</span><span class="p">));</span>
+</span></span><span class="line"><span class="cl">                <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="c1">//Console.WriteLine(String.Join(&#34;,&#34;, result));</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h1 id="code">Code</h1>
+<h2 id="c-1">C#</h2>
+<p>底下的 Function 都是解題會需要的, 我會一個一個解釋, 在C# 的世界裡, 並沒有 Function 的上下排列問題, 你可以先寫 A 裡面包含 B, 後面在寫 B.</p>
+<p>此為最終對 input List<string> 進行整理的部分</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-C#" data-lang="C#"><span class="line"><span class="cl"><span class="k">static</span> <span class="n">List</span><span class="p">&lt;</span><span class="n">List</span><span class="p">&lt;</span><span class="kt">string</span><span class="p">&gt;&gt;</span> <span class="n">GroupStrings</span><span class="p">(</span><span class="n">List</span><span class="p">&lt;</span><span class="kt">string</span><span class="p">&gt;</span> <span class="n">input</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">List</span><span class="p">&lt;</span><span class="n">List</span><span class="p">&lt;</span><span class="kt">string</span><span class="p">&gt;&gt;</span> <span class="n">result</span> <span class="p">=</span> <span class="k">new</span> <span class="n">List</span><span class="p">&lt;</span><span class="n">List</span><span class="p">&lt;</span><span class="kt">string</span><span class="p">&gt;&gt;();</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Dictionary</span><span class="p">&lt;</span><span class="kt">string</span><span class="p">,</span> <span class="kt">bool</span><span class="p">&gt;</span> <span class="n">string_list_dict</span> <span class="p">=</span> <span class="n">CreateStrDict</span><span class="p">(</span><span class="n">input</span><span class="p">);</span> <span class="c1">// 為輸入的 List&lt;string&gt;, 建立一個 Dict, Value 全部為 false</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span> <span class="n">i</span> <span class="p">&lt;</span> <span class="n">input</span><span class="p">.</span><span class="n">Count</span><span class="p">;</span> <span class="n">i</span><span class="p">++)</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">List</span><span class="p">&lt;</span><span class="kt">string</span><span class="p">&gt;</span> <span class="n">same_char</span> <span class="p">=</span> <span class="k">new</span> <span class="n">List</span><span class="p">&lt;</span><span class="kt">string</span><span class="p">&gt;();</span>
+</span></span><span class="line"><span class="cl">        <span class="kt">string</span> <span class="n">str</span> <span class="p">=</span> <span class="n">input</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="n">string_list_dict</span><span class="p">[</span><span class="n">str</span><span class="p">]</span> <span class="p">==</span> <span class="k">true</span><span class="p">)</span> <span class="c1">// 當 string_list_dict[str] == true 表示該 str 已經進行過判斷分類, 就跳過</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">continue</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="n">string_list_dict</span><span class="p">[</span><span class="n">str</span><span class="p">]</span> <span class="p">=</span> <span class="k">true</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">same_char</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="n">str</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">j</span> <span class="p">=</span> <span class="n">i</span> <span class="p">+</span> <span class="m">1</span><span class="p">;</span> <span class="n">j</span> <span class="p">&lt;</span> <span class="n">input</span><span class="p">.</span><span class="n">Count</span><span class="p">;</span> <span class="n">j</span><span class="p">++)</span> <span class="c1">// 依序往後比較</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="kt">bool</span> <span class="n">compare</span> <span class="p">=</span> <span class="n">CompareTwoStr</span><span class="p">(</span><span class="n">str</span><span class="p">,</span> <span class="n">input</span><span class="p">[</span><span class="n">j</span><span class="p">]);</span> <span class="c1">// 判斷兩個 str 是否一樣</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="p">(</span><span class="n">compare</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="n">same_char</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="n">input</span><span class="p">[</span><span class="n">j</span><span class="p">]);</span> <span class="c1">// 一樣就添加到 str 的 list 李</span>
+</span></span><span class="line"><span class="cl">                <span class="n">string_list_dict</span><span class="p">[</span><span class="n">input</span><span class="p">[</span><span class="n">j</span><span class="p">]]</span> <span class="p">=</span> <span class="k">true</span><span class="p">;</span> <span class="c1">// 並將被比較過的 string_list_dict[input[j]] 改為 true, 下一個比較迴圈就會跳過他</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="n">result</span><span class="p">.</span><span class="n">Add</span><span class="p">(</span><span class="n">same_char</span><span class="p">);</span> <span class="c1">// 將該 List 輸入到最終的 List</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">result</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>比較兩個 <code>string str</code> 是否一樣</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-C#" data-lang="C#"><span class="line"><span class="cl"><span class="k">static</span> <span class="kt">bool</span> <span class="n">CompareTwoStr</span><span class="p">(</span><span class="kt">string</span> <span class="n">str1</span><span class="p">,</span> <span class="kt">string</span> <span class="n">str2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">//bool result = true;</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">int</span> <span class="n">count</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Dictionary</span><span class="p">&lt;</span><span class="kt">char</span><span class="p">,</span> <span class="kt">int</span><span class="p">&gt;</span> <span class="n">str_dict</span> <span class="p">=</span> <span class="n">CountTextChar</span><span class="p">(</span><span class="n">str1</span><span class="p">);</span> <span class="c1">// 為第一個 string 建立 char 數量的 dict</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span> <span class="n">i</span> <span class="p">&lt;</span> <span class="n">str2</span><span class="p">.</span><span class="n">Length</span><span class="p">;</span> <span class="n">i</span><span class="p">++)</span> <span class="c1">// loop through 所有 string2 char</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(!</span><span class="n">str_dict</span><span class="p">.</span><span class="n">ContainsKey</span><span class="p">(</span><span class="n">str2</span><span class="p">[</span><span class="n">i</span><span class="p">]))</span> <span class="c1">// 如果沒有出現該 char key 表示不一樣 retrun false</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="k">false</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="n">str_dict</span><span class="p">.</span><span class="n">ContainsKey</span><span class="p">(</span><span class="n">str2</span><span class="p">[</span><span class="n">i</span><span class="p">]))</span> <span class="c1">// 每出現一次 char, 就在 dict 內搜尋該 key 並 -1</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">count</span> <span class="p">=</span> <span class="n">str_dict</span><span class="p">[</span><span class="n">str2</span><span class="p">[</span><span class="n">i</span><span class="p">]]--;</span> 
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="n">count</span> <span class="p">&lt;</span> <span class="m">0</span><span class="p">)</span> <span class="c1">// 如果 char 數量太多減到 &lt;0 一樣是不一樣, return false</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="k">false</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 最後檢查 str1 所建立的 char dict, 裡面的 value 是不是都是 0</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="p">!</span><span class="n">str_dict</span><span class="p">.</span><span class="n">Values</span><span class="p">.</span><span class="n">Any</span><span class="p">(</span><span class="n">x</span> <span class="p">=&gt;</span> <span class="n">x</span> <span class="p">!=</span> <span class="m">0</span><span class="p">);</span> <span class="c1">// 此語法表示如果 str_dict 內的 value 如果有不為 0就 return true</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>計算 <code>string str</code> 每個字母的數量</p>
+<p>取出每一個 string 的 char, 儲存到 dict, 並各別計數</p>
+<p>因為需要比對兩個 string 的 char 和 quantity, 都需要相等才算一樣(不管順序)</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-C#" data-lang="C#"><span class="line"><span class="cl"><span class="k">static</span> <span class="n">Dictionary</span><span class="p">&lt;</span><span class="kt">char</span><span class="p">,</span> <span class="kt">int</span><span class="p">&gt;</span> <span class="n">CountTextChar</span><span class="p">(</span><span class="kt">string</span> <span class="n">str</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Dictionary</span><span class="p">&lt;</span><span class="kt">char</span><span class="p">,</span> <span class="kt">int</span><span class="p">&gt;</span> <span class="n">d</span> <span class="p">=</span> <span class="k">new</span> <span class="n">Dictionary</span><span class="p">&lt;</span><span class="kt">char</span><span class="p">,</span> <span class="kt">int</span><span class="p">&gt;();</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span> <span class="n">i</span> <span class="p">&lt;</span> <span class="n">str</span><span class="p">.</span><span class="n">Length</span><span class="p">;</span> <span class="n">i</span><span class="p">++)</span> <span class="c1">// loop through string 每個 char 存到 dict, 並計算每一個 char 出現的次數</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="n">d</span><span class="p">.</span><span class="n">ContainsKey</span><span class="p">(</span><span class="n">str</span><span class="p">[</span><span class="n">i</span><span class="p">]))</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">d</span><span class="p">[</span><span class="n">str</span><span class="p">[</span><span class="n">i</span><span class="p">]]++;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="k">else</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">d</span><span class="p">[</span><span class="n">str</span><span class="p">[</span><span class="n">i</span><span class="p">]]</span> <span class="p">=</span> <span class="m">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">d</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>為輸入的 List<string>, 建立一個 Dict, Value 全部為 false</p>
+<p>為了判斷該 List<string> 內的 string 是否已經進行過判斷分類, 先都設定為 false 表示沒有進行過判斷或分類</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-C#" data-lang="C#"><span class="line"><span class="cl"><span class="k">static</span> <span class="n">Dictionary</span><span class="p">&lt;</span><span class="kt">string</span><span class="p">,</span> <span class="kt">bool</span><span class="p">&gt;</span> <span class="n">CreateStrDict</span><span class="p">(</span><span class="n">List</span><span class="p">&lt;</span><span class="kt">string</span><span class="p">&gt;</span> <span class="n">strings</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Dictionary</span><span class="p">&lt;</span><span class="kt">string</span><span class="p">,</span> <span class="kt">bool</span><span class="p">&gt;</span> <span class="n">d</span> <span class="p">=</span> <span class="k">new</span> <span class="n">Dictionary</span><span class="p">&lt;</span><span class="kt">string</span><span class="p">,</span> <span class="kt">bool</span><span class="p">&gt;();</span> <span class="c1">// 建立一個空字典, key: vaule type 為 string:bool</span>
+</span></span><span class="line"><span class="cl">    <span class="k">foreach</span> <span class="p">(</span><span class="kt">string</span> <span class="n">s</span> <span class="k">in</span> <span class="n">strings</span><span class="p">)</span> <span class="c1">// 將 List&lt;string&gt; 內的所有內容分別取出, 輸入到 dict </span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">d</span><span class="p">[</span><span class="n">s</span><span class="p">]</span> <span class="p">=</span> <span class="k">false</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">d</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h1 id="process">Process</h1>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="err">┌────────────────────────────────────────────────────────────────────┐</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">│</span><span class="w">                              </span><span class="err">開始</span><span class="w"> </span><span class="p">(</span><span class="k">Start</span><span class="p">)</span><span class="w">                           </span><span class="err">│</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">└────────────────────────────────────────────────────────────────────┘</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                                       </span><span class="err">│</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                                       </span><span class="err">▼</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">┌────────────────────────────────────────────────────────────────────┐</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">│</span><span class="w">        </span><span class="err">初始化結果列表</span><span class="w"> </span><span class="k">result</span><span class="w"> </span><span class="err">和</span><span class="w"> </span><span class="err">字典</span><span class="w"> </span><span class="n">string_list_dict</span><span class="w">                </span><span class="err">│</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">└────────────────────────────────────────────────────────────────────┘</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                                       </span><span class="err">│</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                                       </span><span class="err">▼</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">┌────────────────────────────────────────────────────────────────────┐</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">│</span><span class="w">                     </span><span class="err">外層迴圈遍歷輸入列表</span><span class="w"> </span><span class="k">input</span><span class="w">                      </span><span class="err">│</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">└────────────────────────────────────────────────────────────────────┘</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                  </span><span class="err">┌──────────────────────────────────────┐</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                  </span><span class="err">│</span><span class="w">                                      </span><span class="err">│</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                  </span><span class="err">▼</span><span class="w">                                      </span><span class="err">▼</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">┌──────────────────────────────────────────────┐</span><span class="w">   </span><span class="err">┌──────────────────────────────────────────────────┐</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">│</span><span class="w">  </span><span class="err">檢查字典</span><span class="w"> </span><span class="n">string_list_dict</span><span class="p">[</span><span class="n">str</span><span class="p">]</span><span class="w"> </span><span class="err">是否為</span><span class="w"> </span><span class="k">true</span><span class="w">   </span><span class="err">│</span><span class="w">    </span><span class="err">│</span><span class="w">        </span><span class="err">如果</span><span class="w"> </span><span class="n">string_list_dict</span><span class="p">[</span><span class="n">str</span><span class="p">]</span><span class="w"> </span><span class="err">為</span><span class="w"> </span><span class="k">false</span><span class="w">       </span><span class="err">│</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">└──────────────────────────────────────────────┘</span><span class="w">   </span><span class="err">└──────────────────────────────────────────────────┘</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                  </span><span class="err">│</span><span class="w">                                    </span><span class="err">│</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                  </span><span class="err">│</span><span class="w">                                    </span><span class="err">▼</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                  </span><span class="err">│</span><span class="w">                 </span><span class="err">┌───────────────────────────────────────────────────────────────┐</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                  </span><span class="err">│</span><span class="w">                 </span><span class="err">│</span><span class="w">       </span><span class="err">將當前字符串標記為已處理</span><span class="w"> </span><span class="p">(</span><span class="n">string_list_dict</span><span class="p">[</span><span class="n">str</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">true</span><span class="p">)</span><span class="w">   </span><span class="err">│</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                  </span><span class="err">│</span><span class="w">                 </span><span class="err">└───────────────────────────────────────────────────────────────┘</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                  </span><span class="err">│</span><span class="w">                                    </span><span class="err">│</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                  </span><span class="err">│</span><span class="w">                                    </span><span class="err">▼</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                  </span><span class="err">│</span><span class="w">                 </span><span class="err">┌───────────────────────────────────────────────────────────────┐</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                  </span><span class="err">│</span><span class="w">                 </span><span class="err">│</span><span class="w">  </span><span class="err">創建新列表</span><span class="w"> </span><span class="n">same_char</span><span class="w"> </span><span class="err">並將當前字符串添加進去</span><span class="w">                     </span><span class="err">│</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                  </span><span class="err">│</span><span class="w">                 </span><span class="err">└───────────────────────────────────────────────────────────────┘</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                  </span><span class="err">│</span><span class="w">                                    </span><span class="err">│</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                  </span><span class="err">│</span><span class="w">                                    </span><span class="err">▼</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                  </span><span class="err">│</span><span class="w">                 </span><span class="err">┌───────────────────────────────────────────────────────────────┐</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                  </span><span class="err">│</span><span class="w">                 </span><span class="err">│</span><span class="w">                </span><span class="err">內層迴圈遍歷剩下的字符串</span><span class="w">                         </span><span class="err">│</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                  </span><span class="err">│</span><span class="w">                 </span><span class="err">└───────────────────────────────────────────────────────────────┘</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                  </span><span class="err">│</span><span class="w">                                    </span><span class="err">│</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                  </span><span class="err">│</span><span class="w">                                    </span><span class="err">▼</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                  </span><span class="err">│</span><span class="w">                 </span><span class="err">┌───────────────────────────────────────────────────────────────┐</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                  </span><span class="err">│</span><span class="w">                 </span><span class="err">│</span><span class="w">  </span><span class="err">使用</span><span class="w"> </span><span class="n">CompareTwoStr</span><span class="w"> </span><span class="err">比較字符串</span><span class="w">                                 </span><span class="err">│</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                  </span><span class="err">│</span><span class="w">                 </span><span class="err">└───────────────────────────────────────────────────────────────┘</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                  </span><span class="err">│</span><span class="w">                                    </span><span class="err">│</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                  </span><span class="err">│</span><span class="w">                                    </span><span class="err">▼</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                  </span><span class="err">│</span><span class="w">                 </span><span class="err">┌───────────────────────────────────────────────────────────────┐</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                  </span><span class="err">│</span><span class="w">                 </span><span class="err">│</span><span class="w">   </span><span class="err">如果相同，將被比較字符串添加到</span><span class="w"> </span><span class="n">same_char</span><span class="w"> </span><span class="err">並標記為已處理</span><span class="w">         </span><span class="err">│</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                  </span><span class="err">│</span><span class="w">                 </span><span class="err">└───────────────────────────────────────────────────────────────┘</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                  </span><span class="err">│</span><span class="w">                                    </span><span class="err">│</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                  </span><span class="err">│</span><span class="w">                                    </span><span class="err">▼</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                  </span><span class="err">│</span><span class="w">                 </span><span class="err">┌───────────────────────────────────────────────────────────────┐</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                  </span><span class="err">│</span><span class="w">                 </span><span class="err">│</span><span class="w">            </span><span class="err">將</span><span class="w"> </span><span class="n">same_char</span><span class="w"> </span><span class="err">列表添加到結果列表</span><span class="w"> </span><span class="k">result</span><span class="w">               </span><span class="err">│</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                  </span><span class="err">│</span><span class="w">                 </span><span class="err">└───────────────────────────────────────────────────────────────┘</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                  </span><span class="err">│</span><span class="w">                                    </span><span class="err">│</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                  </span><span class="err">▼</span><span class="w">                                    </span><span class="err">▼</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">┌────────────────────────────────────────┐</span><span class="w">  </span><span class="err">┌──────────────────────────────────────────────────┐</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">│</span><span class="w">          </span><span class="err">繼續遍歷下一個字符串</span><span class="w">            </span><span class="err">│</span><span class="w">  </span><span class="err">│</span><span class="w">                </span><span class="err">跳過已處理的字符串</span><span class="w">                 </span><span class="err">│</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">└────────────────────────────────────────┘</span><span class="w">  </span><span class="err">└──────────────────────────────────────────────────┘</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                                       </span><span class="err">│</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">                                       </span><span class="err">▼</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">┌────────────────────────────────────────────────────────────────────┐</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">│</span><span class="w">                                </span><span class="err">結束</span><span class="w"> </span><span class="p">(</span><span class="k">End</span><span class="p">)</span><span class="w">                           </span><span class="err">│</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="err">└────────────────────────────────────────────────────────────────────┘</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div>
+    </div>
+
+    
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/pawpaw_coding.github.io/tags/c/">C#</a>
+          <a href="/pawpaw_coding.github.io/tags/dict/">dict</a>
+          <a href="/pawpaw_coding.github.io/tags/list/">List</a>
+          </div>
+      <nav class="post-nav">
+        
+        <a class="next" href="/pawpaw_coding.github.io/post/c-sharp/dictionary-based-character-frequency-counter/">
+            <span class="next-text nav-default">[C#] Dictionary Based Character Frequency Counter</span>
+            <span class="next-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="https://github.com/PawXQ/pawpaw.github.io" class="iconfont icon-github" title="github"></a>
+  <a href="https://pawxq.github.io/pawpaw_coding.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2024<span class="heart"><i class="iconfont icon-heart"></i></span><span>PawPaw</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/pawpaw_coding.github.io/js/main.min.4ae89da218555efa0e7093a20b92017d2e1202b66fff9fc2edf4cb8d44b44c6e.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

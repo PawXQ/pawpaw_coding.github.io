@@ -6,7 +6,16 @@
     <description>Recent content in coding on Even - A super concise theme for Hugo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 22 Jun 2024 17:40:57 +0000</lastBuildDate><atom:link href="https://pawxq.github.io/pawpaw_coding.github.io/categories/coding/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 23 Jun 2024 18:03:59 +0000</lastBuildDate><atom:link href="https://pawxq.github.io/pawpaw_coding.github.io/categories/coding/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[C#] Group Anagrams</title>
+      <link>https://pawxq.github.io/pawpaw_coding.github.io/post/coding/group-anagrams/</link>
+      <pubDate>Sun, 23 Jun 2024 18:03:59 +0000</pubDate>
+      
+      <guid>https://pawxq.github.io/pawpaw_coding.github.io/post/coding/group-anagrams/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>[C#] Dictionary Based Character Frequency Counter</title>
       <link>https://pawxq.github.io/pawpaw_coding.github.io/post/c-sharp/dictionary-based-character-frequency-counter/</link>
