@@ -48,7 +48,7 @@
 <meta itemprop="name" content="[C#] Group Anagrams">
 <meta itemprop="description" content=""><meta itemprop="datePublished" content="2024-06-23T18:03:59+00:00" />
 <meta itemprop="dateModified" content="2024-06-23T18:03:59+00:00" />
-<meta itemprop="wordCount" content="3597">
+<meta itemprop="wordCount" content="3606">
 <meta itemprop="keywords" content="C#,dict,List," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="[C#] Group Anagrams"/>
 <meta name="twitter:description" content=""/>
@@ -311,6 +311,8 @@
 </span><span class="lnt">20
 </span><span class="lnt">21
 </span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-C#" data-lang="C#"><span class="line"><span class="cl"><span class="k">namespace</span> <span class="err">&lt;</span><span class="nn">namespace_name</span><span class="p">&gt;</span>
@@ -325,8 +327,10 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">            <span class="n">List</span><span class="p">&lt;</span><span class="n">List</span><span class="p">&lt;</span><span class="kt">string</span><span class="p">&gt;&gt;</span> <span class="n">result</span> <span class="p">=</span> <span class="n">GroupStrings</span><span class="p">(</span><span class="n">strs</span><span class="p">);</span>
 </span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="c1">// int num =1;</span>
 </span></span><span class="line"><span class="cl">            <span class="k">foreach</span> <span class="p">(</span><span class="n">List</span><span class="p">&lt;</span><span class="kt">string</span><span class="p">&gt;</span> <span class="k">group</span> <span class="k">in</span> <span class="n">result</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">            <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="c1">// Console.WriteLine($&#34;{num++} group&#34;);</span>
 </span></span><span class="line"><span class="cl">                <span class="n">Console</span><span class="p">.</span><span class="n">Write</span><span class="p">(</span><span class="kt">string</span><span class="p">.</span><span class="n">Join</span><span class="p">(</span><span class="s">&#34;,&#34;</span><span class="p">,</span> <span class="k">group</span><span class="p">));</span>
 </span></span><span class="line"><span class="cl">                <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">();</span>
 </span></span><span class="line"><span class="cl">            <span class="p">}</span>
@@ -657,7 +661,11 @@
           <a href="/pawpaw_coding.github.io/tags/list/">List</a>
           </div>
       <nav class="post-nav">
-        
+        <a class="prev" href="/pawpaw_coding.github.io/post/leetcode/leetcode-3-longest-substring-without-repeating-characters/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">[LeetCode] 3. Longest Substring Without Repeating Characters</span>
+            <span class="prev-text nav-mobile">Prev</span>
+          </a>
         <a class="next" href="/pawpaw_coding.github.io/post/c-sharp/dictionary-based-character-frequency-counter/">
             <span class="next-text nav-default">[C#] Dictionary Based Character Frequency Counter</span>
             <span class="next-text nav-mobile">Next</span>
