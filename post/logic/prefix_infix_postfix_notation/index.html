@@ -48,7 +48,7 @@
 <meta itemprop="name" content="[Logic] Prefix_infix_postfix_notation">
 <meta itemprop="description" content=""><meta itemprop="datePublished" content="2024-07-02T15:51:00+00:00" />
 <meta itemprop="dateModified" content="2024-07-02T15:51:00+00:00" />
-<meta itemprop="wordCount" content="2051">
+<meta itemprop="wordCount" content="2271">
 <meta itemprop="keywords" content="C#,stack,article,logic," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="[Logic] Prefix_infix_postfix_notation"/>
 <meta name="twitter:description" content=""/>
@@ -707,7 +707,27 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h3 id="solution-2">Solution 2</h3>
-<p>使用 Priority function 來設定和比較 operator 的優先級</p>
+<p><span style="color:red">最小知識原則：解決所有的小問題(先做核心功能再做次要功能)</span></p>
+<p>主要功能：</p>
+<ol>
+<li>
+<p>遇到數字 output： 當前字元是數字時, 直接輸出到 string result</p>
+</li>
+<li>
+<p>遇到符號存 stack： 當前字元是運算符時, 將其存入 stack</p>
+</li>
+<li>
+<p>loop 所有內容： 循環輸入字符串中的每一個字元, 根據字符類型(數字或運算符)執行相應的操作</p>
+</li>
+<li>
+<p>最後把 stack 所有內容 pop： 在 loop 完所有字元後, 將 stack 中剩餘的所有 operator 依次取出並輸出到 string result 中</p>
+</li>
+</ol>
+<p>次要功能：</p>
+<ol>
+<li>判斷 +-*/： 使用 Priority 函數判斷運算符的priority, 並根據優先級進行堆疊操作。</li>
+</ol>
+<p>使用 Priority function 來設定和比較 operator 的priority</p>
 <p>處理 operator 的時候, 透過 function 來確定是否需要將運算子從 stack 中取出</p>
 <p>便於 <code>extand</code> 和 maintenance, 但相對稍微複雜一些</p>
 <div class="highlight"><div class="chroma">
