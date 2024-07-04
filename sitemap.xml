@@ -2,6 +2,90 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://pawxq.github.io/pawpaw_coding.github.io/tags/c#/</loc>
+    <lastmod>2024-07-04T12:56:28+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://pawxq.github.io/pawpaw_coding.github.io/categories/c#/</loc>
+    <lastmod>2024-07-04T12:56:28+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://pawxq.github.io/pawpaw_coding.github.io/categories/</loc>
+    <lastmod>2024-07-04T12:56:28+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://pawxq.github.io/pawpaw_coding.github.io/categories/coding/</loc>
+    <lastmod>2024-07-04T12:56:28+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://pawxq.github.io/pawpaw_coding.github.io/</loc>
+    <lastmod>2024-07-04T12:56:28+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://pawxq.github.io/pawpaw_coding.github.io/tags/logic/</loc>
+    <lastmod>2024-07-04T12:56:28+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://pawxq.github.io/pawpaw_coding.github.io/categories/logic/</loc>
+    <lastmod>2024-07-04T12:56:28+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://pawxq.github.io/pawpaw_coding.github.io/post/</loc>
+    <lastmod>2024-07-04T12:56:28+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://pawxq.github.io/pawpaw_coding.github.io/tags/stack/</loc>
+    <lastmod>2024-07-04T12:56:28+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://pawxq.github.io/pawpaw_coding.github.io/categories/stack/</loc>
+    <lastmod>2024-07-04T12:56:28+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://pawxq.github.io/pawpaw_coding.github.io/tags/</loc>
+    <lastmod>2024-07-04T12:56:28+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://pawxq.github.io/pawpaw_coding.github.io/post/logic/valid_parentheses/</loc>
+    <lastmod>2024-07-04T12:56:28+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://pawxq.github.io/pawpaw_coding.github.io/post/logic/prefix_infix_postfix_notation/</loc>
     <lastmod>2024-07-02T15:51:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -17,83 +101,6 @@
   
   <url>
     <loc>https://pawxq.github.io/pawpaw_coding.github.io/categories/article/</loc>
-    <lastmod>2024-07-02T15:51:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://pawxq.github.io/pawpaw_coding.github.io/tags/c#/</loc>
-    <lastmod>2024-07-02T15:51:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://pawxq.github.io/pawpaw_coding.github.io/categories/c#/</loc>
-    <lastmod>2024-07-02T15:51:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://pawxq.github.io/pawpaw_coding.github.io/categories/</loc>
-    <lastmod>2024-07-02T15:51:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://pawxq.github.io/pawpaw_coding.github.io/categories/coding/</loc>
-    <lastmod>2024-07-02T15:51:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://pawxq.github.io/pawpaw_coding.github.io/</loc>
-    <lastmod>2024-07-02T15:51:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://pawxq.github.io/pawpaw_coding.github.io/tags/logic/</loc>
-    <lastmod>2024-07-02T15:51:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://pawxq.github.io/pawpaw_coding.github.io/categories/logic/</loc>
-    <lastmod>2024-07-02T15:51:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://pawxq.github.io/pawpaw_coding.github.io/post/</loc>
-    <lastmod>2024-07-02T15:51:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://pawxq.github.io/pawpaw_coding.github.io/tags/stack/</loc>
-    <lastmod>2024-07-02T15:51:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://pawxq.github.io/pawpaw_coding.github.io/categories/stack/</loc>
-    <lastmod>2024-07-02T15:51:00+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://pawxq.github.io/pawpaw_coding.github.io/tags/</loc>
     <lastmod>2024-07-02T15:51:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>

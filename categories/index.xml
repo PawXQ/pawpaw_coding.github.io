@@ -6,20 +6,11 @@
     <description>Recent content in Categories on Even - A super concise theme for Hugo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 02 Jul 2024 15:51:00 +0000</lastBuildDate><atom:link href="https://pawxq.github.io/pawpaw_coding.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>article</title>
-      <link>https://pawxq.github.io/pawpaw_coding.github.io/categories/article/</link>
-      <pubDate>Tue, 02 Jul 2024 15:51:00 +0000</pubDate>
-      
-      <guid>https://pawxq.github.io/pawpaw_coding.github.io/categories/article/</guid>
-      <description></description>
-    </item>
-    
+    <lastBuildDate>Thu, 04 Jul 2024 12:56:28 +0000</lastBuildDate><atom:link href="https://pawxq.github.io/pawpaw_coding.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>C#</title>
       <link>https://pawxq.github.io/pawpaw_coding.github.io/categories/c#/</link>
-      <pubDate>Tue, 02 Jul 2024 15:51:00 +0000</pubDate>
+      <pubDate>Thu, 04 Jul 2024 12:56:28 +0000</pubDate>
       
       <guid>https://pawxq.github.io/pawpaw_coding.github.io/categories/c#/</guid>
       <description></description>
@@ -28,7 +19,7 @@
     <item>
       <title>coding</title>
       <link>https://pawxq.github.io/pawpaw_coding.github.io/categories/coding/</link>
-      <pubDate>Tue, 02 Jul 2024 15:51:00 +0000</pubDate>
+      <pubDate>Thu, 04 Jul 2024 12:56:28 +0000</pubDate>
       
       <guid>https://pawxq.github.io/pawpaw_coding.github.io/categories/coding/</guid>
       <description></description>
@@ -37,7 +28,7 @@
     <item>
       <title>logic</title>
       <link>https://pawxq.github.io/pawpaw_coding.github.io/categories/logic/</link>
-      <pubDate>Tue, 02 Jul 2024 15:51:00 +0000</pubDate>
+      <pubDate>Thu, 04 Jul 2024 12:56:28 +0000</pubDate>
       
       <guid>https://pawxq.github.io/pawpaw_coding.github.io/categories/logic/</guid>
       <description></description>
@@ -46,9 +37,18 @@
     <item>
       <title>stack</title>
       <link>https://pawxq.github.io/pawpaw_coding.github.io/categories/stack/</link>
-      <pubDate>Tue, 02 Jul 2024 15:51:00 +0000</pubDate>
+      <pubDate>Thu, 04 Jul 2024 12:56:28 +0000</pubDate>
       
       <guid>https://pawxq.github.io/pawpaw_coding.github.io/categories/stack/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>article</title>
+      <link>https://pawxq.github.io/pawpaw_coding.github.io/categories/article/</link>
+      <pubDate>Tue, 02 Jul 2024 15:51:00 +0000</pubDate>
+      
+      <guid>https://pawxq.github.io/pawpaw_coding.github.io/categories/article/</guid>
       <description></description>
     </item>
     
