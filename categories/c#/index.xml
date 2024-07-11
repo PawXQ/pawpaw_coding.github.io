@@ -6,7 +6,16 @@
     <description>Recent content in C# on Even - A super concise theme for Hugo</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 07 Jul 2024 16:17:03 +0000</lastBuildDate><atom:link href="https://pawxq.github.io/pawpaw_coding.github.io/categories/c#/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 08 Jul 2024 11:46:22 +0000</lastBuildDate><atom:link href="https://pawxq.github.io/pawpaw_coding.github.io/categories/c#/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[DP] Knapsack Problem(Undone)</title>
+      <link>https://pawxq.github.io/pawpaw_coding.github.io/post/coding/knapsack-problem/</link>
+      <pubDate>Mon, 08 Jul 2024 11:46:22 +0000</pubDate>
+      
+      <guid>https://pawxq.github.io/pawpaw_coding.github.io/post/coding/knapsack-problem/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>[LeetCode] 322. Coin Change</title>
       <link>https://pawxq.github.io/pawpaw_coding.github.io/post/leetcode/leetcode-322-coin-change/</link>
