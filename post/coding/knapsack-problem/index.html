@@ -48,7 +48,7 @@
 <meta itemprop="name" content="[DP] Knapsack Problem(Undone)">
 <meta itemprop="description" content=""><meta itemprop="datePublished" content="2024-07-08T11:46:22+00:00" />
 <meta itemprop="dateModified" content="2024-07-08T11:46:22+00:00" />
-<meta itemprop="wordCount" content="593">
+<meta itemprop="wordCount" content="3031">
 <meta itemprop="keywords" content="C#,dp," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="[DP] Knapsack Problem(Undone)"/>
 <meta name="twitter:description" content=""/>
@@ -130,6 +130,7 @@
         <span class="post-time"> 2024-07-08 </span>
         <div class="post-category">
             <a href="/pawpaw_coding.github.io/categories/c/"> C# </a>
+            <a href="/pawpaw_coding.github.io/categories/dp/"> dp </a>
             <a href="/pawpaw_coding.github.io/categories/coding/"> coding </a>
             </div>
         
@@ -143,13 +144,25 @@
   <ul>
     <li><a href="#topic">Topic</a></li>
     <li><a href="#ref">Ref</a></li>
+    <li><a href="#主要思考">主要思考</a></li>
     <li><a href="#0-1-背包">0 1 背包</a>
       <ul>
         <li><a href="#二維-array">二維 array</a></li>
-        <li><a href="#一維-array">一維 array</a></li>
+        <li><a href="#狀態轉移思考">狀態轉移思考</a>
+          <ul>
+            <li><a href="#二維-array-圖例">二維 array 圖例</a></li>
+          </ul>
+        </li>
+        <li><a href="#兩個一維-array-滾動數組優化">兩個一維 array (滾動數組優化)</a></li>
+        <li><a href="#單個一維-array">單個一維 array</a></li>
       </ul>
     </li>
-    <li><a href="#完全背包">完全背包</a></li>
+    <li><a href="#完全背包">完全背包</a>
+      <ul>
+        <li><a href="#倒序">倒序</a></li>
+        <li><a href="#正序">正序</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
   </div>
@@ -187,7 +200,7 @@
 <p>多個背包</p>
 </li>
 <li>
-<p>每個物品有一定數量的複本，可以選擇放入多個背包中</p>
+<p>每個物品有一定數量的複本, 可以選擇放入多個背包中</p>
 </li>
 </ul>
 </li>
@@ -198,14 +211,21 @@
 <p>一個背包</p>
 </li>
 <li>
-<p>物品被分成若干組，每組物品只能選擇一個放入背包</p>
+<p>物品被分成若干組, 每組物品只能選擇一個放入背包</p>
 </li>
 </ul>
 </li>
 </ol>
 <h1 id="ref">Ref</h1>
 <p><a href="https://www.youtube.com/watch?v=AFspvwnCcK4">【动态规划】一次搞定三种背包问题</a></p>
+<h1 id="主要思考">主要思考</h1>
+<p>在動態規劃中, 我們只需要取該重量下最大的價值的組合, 而不需要取得該重量下的所有可能組合</p>
 <h1 id="0-1-背包">0 1 背包</h1>
+<p>題目假設為：</p>
+<p>物品相對應的 weight：<code>2, 3, 5, 7</code></p>
+<p>物品相對應的 value：<code>1, 5, 2, 4</code></p>
+<p>最大重量 total： <code>10</code></p>
+<p>只有一個背包, 物品只有一個, 只能取或不取</p>
 <h2 id="二維-array">二維 array</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
@@ -257,6 +277,8 @@
 </span><span class="lnt">46
 </span><span class="lnt">47
 </span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-C#" data-lang="C#"><span class="line"><span class="cl"><span class="k">namespace</span> <span class="err">&lt;</span><span class="nn">namespace_name</span><span class="p">&gt;</span>
@@ -267,27 +289,29 @@
 </span></span><span class="line"><span class="cl">        <span class="p">{</span>
 </span></span><span class="line"><span class="cl">            <span class="c1">//int[] value = { 4500, 5700, 2250, 1100, 6700 };</span>
 </span></span><span class="line"><span class="cl">            <span class="c1">// int[] value = { 3, 4, 5, 6 };</span>
-</span></span><span class="line"><span class="cl">            <span class="kt">int</span><span class="p">[]</span> <span class="k">value</span> <span class="p">=</span> <span class="p">{</span> <span class="m">1</span><span class="p">,</span> <span class="m">5</span><span class="p">,</span> <span class="m">2</span><span class="p">,</span> <span class="m">4</span> <span class="p">};</span>
+</span></span><span class="line"><span class="cl">            <span class="kt">int</span><span class="p">[]</span> <span class="k">value</span> <span class="p">=</span> <span class="p">{</span> <span class="m">1</span><span class="p">,</span> <span class="m">5</span><span class="p">,</span> <span class="m">2</span><span class="p">,</span> <span class="m">4</span> <span class="p">};</span> <span class="c1">// 定義物品的 value</span>
 </span></span><span class="line"><span class="cl">            <span class="c1">//int[] weight = { 4, 5, 2, 1, 6 };</span>
-</span></span><span class="line"><span class="cl">            <span class="kt">int</span><span class="p">[]</span> <span class="n">weight</span> <span class="p">=</span> <span class="p">{</span> <span class="m">2</span><span class="p">,</span> <span class="m">3</span><span class="p">,</span> <span class="m">5</span><span class="p">,</span> <span class="m">7</span> <span class="p">};</span>
+</span></span><span class="line"><span class="cl">            <span class="kt">int</span><span class="p">[]</span> <span class="n">weight</span> <span class="p">=</span> <span class="p">{</span> <span class="m">2</span><span class="p">,</span> <span class="m">3</span><span class="p">,</span> <span class="m">5</span><span class="p">,</span> <span class="m">7</span> <span class="p">};</span> <span class="c1">// 定義物品的 weight</span>
 </span></span><span class="line"><span class="cl">            <span class="c1">// int total = 8;</span>
-</span></span><span class="line"><span class="cl">            <span class="kt">int</span> <span class="n">total</span> <span class="p">=</span> <span class="m">10</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="kt">int</span> <span class="n">total</span> <span class="p">=</span> <span class="m">10</span><span class="p">;</span> <span class="c1">// 定義背包的 total weight</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">            <span class="kt">int</span><span class="p">[,]</span> <span class="n">numbers</span> <span class="p">=</span> <span class="k">new</span> <span class="kt">int</span><span class="p">[</span><span class="n">weight</span><span class="p">.</span><span class="n">Length</span> <span class="p">+</span> <span class="m">1</span><span class="p">,</span> <span class="n">total</span> <span class="p">+</span> <span class="m">1</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">            <span class="kt">int</span><span class="p">[,]</span> <span class="n">numbers</span> <span class="p">=</span> <span class="k">new</span> <span class="kt">int</span><span class="p">[</span><span class="n">weight</span><span class="p">.</span><span class="n">Length</span> <span class="p">+</span> <span class="m">1</span><span class="p">,</span> <span class="n">total</span> <span class="p">+</span> <span class="m">1</span><span class="p">];</span> <span class="c1">// 使用二維 aarray 來存放動態規劃的結果, 會都 +1 是為了存放不取物品以及當重量為0的情況, 方便之後動態轉移使用</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">            <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="p">=</span> <span class="m">1</span><span class="p">;</span> <span class="n">i</span> <span class="p">&lt;=</span> <span class="n">weight</span><span class="p">.</span><span class="n">Length</span><span class="p">;</span> <span class="n">i</span><span class="p">++)</span>
+</span></span><span class="line"><span class="cl">            <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="p">=</span> <span class="m">1</span><span class="p">;</span> <span class="n">i</span> <span class="p">&lt;=</span> <span class="n">weight</span><span class="p">.</span><span class="n">Length</span><span class="p">;</span> <span class="n">i</span><span class="p">++)</span> <span class="c1">// loop 每一個物品</span>
 </span></span><span class="line"><span class="cl">            <span class="p">{</span>
-</span></span><span class="line"><span class="cl">                <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">j</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span> <span class="n">j</span> <span class="p">&lt;=</span> <span class="n">total</span><span class="p">;</span> <span class="n">j</span><span class="p">++)</span>
+</span></span><span class="line"><span class="cl">                <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">j</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span> <span class="n">j</span> <span class="p">&lt;=</span> <span class="n">total</span><span class="p">;</span> <span class="n">j</span><span class="p">++)</span> <span class="c1">// loop 每一個重量</span>
 </span></span><span class="line"><span class="cl">                <span class="p">{</span>
-</span></span><span class="line"><span class="cl">                    <span class="k">if</span> <span class="p">(</span><span class="n">weight</span><span class="p">[</span><span class="n">i</span> <span class="p">-</span> <span class="m">1</span><span class="p">]</span> <span class="p">&gt;</span> <span class="n">j</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                    <span class="k">if</span> <span class="p">(</span><span class="n">weight</span><span class="p">[</span><span class="n">i</span> <span class="p">-</span> <span class="m">1</span><span class="p">]</span> <span class="p">&gt;</span> <span class="n">j</span><span class="p">)</span> <span class="c1">// 如果當前物品的重量超過當前的可用重量, 不能選取此物品</span>
 </span></span><span class="line"><span class="cl">                    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                        <span class="c1">// 當前物品不能放入背包, 直接繼承前一個物品在當前容量下的最大價值</span>
 </span></span><span class="line"><span class="cl">                        <span class="kt">int</span> <span class="n">origin_value</span> <span class="p">=</span> <span class="n">numbers</span><span class="p">[</span><span class="n">i</span> <span class="p">-</span> <span class="m">1</span><span class="p">,</span> <span class="n">j</span><span class="p">];</span>
 </span></span><span class="line"><span class="cl">                        <span class="n">numbers</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">]</span> <span class="p">=</span> <span class="n">origin_value</span><span class="p">;</span>
 </span></span><span class="line"><span class="cl">                    <span class="p">}</span>
 </span></span><span class="line"><span class="cl">                    <span class="k">else</span>
 </span></span><span class="line"><span class="cl">                    <span class="p">{</span>
-</span></span><span class="line"><span class="cl">                        <span class="kt">int</span> <span class="n">origin_value</span> <span class="p">=</span> <span class="n">numbers</span><span class="p">[</span><span class="n">i</span> <span class="p">-</span> <span class="m">1</span><span class="p">,</span> <span class="n">j</span><span class="p">];</span>
-</span></span><span class="line"><span class="cl">                        <span class="kt">int</span> <span class="n">new_value</span> <span class="p">=</span> <span class="n">numbers</span><span class="p">[</span><span class="n">i</span> <span class="p">-</span> <span class="m">1</span><span class="p">,</span> <span class="n">j</span> <span class="p">-</span> <span class="n">weight</span><span class="p">[</span><span class="n">i</span> <span class="p">-</span> <span class="m">1</span><span class="p">]]</span> <span class="p">+</span> <span class="k">value</span><span class="p">[</span><span class="n">i</span> <span class="p">-</span> <span class="m">1</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">                        <span class="c1">// 當前物品可以放入背包</span>
+</span></span><span class="line"><span class="cl">                        <span class="kt">int</span> <span class="n">origin_value</span> <span class="p">=</span> <span class="n">numbers</span><span class="p">[</span><span class="n">i</span> <span class="p">-</span> <span class="m">1</span><span class="p">,</span> <span class="n">j</span><span class="p">];</span> <span class="c1">// 取得前一個物品在目前容量下的最大價值</span>
+</span></span><span class="line"><span class="cl">                        <span class="kt">int</span> <span class="n">new_value</span> <span class="p">=</span> <span class="n">numbers</span><span class="p">[</span><span class="n">i</span> <span class="p">-</span> <span class="m">1</span><span class="p">,</span> <span class="n">j</span> <span class="p">-</span> <span class="n">weight</span><span class="p">[</span><span class="n">i</span> <span class="p">-</span> <span class="m">1</span><span class="p">]]</span> <span class="p">+</span> <span class="k">value</span><span class="p">[</span><span class="n">i</span> <span class="p">-</span> <span class="m">1</span><span class="p">];</span> <span class="c1">// 計算放入當前物品后的最大價值</span>
 </span></span><span class="line"><span class="cl">                        <span class="k">if</span> <span class="p">(</span><span class="n">new_value</span> <span class="p">&gt;</span> <span class="n">origin_value</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">                        <span class="p">{</span>
 </span></span><span class="line"><span class="cl">                            <span class="n">numbers</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">]</span> <span class="p">=</span> <span class="n">new_value</span><span class="p">;</span>
@@ -309,18 +333,423 @@
 </span></span><span class="line"><span class="cl"><span class="p">}</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>row <code>i</code> 表示第幾個物品</p>
+</div><h2 id="狀態轉移思考">狀態轉移思考</h2>
+<p>在<code>每一個重量</code>情況下, 最大價值是通過比較<code>不考慮當前物品</code>的最大價值和<code>考慮當前物品</code>後所能獲得的最大價值來決定的</p>
+<p>dp[i][j] 表示前 i 個物品, 在重量 j 的情況下, 所能取到的最大價值</p>
+<p>如果<code>取</code>第 i 個物品, 價值為 <code>dp[i-1][j-weight[i]] + value[i]</code></p>
+<p>如果<code>不取</code>第 i 個物品, 價值為 <code>dp[i-1][j]</code></p>
+<p>狀態轉移： <code>dp[i][j] = max(dp[i-1][j-weight[i]] + value[i], dp[i-1][j])</code></p>
+<p>我們用 dp[2,3] 和 dp[2,5]來說明上述狀態轉移的想法</p>
+<p>第二個物品 weight 為 3, value 為 5</p>
+<ol>
+<li>
+<p>在 dp[2,3] 的時候</p>
+<ul>
+<li>
+<p><code>不取第二個</code>物品：在重量為 3 時, 不取第二個物品的最大價值為 <code>dp[2-1,3]</code>, 即不考慮目前物品時的最大價值, 這裡為 1</p>
+</li>
+<li>
+<p><code>取第二個</code>物品：在重量為 3 時，選擇取第二個物品, 此時的最大價值為 <code>dp[2-1, 3-3] + 5</code>, 即在去掉當前物品的重量後的<code>剩餘重量(0)下的最大價值加上當前物品的價值</code>, 具體計算為 dp[1, 0] + 5 = 5</p>
+</li>
+<li>
+<p>比較與選擇：比較取與不取目前物品時的最大價值, 取較大值為 dp[2,3] 的值, 在這個例子中, dp[2,3] = 5</p>
+</li>
+</ul>
+</li>
+<li>
+<p>在 dp[2,5] 的時候</p>
+<ul>
+<li>
+<p><code>不取第二個</code>物品：在重量為 5 時, 不取第二個物品的最大價值為 <code>dp[2-1,5]</code>, 即不考慮目前物品時的最大價值, 這裡為 1</p>
+</li>
+<li>
+<p><code>取第二個</code>物品：在重量為 5 時，選擇取第二個物品, 此時的最大價值為 <code>dp[2-1, 5-3] + 5</code>, 即在去掉當前物品的重量後的<code>剩餘重量(2)下的最大價值加上當前物品的價值</code>, 具體計算為 dp[1, 2] + 5 = 6</p>
+</li>
+<li>
+<p>比較與選擇：比較取與不取目前物品時的最大價值, 取較大值為 dp[2,5] 的值, 在這個例子中, dp[2,5] = 6</p>
+</li>
+</ul>
+</li>
+</ol>
+<h3 id="二維-array-圖例">二維 array 圖例</h3>
+<p><img src="dp-matrix-1.png" alt="dp-matrix-1"></p>
+<p>row <code>i</code> 表示第幾個物品</p>
 <p>column <code>j</code> 表示背包的重量</p>
-<p>從這個表格可以看到在在 dp[i,j], 表示在第 <code>i</code> 個物品, 在重量 <code>j</code> 的情況下所能獲取的最大價值</p>
-<p>藍色的位置是這表格中關鍵得狀態轉換的位置</p>
-<p>dp[1,2] =&gt; 在最大承重 2 的情況下, 取了第一個物品, value 為 1</p>
-<p>dp[2,3] =&gt; 在最大承重 3 的情況下, 取了第一個物品, value 為 1</p>
-<p>dp[2,5] =&gt; 在最大承重 5 的情況下, 取了第一個物品, value 為 1</p>
-<p>dp[3,8] =&gt; 在最大承重 8 的情況下, 取了第一個物品, value 為 1</p>
-<p>dp[3,10] =&gt; 在最大承重 10 的情況下, 取了第一個物品, value 為 1</p>
-<p>dp[4,10] =&gt; 在最大承重 10 的情況下, 取了第一個物品, value 為 1</p>
-<h2 id="一維-array">一維 array</h2>
-<h1 id="完全背包">完全背包</h1>
+<p>從這個表格可以看到在在 dp[i,j], 表示在取前 <code>i</code> 個物品, 在重量 <code>j</code> 的情況下所能獲取的最大價值</p>
+<p>藍色的位置是這表格中關鍵的狀態轉換的位置</p>
+<p>dp[1,2] =&gt; 在最大承重 2 的情況下, 只取了<code>第一個</code>物品, value 為 <code>1</code></p>
+<p>dp[2,3] =&gt; 在最大承重 3 的情況下, 只取了<code>第二個</code>物品, value 為 <code>5</code></p>
+<p>dp[2,5] =&gt; 在最大承重 5 的情況下, 同時取了<code>第一、第二個</code>物品, value 為 <code>6</code></p>
+<p>dp[3,8] =&gt; 在最大承重 8 的情況下, 同時取了<code>第二、三個</code>物品, value 為 <code>7</code></p>
+<p>dp[3,10] =&gt; 在最大承重 10 的情況下, 同時取了<code>第一、第二、第三</code>個物品, value 為 <code>8</code></p>
+<p>dp[4,10] =&gt; 在最大承重 10 的情況下, 取了<code>第二、第四</code>個物品, value 為 <code>9</code></p>
+<h2 id="兩個一維-array-滾動數組優化">兩個一維 array (滾動數組優化)</h2>
+<p>現在要來優化剛剛的<code>二維 array</code>, 變成只需要用兩個<code>一維 array</code> 就可以處理</p>
+<p>在狀態轉移的思考的過程中, 可以注意到在前 i 個物品所能取到的最大 value, 只和取前 i-1 個物品所能取到的最大 value 有關</p>
+<p>因此在過程中不需要紀錄 i-2, i-3, i-n&hellip;的狀態</p>
+<p>以剛剛的例子 dp[2,3] 和 dp[2,5] 為例：</p>
+<ol>
+<li>
+<p><code>dp[2,3]</code> 只和 <code>dp[1,3]</code> 和 <code>dp[1,0]</code> 有關</p>
+</li>
+<li>
+<p><code>dp[2,5]</code> 只和 <code>dp[1,5]</code> 和 <code>dp[1,2]</code> 有關</p>
+</li>
+</ol>
+<p>dp[<span style="color:red">i</span>][j] = max(dp[<span style="color:red">i-1</span>][j-weight[i]] + value[i], dp[<span style="color:red">i-1</span>][j])</p>
+<p>優化成</p>
+<p>dp[<span style="color:red">i</span>][j] = max(dp[<span style="color:red">0</span>][j-weight[i]] + value[i], dp[<span style="color:red">0</span>][j])</p>
+<p>因為用了兩個一維 array, 因此最後要將 <code>curr array 複製給 prev array</code></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-C#" data-lang="C#"><span class="line"><span class="cl"><span class="kt">int</span><span class="p">[]</span> <span class="n">prev</span> <span class="p">=</span> <span class="k">new</span> <span class="kt">int</span><span class="p">[</span><span class="n">capacity</span> <span class="p">+</span> <span class="m">1</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span><span class="p">[]</span> <span class="n">curr</span> <span class="p">=</span> <span class="k">new</span> <span class="kt">int</span><span class="p">[</span><span class="n">capacity</span> <span class="p">+</span> <span class="m">1</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="p">=</span> <span class="m">1</span><span class="p">;</span> <span class="n">i</span> <span class="p">&lt;=</span> <span class="n">n</span><span class="p">;</span> <span class="n">i</span><span class="p">++)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">j</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span> <span class="n">j</span> <span class="p">&lt;=</span> <span class="n">capacity</span><span class="p">;</span> <span class="n">j</span><span class="p">++)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="p">(</span><span class="n">weights</span><span class="p">[</span><span class="n">i</span> <span class="p">-</span> <span class="m">1</span><span class="p">]</span> <span class="p">&gt;</span> <span class="n">j</span><span class="p">)</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">curr</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="p">=</span> <span class="n">prev</span><span class="p">[</span><span class="n">j</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="n">curr</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="p">=</span> <span class="n">Math</span><span class="p">.</span><span class="n">Max</span><span class="p">(</span><span class="n">prev</span><span class="p">[</span><span class="n">j</span><span class="p">],</span> <span class="n">prev</span><span class="p">[</span><span class="n">j</span> <span class="p">-</span> <span class="n">weights</span><span class="p">[</span><span class="n">i</span> <span class="p">-</span> <span class="m">1</span><span class="p">]]</span> <span class="p">+</span> <span class="n">values</span><span class="p">[</span><span class="n">i</span> <span class="p">-</span> <span class="m">1</span><span class="p">]);</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// 複製 prev 和 curr</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Array</span><span class="p">.</span><span class="n">Copy</span><span class="p">(</span><span class="n">curr</span><span class="p">,</span> <span class="n">prev</span><span class="p">,</span> <span class="n">capacity</span> <span class="p">+</span> <span class="m">1</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="單個一維-array">單個一維 array</h2>
+<p>現在要來優化剛剛的<code>二維 array</code> 和使用兩個 <code>一維 array</code>, 最終只需要使用一個 <code>一維 array</code> 就可以解題</p>
+<p>在狀態轉移的思考的過程中, 可以注意到在前 i 個物品所能取到的最大 value, 只和取前 i-1 個物品所能取到的最大 value 有關</p>
+<p>因此在過程中不需要紀錄 i-2, i-3, i-n&hellip;的狀態</p>
+<p>以剛剛的例子 dp[2,3] 和 dp[2,5] 為例：</p>
+<ol>
+<li>
+<p><code>dp[2,3]</code> 只和 <code>dp[1,3]</code> 和 <code>dp[1,0]</code> 有關</p>
+</li>
+<li>
+<p><code>dp[2,5]</code> 只和 <code>dp[1,5]</code> 和 <code>dp[1,2]</code> 有關</p>
+</li>
+</ol>
+<p>dp[j][<span style="color:red">j</span>] = max(dp[0][<span style="color:red">j-weight[i]</span>] + value[i], dp[0][<span style="color:red">j</span>])</p>
+<p>當前 j 只和<span style="color:red">上一層的 j</span>, 以及<span style="color:red">上一層的j-weight[i]</span> 有關</p>
+<p>dp[j] = max(dp[j-weight[i]] + value[i], dp[j]) <span style="color:red">(這邊注意一定要倒敘)</span></p>
+<p>必須從<span style="color:red">大到小倒序遍歷 j</span>, 確保在計算當前 dp[j] 時, dp[j - weights[i]] 仍然是原本的值, 這樣可以避免在同一層次的迭代中覆蓋掉所需的數據, 從而保證狀態轉移的正確性</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-C#" data-lang="C#"><span class="line"><span class="cl"><span class="k">namespace</span> <span class="err">&lt;</span><span class="nn">namespace_name</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">internal</span> <span class="k">class</span> <span class="nc">Program</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">static</span> <span class="k">void</span> <span class="n">Main</span><span class="p">(</span><span class="kt">string</span><span class="p">[]</span> <span class="n">args</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="c1">// int[] value = { 3, 4, 5, 6 };</span>
+</span></span><span class="line"><span class="cl">            <span class="kt">int</span><span class="p">[]</span> <span class="k">value</span> <span class="p">=</span> <span class="p">{</span> <span class="m">1</span><span class="p">,</span> <span class="m">5</span><span class="p">,</span> <span class="m">2</span><span class="p">,</span> <span class="m">4</span> <span class="p">};</span>
+</span></span><span class="line"><span class="cl">            <span class="kt">int</span><span class="p">[]</span> <span class="n">weight</span> <span class="p">=</span> <span class="p">{</span> <span class="m">2</span><span class="p">,</span> <span class="m">3</span><span class="p">,</span> <span class="m">5</span><span class="p">,</span> <span class="m">7</span> <span class="p">};</span>
+</span></span><span class="line"><span class="cl">            <span class="c1">// int[] weight = { 2, 3, 4, 5 };</span>
+</span></span><span class="line"><span class="cl">            <span class="kt">int</span> <span class="n">total</span> <span class="p">=</span> <span class="m">10</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="kt">int</span><span class="p">[]</span> <span class="n">numbers</span> <span class="p">=</span> <span class="k">new</span> <span class="kt">int</span><span class="p">[</span><span class="n">total</span> <span class="p">+</span> <span class="m">1</span><span class="p">];</span> <span class="c1">// 用來存放每個重量下的最大價值, 包含0</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span> <span class="n">i</span> <span class="p">&lt;</span> <span class="n">weight</span><span class="p">.</span><span class="n">Length</span><span class="p">;</span> <span class="n">i</span><span class="p">++)</span> <span class="c1">// loop 每個物品</span>
+</span></span><span class="line"><span class="cl">            <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">j</span> <span class="p">=</span> <span class="n">total</span><span class="p">;</span> <span class="n">j</span> <span class="p">&gt;</span> <span class="m">0</span><span class="p">;</span> <span class="n">j</span><span class="p">--)</span> <span class="c1">// loop 每個重量, 注意由大到小</span>
+</span></span><span class="line"><span class="cl">                <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                    <span class="k">if</span> <span class="p">(</span><span class="n">weight</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="p">&gt;</span> <span class="n">j</span><span class="p">)</span> <span class="c1">// 如果當前物品的重量大於當前重量</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                        <span class="c1">// 不須更新, 直接保留原來的最大價值</span>
+</span></span><span class="line"><span class="cl">                        <span class="kt">int</span> <span class="n">origin_value</span> <span class="p">=</span> <span class="n">numbers</span><span class="p">[</span><span class="n">j</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">                        <span class="n">numbers</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="p">=</span> <span class="n">origin_value</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">                    <span class="k">else</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                        <span class="kt">int</span> <span class="n">origin_value</span> <span class="p">=</span> <span class="n">numbers</span><span class="p">[</span><span class="n">j</span><span class="p">];</span> <span class="c1">// 當前重量的原最大價值</span>
+</span></span><span class="line"><span class="cl">                        <span class="kt">int</span> <span class="n">new_value</span> <span class="p">=</span> <span class="n">numbers</span><span class="p">[</span><span class="n">j</span> <span class="p">-</span> <span class="n">weight</span><span class="p">[</span><span class="n">i</span><span class="p">]]</span> <span class="p">+</span> <span class="k">value</span><span class="p">[</span><span class="n">i</span><span class="p">];</span> <span class="c1">// 加入當前物品後的新最大價值</span>
+</span></span><span class="line"><span class="cl">                        <span class="k">if</span> <span class="p">(</span><span class="n">new_value</span> <span class="p">&gt;</span> <span class="n">origin_value</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                            <span class="n">numbers</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="p">=</span> <span class="n">new_value</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">                        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">                        <span class="k">else</span>
+</span></span><span class="line"><span class="cl">                        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                            <span class="n">numbers</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="p">=</span> <span class="n">origin_value</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">                        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">                <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&#34;Maximum value: &#34;</span> <span class="p">+</span> <span class="n">numbers</span><span class="p">[</span><span class="n">total</span><span class="p">]);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="n">Console</span><span class="p">.</span><span class="n">ReadKey</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h1 id="完全背包">完全背包</h1>
+<p>只有一個背包, 物品有複數個, 不取或取複數個</p>
+<p>所以每個物品能取的最大數量為 <code>total weight / weight</code></p>
+<p>dp[i][j] = max(dp[i][j],dp[i-1][j - k * weight[i]] + k * weight[i])</p>
+<p>題目假設為：</p>
+<p>物品相對應的 weight：<code>2, 3, 4, 5</code></p>
+<p>物品相對應的 value：<code>30, 50, 100, 200</code></p>
+<p>最大重量 total： <code>8</code></p>
+<h2 id="倒序">倒序</h2>
+<p>這邊其實可以把<code>完全背包</code>的題目<code>轉換</code>成<code>01背包</code>的題目下去做思考</p>
+<p>例如在第一個物品的情況下, 總重 <code>8 / 2 = 4</code> 其實就可以看做<code>4個重量為2的物品</code>, 這樣也是相同變成 01背包, 取或不取的概念</p>
+<p><img src="dp-matrix-2.png" alt="dp-matrix-2"></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-C#" data-lang="C#"><span class="line"><span class="cl"><span class="k">namespace</span> <span class="err">&lt;</span><span class="nn">namespace_name</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">internal</span> <span class="k">class</span> <span class="nc">Program</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">static</span> <span class="k">void</span> <span class="n">Main</span><span class="p">(</span><span class="kt">string</span><span class="p">[]</span> <span class="n">args</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="c1">//int[] value = { 30, 50, 200, 200 };</span>
+</span></span><span class="line"><span class="cl">            <span class="kt">int</span><span class="p">[]</span> <span class="k">value</span> <span class="p">=</span> <span class="p">{</span> <span class="m">30</span><span class="p">,</span> <span class="m">50</span><span class="p">,</span> <span class="m">100</span><span class="p">,</span> <span class="m">200</span> <span class="p">};</span>
+</span></span><span class="line"><span class="cl">            <span class="c1">//int[] value = { 4500, 5700, 2250, 1100, 6700 };</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="kt">int</span><span class="p">[]</span> <span class="n">weight</span> <span class="p">=</span> <span class="p">{</span> <span class="m">2</span><span class="p">,</span> <span class="m">3</span><span class="p">,</span> <span class="m">4</span><span class="p">,</span> <span class="m">5</span> <span class="p">};</span>
+</span></span><span class="line"><span class="cl">            <span class="c1">//int[] weight = { 4, 5, 2, 1, 6 };</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="kt">int</span> <span class="n">total</span> <span class="p">=</span> <span class="m">8</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="kt">int</span><span class="p">[]</span> <span class="n">numbers</span> <span class="p">=</span> <span class="k">new</span> <span class="kt">int</span><span class="p">[</span><span class="n">total</span> <span class="p">+</span> <span class="m">1</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span> <span class="n">i</span> <span class="p">&lt;</span> <span class="n">weight</span><span class="p">.</span><span class="n">Length</span><span class="p">;</span> <span class="n">i</span><span class="p">++)</span>
+</span></span><span class="line"><span class="cl">            <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="kt">int</span> <span class="n">frequency</span> <span class="p">=</span> <span class="n">total</span> <span class="p">/</span> <span class="n">weight</span><span class="p">[</span><span class="n">i</span><span class="p">];</span> <span class="c1">// 計算目前物品在背包中最多可以出現的次數</span>
+</span></span><span class="line"><span class="cl">                <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">k</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span> <span class="n">k</span> <span class="p">&lt;</span> <span class="n">frequency</span><span class="p">;</span> <span class="n">k</span><span class="p">++)</span> <span class="c1">// loop 當前物品出現的次數</span>
+</span></span><span class="line"><span class="cl">                <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">j</span> <span class="p">=</span> <span class="n">total</span><span class="p">;</span> <span class="n">j</span> <span class="p">&gt;</span> <span class="m">0</span><span class="p">;</span> <span class="n">j</span><span class="p">--)</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                        <span class="k">if</span> <span class="p">(</span><span class="n">weight</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="p">&gt;</span> <span class="n">j</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                            <span class="kt">int</span> <span class="n">origin_value</span> <span class="p">=</span> <span class="n">numbers</span><span class="p">[</span><span class="n">j</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">                            <span class="n">numbers</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="p">=</span> <span class="n">origin_value</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">                        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">                        <span class="k">else</span>
+</span></span><span class="line"><span class="cl">                        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                            <span class="kt">int</span> <span class="n">origin_value</span> <span class="p">=</span> <span class="n">numbers</span><span class="p">[</span><span class="n">j</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">                            <span class="kt">int</span> <span class="n">new_value</span> <span class="p">=</span> <span class="n">numbers</span><span class="p">[</span><span class="n">j</span> <span class="p">-</span> <span class="n">weight</span><span class="p">[</span><span class="n">i</span><span class="p">]]</span> <span class="p">+</span> <span class="k">value</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">                            <span class="k">if</span> <span class="p">(</span><span class="n">new_value</span> <span class="p">&gt;</span> <span class="n">origin_value</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                            <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                                <span class="n">numbers</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="p">=</span> <span class="n">new_value</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">                            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">                            <span class="k">else</span>
+</span></span><span class="line"><span class="cl">                            <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                                <span class="n">numbers</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="p">=</span> <span class="n">origin_value</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">                            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">                        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">                <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&#34;Maximum value: &#34;</span> <span class="p">+</span> <span class="n">numbers</span><span class="p">[</span><span class="n">total</span><span class="p">]);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="n">Console</span><span class="p">.</span><span class="n">ReadKey</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="正序">正序</h2>
+<p>剛剛我們是以<span style="color:red">倒敘法</span>把<span style="color:red">完全背包變成01背包</span>的解法, 但其實只要以<span style="color:red">正序法</span>下去解題, 就不需要多一步計算可放入次數的動作</p>
+<p>還記得剛剛在01背包使用<code>一維 array</code>的時候, <span style="color:red">為了避免汙染前面的資料因此使用倒敘法</span>, 其實就是<span style="color:red">怕重複使用變成完全背包的狀況</span>, 因此只能倒敘</p>
+<p>但是現在物品可以重複使用, 因此<span style="color:red">在此情況下正序法就是可以正常使用</span></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-C#" data-lang="C#"><span class="line"><span class="cl"><span class="k">namespace</span> <span class="err">&lt;</span><span class="nn">namespace_name</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">internal</span> <span class="k">class</span> <span class="nc">Program</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">static</span> <span class="k">void</span> <span class="n">Main</span><span class="p">(</span><span class="kt">string</span><span class="p">[]</span> <span class="n">args</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="kt">int</span><span class="p">[]</span> <span class="k">value</span> <span class="p">=</span> <span class="p">{</span> <span class="m">30</span><span class="p">,</span> <span class="m">50</span><span class="p">,</span> <span class="m">100</span><span class="p">,</span> <span class="m">200</span> <span class="p">};</span>
+</span></span><span class="line"><span class="cl">            <span class="c1">//int[] value = { 4500, 5700, 2250, 1100, 6700 };</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="kt">int</span><span class="p">[]</span> <span class="n">weight</span> <span class="p">=</span> <span class="p">{</span> <span class="m">2</span><span class="p">,</span> <span class="m">3</span><span class="p">,</span> <span class="m">4</span><span class="p">,</span> <span class="m">5</span> <span class="p">};</span>
+</span></span><span class="line"><span class="cl">            <span class="c1">//int[] weight = { 4, 5, 2, 1, 6 };</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="kt">int</span> <span class="n">total</span> <span class="p">=</span> <span class="m">8</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="kt">int</span><span class="p">[]</span> <span class="n">numbers</span> <span class="p">=</span> <span class="k">new</span> <span class="kt">int</span><span class="p">[</span><span class="n">total</span> <span class="p">+</span> <span class="m">1</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span> <span class="n">i</span> <span class="p">&lt;</span> <span class="n">weight</span><span class="p">.</span><span class="n">Length</span><span class="p">;</span> <span class="n">i</span><span class="p">++)</span>
+</span></span><span class="line"><span class="cl">            <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">j</span> <span class="p">=</span> <span class="n">weight</span><span class="p">[</span><span class="n">i</span><span class="p">];</span> <span class="n">j</span> <span class="p">&lt;=</span> <span class="n">total</span><span class="p">;</span> <span class="n">j</span><span class="p">++)</span> <span class="c1">// 從小到大 loop 所有的重量</span>
+</span></span><span class="line"><span class="cl">                <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                    <span class="c1">// 當目前重量能裝下當前物品時, 嘗試放入當前物品</span>
+</span></span><span class="line"><span class="cl">                    <span class="kt">int</span> <span class="n">new_value</span> <span class="p">=</span> <span class="n">numbers</span><span class="p">[</span><span class="n">j</span> <span class="p">-</span> <span class="n">weight</span><span class="p">[</span><span class="n">i</span><span class="p">]]</span> <span class="p">+</span> <span class="k">value</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+</span></span><span class="line"><span class="cl">                    <span class="c1">// 更新最大價值</span>
+</span></span><span class="line"><span class="cl">                    <span class="k">if</span> <span class="p">(</span><span class="n">new_value</span> <span class="p">&gt;</span> <span class="n">numbers</span><span class="p">[</span><span class="n">j</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                        <span class="n">numbers</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="p">=</span> <span class="n">new_value</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">                    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">                <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">&#34;Maximum value: &#34;</span> <span class="p">+</span> <span class="n">numbers</span><span class="p">[</span><span class="n">total</span><span class="p">]);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="n">Console</span><span class="p">.</span><span class="n">ReadKey</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>
     </div>
 
     
