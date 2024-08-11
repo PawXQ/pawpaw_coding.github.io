@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>algorithms on Even - A super concise theme for Hugo</title>
+    <link>https://pawxq.github.io/pawpaw_coding.github.io/categories/algorithms/</link>
+    <description>Recent content in algorithms on Even - A super concise theme for Hugo</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 11 Aug 2024 15:50:21 +0000</lastBuildDate><atom:link href="https://pawxq.github.io/pawpaw_coding.github.io/categories/algorithms/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>[Algorithms] Binary_search</title>
+      <link>https://pawxq.github.io/pawpaw_coding.github.io/post/coding/binary_search/</link>
+      <pubDate>Sun, 11 Aug 2024 15:50:21 +0000</pubDate>
+      
+      <guid>https://pawxq.github.io/pawpaw_coding.github.io/post/coding/binary_search/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>[Algorithms] Bubble_sort</title>
+      <link>https://pawxq.github.io/pawpaw_coding.github.io/post/coding/bubble_sort/</link>
+      <pubDate>Sat, 10 Aug 2024 20:27:06 +0000</pubDate>
+      
+      <guid>https://pawxq.github.io/pawpaw_coding.github.io/post/coding/bubble_sort/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

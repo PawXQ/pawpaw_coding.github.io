@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>[Algorithms] Binary_search - Even - A super concise theme for Hugo</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="PawPaw" /><meta name="description" content="" /><meta name="keywords" content="Hugo, theme, even" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.108.0 with theme even" />
+
+
+<link rel="canonical" href="https://pawxq.github.io/pawpaw_coding.github.io/post/coding/binary_search/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/pawpaw_coding.github.io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/pawpaw_coding.github.io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/pawpaw_coding.github.io/favicon-16x16.png">
+<link rel="manifest" href="/pawpaw_coding.github.io/manifest.json">
+<link rel="mask-icon" href="/pawpaw_coding.github.io/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/pawpaw_coding.github.io/sass/main.min.f92fd13721ddf72129410fd8250e73152cc6f2438082b6c0208dc24ee7c13fc4.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="[Algorithms] Binary_search" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://pawxq.github.io/pawpaw_coding.github.io/post/coding/binary_search/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2024-08-11T15:50:21+00:00" />
+<meta property="article:modified_time" content="2024-08-11T15:50:21+00:00" />
+<meta itemprop="name" content="[Algorithms] Binary_search">
+<meta itemprop="description" content=""><meta itemprop="datePublished" content="2024-08-11T15:50:21+00:00" />
+<meta itemprop="dateModified" content="2024-08-11T15:50:21+00:00" />
+<meta itemprop="wordCount" content="787">
+<meta itemprop="keywords" content="C#,binary_search,python," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="[Algorithms] Binary_search"/>
+<meta name="twitter:description" content=""/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">PawPaw_coding</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/pawpaw_coding.github.io/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/pawpaw_coding.github.io/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/pawpaw_coding.github.io/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/pawpaw_coding.github.io/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">PawPaw_coding</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/pawpaw_coding.github.io/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/pawpaw_coding.github.io/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/pawpaw_coding.github.io/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/pawpaw_coding.github.io/categories/">Categories</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">[Algorithms] Binary_search</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2024-08-11 </span>
+        <div class="post-category">
+            <a href="/pawpaw_coding.github.io/categories/c/"> C# </a>
+            <a href="/pawpaw_coding.github.io/categories/algorithms/"> algorithms </a>
+            <a href="/pawpaw_coding.github.io/categories/python/"> python </a>
+            </div>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#ref">Ref</a></li>
+    <li><a href="#topic">Topic</a></li>
+    <li><a href="#coding">Coding</a>
+      <ul>
+        <li><a href="#c">C#</a></li>
+        <li><a href="#python">Python</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <h1 id="ref">Ref</h1>
+<p><a href="https://zh.wikipedia.org/zh-tw/%E4%BA%8C%E5%88%86%E6%90%9C%E5%B0%8B">二分搜尋</a></p>
+<h1 id="topic">Topic</h1>
+<p>二分搜尋法(<code>binary search</code>)是一種高效且常用的搜尋演算法, 特別適合在已排序的數列中查找特定 element 的位置</p>
+<p>這個方法的核心在於<span style="color: red">每次將搜索範圍縮小一半</span>, 從而迅速找到目標</p>
+<p>運作方式：</p>
+<p>一開始<span style="color: red">先找到數列的中間位置, 並將中間的元素與目標值進行比較</span>, 根據比較結果, 有三種可能：</p>
+<ul>
+<li>
+<p><code>找到目標值</code>(middle = target)： 如果中間位置的元素正好和目標值一樣, 那麼搜索結束, 返回這個元素的位置</p>
+</li>
+<li>
+<p><code>目標值較小</code>(middle &lt; target)： 往左邊找. 如果 target 比中間位置的元素小, 表示 target 應該在數列的左半邊. 將搜索範圍縮小到左半邊, 繼續比較</p>
+</li>
+<li>
+<p><code>目標值較大</code>(middle &gt; target)： 往右邊找. 如果 target 比中間位置的元素大, 表示 target 應該在數列的右半邊. 將搜索範圍縮小到右半邊, 繼續比較</p>
+</li>
+</ul>
+<p>每次比較後, 搜索範圍會縮小一半, 不斷重複, 直到找到 target, 或確認 target 不在數列中。</p>
+<h1 id="coding">Coding</h1>
+<h2 id="c">C#</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-C#" data-lang="C#"><span class="line"><span class="cl"><span class="k">namespace</span> <span class="nn">Test2</span>
+</span></span><span class="line"><span class="cl"><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">internal</span> <span class="k">class</span> <span class="nc">Program</span>
+</span></span><span class="line"><span class="cl">    <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">static</span> <span class="k">void</span> <span class="n">Main</span><span class="p">(</span><span class="kt">string</span><span class="p">[]</span> <span class="n">args</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="kt">int</span><span class="p">[]</span> <span class="n">numbers</span> <span class="p">=</span> <span class="p">{</span> <span class="m">7</span><span class="p">,</span> <span class="m">17</span><span class="p">,</span> <span class="m">20</span><span class="p">,</span> <span class="m">26</span><span class="p">,</span> <span class="m">27</span><span class="p">,</span> <span class="m">35</span><span class="p">,</span> <span class="m">44</span><span class="p">,</span> <span class="m">48</span><span class="p">,</span> <span class="m">56</span><span class="p">,</span> <span class="m">87</span> <span class="p">};</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="kt">int</span> <span class="n">target</span> <span class="p">=</span> <span class="m">20</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="kt">int</span> <span class="n">index</span> <span class="p">=</span> <span class="n">Dichotomy</span><span class="p">(</span><span class="n">numbers</span><span class="p">,</span> <span class="n">target</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="s">$&#34;{target} index is {index}.&#34;</span><span class="p">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="n">Console</span><span class="p">.</span><span class="n">ReadKey</span><span class="p">();</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="k">static</span> <span class="kt">int</span> <span class="n">Dichotomy</span><span class="p">(</span><span class="kt">int</span><span class="p">[]</span> <span class="n">number</span><span class="p">,</span> <span class="kt">int</span> <span class="n">target</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="c1">// 初始化搜尋範圍的起點(begin)和終點(end)</span>
+</span></span><span class="line"><span class="cl">            <span class="kt">int</span> <span class="n">begin</span> <span class="p">=</span> <span class="m">0</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">            <span class="kt">int</span> <span class="n">end</span> <span class="p">=</span> <span class="n">number</span><span class="p">.</span><span class="n">Length</span> <span class="p">-</span> <span class="m">1</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="c1">// 當搜尋範圍內仍有元素時繼續搜尋</span>
+</span></span><span class="line"><span class="cl">            <span class="k">while</span> <span class="p">(</span><span class="n">begin</span> <span class="p">&lt;=</span> <span class="n">end</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="c1">// 計算中間 index</span>
+</span></span><span class="line"><span class="cl">                <span class="kt">int</span> <span class="n">index</span> <span class="p">=</span> <span class="p">(</span><span class="n">begin</span> <span class="p">+</span> <span class="n">end</span><span class="p">)</span> <span class="p">/</span> <span class="m">2</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">                <span class="k">if</span> <span class="p">(</span><span class="n">number</span><span class="p">[</span><span class="n">index</span><span class="p">]</span> <span class="p">&lt;</span> <span class="n">target</span><span class="p">)</span> <span class="c1">// 如果中間的元素小於 target, 將搜尋範圍縮小到右半邊</span>
+</span></span><span class="line"><span class="cl">                <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">begin</span> <span class="p">=</span> <span class="n">index</span> <span class="p">+</span> <span class="m">1</span><span class="p">;</span> <span class="c1">// 將起點移動到 index 的右邊一個位置(排除當前的 index)</span>
+</span></span><span class="line"><span class="cl">                <span class="p">}</span>
+</span></span><span class="line"><span class="cl">                <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">number</span><span class="p">[</span><span class="n">index</span><span class="p">]</span> <span class="p">&gt;</span> <span class="n">target</span><span class="p">)</span> <span class="c1">// 如果中間的元素大於 target，將搜尋範圍縮小到左半邊</span>
+</span></span><span class="line"><span class="cl">                <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">end</span> <span class="p">=</span> <span class="n">index</span> <span class="p">-</span> <span class="m">1</span><span class="p">;</span> <span class="c1">// 將終點移動到 index 的左邊一個位置(排除當前的 index)</span>
+</span></span><span class="line"><span class="cl">                <span class="p">}</span>
+</span></span><span class="line"><span class="cl">                <span class="k">else</span> <span class="k">if</span> <span class="p">(</span><span class="n">number</span><span class="p">[</span><span class="n">index</span><span class="p">]</span> <span class="p">==</span> <span class="n">target</span><span class="p">)</span> <span class="c1">// 如果找到 target, 返回 index</span>
+</span></span><span class="line"><span class="cl">                <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                    <span class="k">return</span> <span class="n">index</span><span class="p">;</span>
+</span></span><span class="line"><span class="cl">                <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="p">-</span><span class="m">1</span><span class="p">;</span> <span class="c1">// 如果搜尋結束仍未找到 target, 返回 -1 表示未找到</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="python">Python</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">binary_search</span><span class="p">(</span><span class="n">numbers</span><span class="p">,</span> <span class="n">target</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">begin</span> <span class="o">=</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl">    <span class="n">end</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">numbers</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">while</span> <span class="p">(</span><span class="n">begin</span> <span class="o">&lt;=</span> <span class="n">end</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="n">index</span> <span class="o">=</span> <span class="p">(</span><span class="n">begin</span> <span class="o">+</span> <span class="n">end</span><span class="p">)</span> <span class="o">//</span> <span class="mi">2</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="n">numbers</span><span class="p">[</span><span class="n">index</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">target</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">end</span> <span class="o">=</span> <span class="n">index</span> <span class="o">-</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">        <span class="k">elif</span> <span class="n">numbers</span><span class="p">[</span><span class="n">index</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">target</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">begin</span> <span class="o">=</span> <span class="n">index</span> <span class="o">+</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">        <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="n">index</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="o">-</span><span class="mi">1</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># main program</span>
+</span></span><span class="line"><span class="cl"><span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">7</span><span class="p">,</span> <span class="mi">17</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">26</span><span class="p">,</span> <span class="mi">27</span><span class="p">,</span> <span class="mi">35</span><span class="p">,</span> <span class="mi">44</span><span class="p">,</span> <span class="mi">48</span><span class="p">,</span> <span class="mi">56</span><span class="p">,</span> <span class="mi">87</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">target</span> <span class="o">=</span> <span class="mi">44</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">index</span> <span class="o">=</span> <span class="n">binary_search</span><span class="p">(</span><span class="n">numbers</span><span class="p">,</span> <span class="n">target</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;</span><span class="si">{</span><span class="n">target</span><span class="si">}</span><span class="s2"> index is </span><span class="si">{</span><span class="n">index</span><span class="si">}</span><span class="s2">.&#34;</span><span class="p">)</span> <span class="c1">#44 index is 6.</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>
+    </div>
+
+    
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/pawpaw_coding.github.io/tags/c/">C#</a>
+          <a href="/pawpaw_coding.github.io/tags/binary_search/">binary_search</a>
+          <a href="/pawpaw_coding.github.io/tags/python/">python</a>
+          </div>
+      <nav class="post-nav">
+        
+        <a class="next" href="/pawpaw_coding.github.io/post/coding/bubble_sort/">
+            <span class="next-text nav-default">[Algorithms] Bubble_sort</span>
+            <span class="next-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="https://github.com/PawXQ/pawpaw.github.io" class="iconfont icon-github" title="github"></a>
+  <a href="https://pawxq.github.io/pawpaw_coding.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2024<span class="heart"><i class="iconfont icon-heart"></i></span><span>PawPaw</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/pawpaw_coding.github.io/js/main.min.4ae89da218555efa0e7093a20b92017d2e1202b66fff9fc2edf4cb8d44b44c6e.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>
