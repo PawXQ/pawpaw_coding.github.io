@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>[Python] Python-100days - Day7 - Even - A super concise theme for Hugo</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="PawPaw" /><meta name="description" content="" /><meta name="keywords" content="Hugo, theme, even" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.108.0 with theme even" />
+
+
+<link rel="canonical" href="https://pawxq.github.io/pawpaw_coding.github.io/post/python/python-100days/day7/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/pawpaw_coding.github.io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/pawpaw_coding.github.io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/pawpaw_coding.github.io/favicon-16x16.png">
+<link rel="manifest" href="/pawpaw_coding.github.io/manifest.json">
+<link rel="mask-icon" href="/pawpaw_coding.github.io/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/pawpaw_coding.github.io/sass/main.min.f92fd13721ddf72129410fd8250e73152cc6f2438082b6c0208dc24ee7c13fc4.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/style.css">
+
+
+<meta property="og:title" content="[Python] Python-100days - Day7" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://pawxq.github.io/pawpaw_coding.github.io/post/python/python-100days/day7/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2024-09-14T06:35:38+00:00" />
+<meta property="article:modified_time" content="2024-09-14T06:35:38+00:00" />
+<meta itemprop="name" content="[Python] Python-100days - Day7">
+<meta itemprop="description" content=""><meta itemprop="datePublished" content="2024-09-14T06:35:38+00:00" />
+<meta itemprop="dateModified" content="2024-09-14T06:35:38+00:00" />
+<meta itemprop="wordCount" content="801">
+<meta itemprop="keywords" content="python,100-days," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="[Python] Python-100days - Day7"/>
+<meta name="twitter:description" content=""/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">PawPaw_coding</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/pawpaw_coding.github.io/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/pawpaw_coding.github.io/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/pawpaw_coding.github.io/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/pawpaw_coding.github.io/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">PawPaw_coding</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/pawpaw_coding.github.io/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/pawpaw_coding.github.io/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/pawpaw_coding.github.io/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/pawpaw_coding.github.io/categories/">Categories</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">[Python] Python-100days - Day7</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2024-09-14 </span>
+        <div class="post-category">
+            <a href="/pawpaw_coding.github.io/categories/python/"> python </a>
+            </div>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#ref">REF</a></li>
+    <li><a href="#hangman">Hangman</a>
+      <ul>
+        <li><a href="#題目要求">題目要求：</a></li>
+        <li><a href="#附註">附註：</a></li>
+      </ul>
+    </li>
+    <li><a href="#code">Code</a>
+      <ul>
+        <li><a href="#hangman_artpy">hangman_art.py</a></li>
+        <li><a href="#hangman_wordpy">hangman_word.py</a></li>
+        <li><a href="#hangmanpy">hangman.py</a></li>
+      </ul>
+    </li>
+    <li><a href="#flow-chart">Flow Chart</a></li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <h1 id="ref">REF</h1>
+<p>紀錄學習 <a href="https://www.udemy.com/course/100-days-of-code/?couponCode=KEEPLEARNING">Udemy-Python-100days of code</a></p>
+<p>Day 7 - Begineer - Hangman</p>
+<p>今天只有題目~~</p>
+<h1 id="hangman">Hangman</h1>
+<hr>
+<h2 id="題目要求">題目要求：</h2>
+<ol>
+<li>
+<p><strong>初始化遊戲</strong>：</p>
+<ul>
+<li>隨機選擇一個單詞並顯示初始化畫面(例如, 顯示下劃線 <code>_</code>)</li>
+</ul>
+</li>
+<li>
+<p><strong>處理猜測</strong>：</p>
+<ul>
+<li>允許用戶輸入字母</li>
+<li>檢查字母是否在單詞中並更新顯示</li>
+<li>如果猜錯，血量減少</li>
+</ul>
+</li>
+<li>
+<p><strong>顯示遊戲狀態</strong>：</p>
+<ul>
+<li>根據剩餘的血量顯示不同階段的 Hangman ASCII art</li>
+</ul>
+</li>
+<li>
+<p><strong>遊戲結束條件</strong>：</p>
+<ul>
+<li>如果血量為 0，顯示「遊戲結束！」</li>
+<li>如果猜對所有字母，顯示「恭喜，你贏了！」</li>
+</ul>
+</li>
+</ol>
+<h2 id="附註">附註：</h2>
+<ul>
+<li>防止用戶重複猜測相同字母</li>
+</ul>
+<hr>
+<h1 id="code">Code</h1>
+<h2 id="hangman_artpy">hangman_art.py</h2>
+<details>
+  <summary style="cursor: pointer; font-weight: bold;">&#x25B6; vault.service</summary>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span><span class="lnt">60
+</span><span class="lnt">61
+</span><span class="lnt">62
+</span><span class="lnt">63
+</span><span class="lnt">64
+</span><span class="lnt">65
+</span><span class="lnt">66
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">stages</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;&#39;&#39;
+</span></span></span><span class="line"><span class="cl"><span class="s1">  +---+
+</span></span></span><span class="line"><span class="cl"><span class="s1">  |   |
+</span></span></span><span class="line"><span class="cl"><span class="s1">  O   |
+</span></span></span><span class="line"><span class="cl"><span class="s1"> /|\  |
+</span></span></span><span class="line"><span class="cl"><span class="s1"> / \  |
+</span></span></span><span class="line"><span class="cl"><span class="s1">      |
+</span></span></span><span class="line"><span class="cl"><span class="s1">=========
+</span></span></span><span class="line"><span class="cl"><span class="s1">&#39;&#39;&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;&#39;
+</span></span></span><span class="line"><span class="cl"><span class="s1">  +---+
+</span></span></span><span class="line"><span class="cl"><span class="s1">  |   |
+</span></span></span><span class="line"><span class="cl"><span class="s1">  O   |
+</span></span></span><span class="line"><span class="cl"><span class="s1"> /|\  |
+</span></span></span><span class="line"><span class="cl"><span class="s1"> /    |
+</span></span></span><span class="line"><span class="cl"><span class="s1">      |
+</span></span></span><span class="line"><span class="cl"><span class="s1">=========
+</span></span></span><span class="line"><span class="cl"><span class="s1">&#39;&#39;&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;&#39;
+</span></span></span><span class="line"><span class="cl"><span class="s1">  +---+
+</span></span></span><span class="line"><span class="cl"><span class="s1">  |   |
+</span></span></span><span class="line"><span class="cl"><span class="s1">  O   |
+</span></span></span><span class="line"><span class="cl"><span class="s1"> /|\  |
+</span></span></span><span class="line"><span class="cl"><span class="s1">      |
+</span></span></span><span class="line"><span class="cl"><span class="s1">      |
+</span></span></span><span class="line"><span class="cl"><span class="s1">=========
+</span></span></span><span class="line"><span class="cl"><span class="s1">&#39;&#39;&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;&#39;
+</span></span></span><span class="line"><span class="cl"><span class="s1">  +---+
+</span></span></span><span class="line"><span class="cl"><span class="s1">  |   |
+</span></span></span><span class="line"><span class="cl"><span class="s1">  O   |
+</span></span></span><span class="line"><span class="cl"><span class="s1"> /|   |
+</span></span></span><span class="line"><span class="cl"><span class="s1">      |
+</span></span></span><span class="line"><span class="cl"><span class="s1">      |
+</span></span></span><span class="line"><span class="cl"><span class="s1">=========&#39;&#39;&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;&#39;
+</span></span></span><span class="line"><span class="cl"><span class="s1">  +---+
+</span></span></span><span class="line"><span class="cl"><span class="s1">  |   |
+</span></span></span><span class="line"><span class="cl"><span class="s1">  O   |
+</span></span></span><span class="line"><span class="cl"><span class="s1">  |   |
+</span></span></span><span class="line"><span class="cl"><span class="s1">      |
+</span></span></span><span class="line"><span class="cl"><span class="s1">      |
+</span></span></span><span class="line"><span class="cl"><span class="s1">=========
+</span></span></span><span class="line"><span class="cl"><span class="s1">&#39;&#39;&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;&#39;
+</span></span></span><span class="line"><span class="cl"><span class="s1">  +---+
+</span></span></span><span class="line"><span class="cl"><span class="s1">  |   |
+</span></span></span><span class="line"><span class="cl"><span class="s1">  O   |
+</span></span></span><span class="line"><span class="cl"><span class="s1">      |
+</span></span></span><span class="line"><span class="cl"><span class="s1">      |
+</span></span></span><span class="line"><span class="cl"><span class="s1">      |
+</span></span></span><span class="line"><span class="cl"><span class="s1">=========
+</span></span></span><span class="line"><span class="cl"><span class="s1">&#39;&#39;&#39;</span><span class="p">,</span> <span class="s1">&#39;&#39;&#39;
+</span></span></span><span class="line"><span class="cl"><span class="s1">  +---+
+</span></span></span><span class="line"><span class="cl"><span class="s1">  |   |
+</span></span></span><span class="line"><span class="cl"><span class="s1">      |
+</span></span></span><span class="line"><span class="cl"><span class="s1">      |
+</span></span></span><span class="line"><span class="cl"><span class="s1">      |
+</span></span></span><span class="line"><span class="cl"><span class="s1">      |
+</span></span></span><span class="line"><span class="cl"><span class="s1">=========
+</span></span></span><span class="line"><span class="cl"><span class="s1">&#39;&#39;&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">logo</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39; 
+</span></span></span><span class="line"><span class="cl"><span class="s1"> _                                             
+</span></span></span><span class="line"><span class="cl"><span class="s1">| |                                            
+</span></span></span><span class="line"><span class="cl"><span class="s1">| |__   __ _ _ __   __ _ _ __ ___   __ _ _ __  
+</span></span></span><span class="line"><span class="cl"><span class="s1">| &#39;_ \ / _` | &#39;_ \ / _` | &#39;_ ` _ \ / _` | &#39;_ \ 
+</span></span></span><span class="line"><span class="cl"><span class="s1">| | | | (_| | | | | (_| | | | | | | (_| | | | |
+</span></span></span><span class="line"><span class="cl"><span class="s1">|_| |_|\__,_|_| |_|\__, |_| |_| |_|\__,_|_| |_|
+</span></span></span><span class="line"><span class="cl"><span class="s1">                    __/ |                      
+</span></span></span><span class="line"><span class="cl"><span class="s1">                   |___/    &#39;&#39;&#39;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></details>
+<h2 id="hangman_wordpy">hangman_word.py</h2>
+<details>
+  <summary style="cursor: pointer; font-weight: bold;">&#x25B6; vault.service</summary>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">word_list</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;abruptly&#39;</span><span class="p">,</span> <span class="s1">&#39;absurd&#39;</span><span class="p">,</span> <span class="s1">&#39;abyss&#39;</span><span class="p">,</span> <span class="s1">&#39;affix&#39;</span><span class="p">,</span> <span class="s1">&#39;askew&#39;</span><span class="p">,</span> <span class="s1">&#39;avenue&#39;</span><span class="p">,</span> <span class="s1">&#39;awkward&#39;</span><span class="p">,</span> <span class="s1">&#39;axiom&#39;</span><span class="p">,</span> <span class="s1">&#39;azure&#39;</span><span class="p">,</span> <span class="s1">&#39;bagpipes&#39;</span><span class="p">,</span> <span class="s1">&#39;bandwagon&#39;</span><span class="p">,</span> <span class="s1">&#39;banjo&#39;</span><span class="p">,</span> <span class="s1">&#39;bayou&#39;</span><span class="p">,</span> <span class="s1">&#39;beekeeper&#39;</span><span class="p">,</span> <span class="s1">&#39;bikini&#39;</span><span class="p">,</span> <span class="s1">&#39;blitz&#39;</span><span class="p">,</span> <span class="s1">&#39;blizzard&#39;</span><span class="p">,</span> <span class="s1">&#39;boggle&#39;</span><span class="p">,</span> <span class="s1">&#39;bookworm&#39;</span><span class="p">,</span> <span class="s1">&#39;boxcar&#39;</span><span class="p">,</span> <span class="s1">&#39;boxful&#39;</span><span class="p">,</span> <span class="s1">&#39;buckaroo&#39;</span><span class="p">,</span> <span class="s1">&#39;buffalo&#39;</span><span class="p">,</span> <span class="s1">&#39;buffoon&#39;</span><span class="p">,</span> <span class="s1">&#39;buxom&#39;</span><span class="p">,</span> <span class="s1">&#39;buzzard&#39;</span><span class="p">,</span> <span class="s1">&#39;buzzing&#39;</span><span class="p">,</span> <span class="s1">&#39;buzzwords&#39;</span><span class="p">,</span> <span class="s1">&#39;caliph&#39;</span><span class="p">,</span> <span class="s1">&#39;cobweb&#39;</span><span class="p">,</span> <span class="s1">&#39;cockiness&#39;</span><span class="p">,</span> <span class="s1">&#39;croquet&#39;</span><span class="p">,</span> <span class="s1">&#39;crypt&#39;</span><span class="p">,</span> <span class="s1">&#39;curacao&#39;</span><span class="p">,</span> <span class="s1">&#39;cycle&#39;</span><span class="p">,</span> <span class="s1">&#39;daiquiri&#39;</span><span class="p">,</span> <span class="s1">&#39;dirndl&#39;</span><span class="p">,</span> <span class="s1">&#39;disavow&#39;</span><span class="p">,</span> <span class="s1">&#39;dizzying&#39;</span><span class="p">,</span> <span class="s1">&#39;duplex&#39;</span><span class="p">,</span> <span class="s1">&#39;dwarves&#39;</span><span class="p">,</span> <span class="s1">&#39;embezzle&#39;</span><span class="p">,</span> <span class="s1">&#39;equip&#39;</span><span class="p">,</span> <span class="s1">&#39;espionage&#39;</span><span class="p">,</span> <span class="s1">&#39;euouae&#39;</span><span class="p">,</span> <span class="s1">&#39;exodus&#39;</span><span class="p">,</span> <span class="s1">&#39;faking&#39;</span><span class="p">,</span> <span class="s1">&#39;fishhook&#39;</span><span class="p">,</span> <span class="s1">&#39;fixable&#39;</span><span class="p">,</span> <span class="s1">&#39;fjord&#39;</span><span class="p">,</span> <span class="s1">&#39;flapjack&#39;</span><span class="p">,</span> <span class="s1">&#39;flopping&#39;</span><span class="p">,</span> <span class="s1">&#39;fluffiness&#39;</span><span class="p">,</span> <span class="s1">&#39;flyby&#39;</span><span class="p">,</span> <span class="s1">&#39;foxglove&#39;</span><span class="p">,</span> <span class="s1">&#39;frazzled&#39;</span><span class="p">,</span> <span class="s1">&#39;frizzled&#39;</span><span class="p">,</span> <span class="s1">&#39;fuchsia&#39;</span><span class="p">,</span> <span class="s1">&#39;funny&#39;</span><span class="p">,</span> <span class="s1">&#39;gabby&#39;</span><span class="p">,</span> <span class="s1">&#39;galaxy&#39;</span><span class="p">,</span> <span class="s1">&#39;galvanize&#39;</span><span class="p">,</span> <span class="s1">&#39;gazebo&#39;</span><span class="p">,</span> <span class="s1">&#39;giaour&#39;</span><span class="p">,</span> <span class="s1">&#39;gizmo&#39;</span><span class="p">,</span> <span class="s1">&#39;glowworm&#39;</span><span class="p">,</span> <span class="s1">&#39;glyph&#39;</span><span class="p">,</span> <span class="s1">&#39;gnarly&#39;</span><span class="p">,</span> <span class="s1">&#39;gnostic&#39;</span><span class="p">,</span> <span class="s1">&#39;gossip&#39;</span><span class="p">,</span> <span class="s1">&#39;grogginess&#39;</span><span class="p">,</span> <span class="s1">&#39;haiku&#39;</span><span class="p">,</span> <span class="s1">&#39;haphazard&#39;</span><span class="p">,</span> <span class="s1">&#39;hyphen&#39;</span><span class="p">,</span> <span class="s1">&#39;iatrogenic&#39;</span><span class="p">,</span> <span class="s1">&#39;icebox&#39;</span><span class="p">,</span> <span class="s1">&#39;injury&#39;</span><span class="p">,</span> <span class="s1">&#39;ivory&#39;</span><span class="p">,</span> <span class="s1">&#39;ivy&#39;</span><span class="p">,</span> <span class="s1">&#39;jackpot&#39;</span><span class="p">,</span> <span class="s1">&#39;jaundice&#39;</span><span class="p">,</span> <span class="s1">&#39;jawbreaker&#39;</span><span class="p">,</span> <span class="s1">&#39;jaywalk&#39;</span><span class="p">,</span> <span class="s1">&#39;jazziest&#39;</span><span class="p">,</span> <span class="s1">&#39;jazzy&#39;</span><span class="p">,</span> <span class="s1">&#39;jelly&#39;</span><span class="p">,</span> <span class="s1">&#39;jigsaw&#39;</span><span class="p">,</span> <span class="s1">&#39;jinx&#39;</span><span class="p">,</span> <span class="s1">&#39;jiujitsu&#39;</span><span class="p">,</span> <span class="s1">&#39;jockey&#39;</span><span class="p">,</span> <span class="s1">&#39;jogging&#39;</span><span class="p">,</span> <span class="s1">&#39;joking&#39;</span><span class="p">,</span> <span class="s1">&#39;jovial&#39;</span><span class="p">,</span> <span class="s1">&#39;joyful&#39;</span><span class="p">,</span> <span class="s1">&#39;juicy&#39;</span><span class="p">,</span> <span class="s1">&#39;jukebox&#39;</span><span class="p">,</span> <span class="s1">&#39;jumbo&#39;</span><span class="p">,</span> <span class="s1">&#39;kayak&#39;</span><span class="p">,</span> <span class="s1">&#39;kazoo&#39;</span><span class="p">,</span> <span class="s1">&#39;keyhole&#39;</span><span class="p">,</span> <span class="s1">&#39;khaki&#39;</span><span class="p">,</span> <span class="s1">&#39;kilobyte&#39;</span><span class="p">,</span> <span class="s1">&#39;kiosk&#39;</span><span class="p">,</span> <span class="s1">&#39;kitsch&#39;</span><span class="p">,</span> <span class="s1">&#39;kiwifruit&#39;</span><span class="p">,</span> <span class="s1">&#39;klutz&#39;</span><span class="p">,</span> <span class="s1">&#39;knapsack&#39;</span><span class="p">,</span> <span class="s1">&#39;larynx&#39;</span><span class="p">,</span> <span class="s1">&#39;lengths&#39;</span><span class="p">,</span> <span class="s1">&#39;lucky&#39;</span><span class="p">,</span> <span class="s1">&#39;luxury&#39;</span><span class="p">,</span> <span class="s1">&#39;lymph&#39;</span><span class="p">,</span> <span class="s1">&#39;marquis&#39;</span><span class="p">,</span> <span class="s1">&#39;matrix&#39;</span><span class="p">,</span> <span class="s1">&#39;megahertz&#39;</span><span class="p">,</span> <span class="s1">&#39;microwave&#39;</span><span class="p">,</span> <span class="s1">&#39;mnemonic&#39;</span><span class="p">,</span> <span class="s1">&#39;mystify&#39;</span><span class="p">,</span> <span class="s1">&#39;naphtha&#39;</span><span class="p">,</span> <span class="s1">&#39;nightclub&#39;</span><span class="p">,</span> <span class="s1">&#39;nowadays&#39;</span><span class="p">,</span> <span class="s1">&#39;numbskull&#39;</span><span class="p">,</span> <span class="s1">&#39;nymph&#39;</span><span class="p">,</span> <span class="s1">&#39;onyx&#39;</span><span class="p">,</span> <span class="s1">&#39;ovary&#39;</span><span class="p">,</span> <span class="s1">&#39;oxidize&#39;</span><span class="p">,</span> <span class="s1">&#39;oxygen&#39;</span><span class="p">,</span> <span class="s1">&#39;pajama&#39;</span><span class="p">,</span> <span class="s1">&#39;peekaboo&#39;</span><span class="p">,</span> <span class="s1">&#39;phlegm&#39;</span><span class="p">,</span> <span class="s1">&#39;pixel&#39;</span><span class="p">,</span> <span class="s1">&#39;pizazz&#39;</span><span class="p">,</span> <span class="s1">&#39;pneumonia&#39;</span><span class="p">,</span> <span class="s1">&#39;polka&#39;</span><span class="p">,</span> <span class="s1">&#39;pshaw&#39;</span><span class="p">,</span> <span class="s1">&#39;psyche&#39;</span><span class="p">,</span> <span class="s1">&#39;puppy&#39;</span><span class="p">,</span> <span class="s1">&#39;puzzling&#39;</span><span class="p">,</span> <span class="s1">&#39;quartz&#39;</span><span class="p">,</span> <span class="s1">&#39;queue&#39;</span><span class="p">,</span> <span class="s1">&#39;quips&#39;</span><span class="p">,</span> <span class="s1">&#39;quixotic&#39;</span><span class="p">,</span> <span class="s1">&#39;quiz&#39;</span><span class="p">,</span> <span class="s1">&#39;quizzes&#39;</span><span class="p">,</span> <span class="s1">&#39;quorum&#39;</span><span class="p">,</span> <span class="s1">&#39;razzmatazz&#39;</span><span class="p">,</span> <span class="s1">&#39;rhubarb&#39;</span><span class="p">,</span> <span class="s1">&#39;rhythm&#39;</span><span class="p">,</span> <span class="s1">&#39;rickshaw&#39;</span><span class="p">,</span> <span class="s1">&#39;schnapps&#39;</span><span class="p">,</span> <span class="s1">&#39;scratch&#39;</span><span class="p">,</span> <span class="s1">&#39;shiv&#39;</span><span class="p">,</span> <span class="s1">&#39;snazzy&#39;</span><span class="p">,</span> <span class="s1">&#39;sphinx&#39;</span><span class="p">,</span> <span class="s1">&#39;spritz&#39;</span><span class="p">,</span> <span class="s1">&#39;squawk&#39;</span><span class="p">,</span> <span class="s1">&#39;staff&#39;</span><span class="p">,</span> <span class="s1">&#39;strength&#39;</span><span class="p">,</span> <span class="s1">&#39;strengths&#39;</span><span class="p">,</span> <span class="s1">&#39;stretch&#39;</span><span class="p">,</span> <span class="s1">&#39;stronghold&#39;</span><span class="p">,</span> <span class="s1">&#39;stymied&#39;</span><span class="p">,</span> <span class="s1">&#39;subway&#39;</span><span class="p">,</span> <span class="s1">&#39;swivel&#39;</span><span class="p">,</span> <span class="s1">&#39;syndrome&#39;</span><span class="p">,</span> <span class="s1">&#39;thriftless&#39;</span><span class="p">,</span> <span class="s1">&#39;thumbscrew&#39;</span><span class="p">,</span> <span class="s1">&#39;topaz&#39;</span><span class="p">,</span> <span class="s1">&#39;transcript&#39;</span><span class="p">,</span> <span class="s1">&#39;transgress&#39;</span><span class="p">,</span> <span class="s1">&#39;transplant&#39;</span><span class="p">,</span> <span class="s1">&#39;triphthong&#39;</span><span class="p">,</span> <span class="s1">&#39;twelfth&#39;</span><span class="p">,</span> <span class="s1">&#39;twelfths&#39;</span><span class="p">,</span> <span class="s1">&#39;unknown&#39;</span><span class="p">,</span> <span class="s1">&#39;unworthy&#39;</span><span class="p">,</span> <span class="s1">&#39;unzip&#39;</span><span class="p">,</span> <span class="s1">&#39;uptown&#39;</span><span class="p">,</span> <span class="s1">&#39;vaporize&#39;</span><span class="p">,</span> <span class="s1">&#39;vixen&#39;</span><span class="p">,</span> <span class="s1">&#39;vodka&#39;</span><span class="p">,</span> <span class="s1">&#39;voodoo&#39;</span><span class="p">,</span> <span class="s1">&#39;vortex&#39;</span><span class="p">,</span> <span class="s1">&#39;voyeurism&#39;</span><span class="p">,</span> <span class="s1">&#39;walkway&#39;</span><span class="p">,</span> <span class="s1">&#39;waltz&#39;</span><span class="p">,</span> <span class="s1">&#39;wave&#39;</span><span class="p">,</span> <span class="s1">&#39;wavy&#39;</span><span class="p">,</span> <span class="s1">&#39;waxy&#39;</span><span class="p">,</span> <span class="s1">&#39;wellspring&#39;</span><span class="p">,</span> <span class="s1">&#39;wheezy&#39;</span><span class="p">,</span> <span class="s1">&#39;whiskey&#39;</span><span class="p">,</span> <span class="s1">&#39;whizzing&#39;</span><span class="p">,</span> <span class="s1">&#39;whomever&#39;</span><span class="p">,</span> <span class="s1">&#39;wimpy&#39;</span><span class="p">,</span> <span class="s1">&#39;witchcraft&#39;</span><span class="p">,</span> <span class="s1">&#39;wizard&#39;</span><span class="p">,</span> <span class="s1">&#39;woozy&#39;</span><span class="p">,</span> <span class="s1">&#39;wristwatch&#39;</span><span class="p">,</span> <span class="s1">&#39;wyvern&#39;</span><span class="p">,</span> <span class="s1">&#39;xylophone&#39;</span><span class="p">,</span> <span class="s1">&#39;yachtsman&#39;</span><span class="p">,</span> <span class="s1">&#39;yippee&#39;</span><span class="p">,</span> <span class="s1">&#39;yoked&#39;</span><span class="p">,</span> <span class="s1">&#39;youthful&#39;</span><span class="p">,</span> <span class="s1">&#39;yummy&#39;</span><span class="p">,</span> <span class="s1">&#39;zephyr&#39;</span><span class="p">,</span> <span class="s1">&#39;zigzag&#39;</span><span class="p">,</span> <span class="s1">&#39;zigzagging&#39;</span><span class="p">,</span> <span class="s1">&#39;zilch&#39;</span><span class="p">,</span> <span class="s1">&#39;zipper&#39;</span><span class="p">,</span> <span class="s1">&#39;zodiac&#39;</span><span class="p">,</span> <span class="s1">&#39;zombie&#39;</span><span class="p">]</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></details>
+<h2 id="hangmanpy">hangman.py</h2>
+<p><strong>Main Code</strong></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">random</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">hangman_art</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">hangman_words</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># word_list = [&#34;aardvark&#34;, &#34;babppn&#34;, &#34;camel&#34;]</span>
+</span></span><span class="line"><span class="cl"><span class="n">word_list</span> <span class="o">=</span> <span class="n">hangman_words</span><span class="o">.</span><span class="n">word_list</span>
+</span></span><span class="line"><span class="cl"><span class="n">answer</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">word_list</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># answer = &#34;abcda&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">place_holder</span> <span class="o">=</span> <span class="p">[]</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># char_already_guess = []</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">live</span> <span class="o">=</span> <span class="mi">6</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">hangman_art</span><span class="o">.</span><span class="n">logo</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">answer</span><span class="p">)):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">place_holder</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&#34;_&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;answer: </span><span class="si">{</span><span class="n">answer</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;Start with </span><span class="si">{</span><span class="n">live</span><span class="si">}</span><span class="s2"> live.&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">place_holder</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">    <span class="n">user_guess</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="s2">&#34;Guess a letter: &#34;</span><span class="p">)</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">user_guess</span> <span class="ow">in</span> <span class="n">place_holder</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;You&#39;ve already gussed </span><span class="si">{</span><span class="n">user_guess</span><span class="si">}</span><span class="s2">.&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="c1"># continue</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1"># char_already_guess.append(user_guess)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">answer</span><span class="p">)):</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="n">user_guess</span> <span class="o">==</span> <span class="n">answer</span><span class="p">[</span><span class="n">i</span><span class="p">]:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">place_holder</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">user_guess</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">user_guess</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">answer</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">live</span> <span class="o">-=</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Guess wrong live -1.&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">live</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;Live returns to </span><span class="si">{</span><span class="n">live</span><span class="si">}</span><span class="s2">.&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;Correct answer is </span><span class="se">\&#34;</span><span class="si">{</span><span class="n">answer</span><span class="si">}</span><span class="se">\&#34;</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Game Over!&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="n">hangman_art</span><span class="o">.</span><span class="n">stages</span><span class="p">[</span><span class="n">live</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">        <span class="k">break</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="s2">&#34;_&#34;</span> <span class="ow">not</span> <span class="ow">in</span> <span class="n">place_holder</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;You Win!&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">break</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;Live still have </span><span class="si">{</span><span class="n">live</span><span class="si">}</span><span class="s2">.&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">hangman_art</span><span class="o">.</span><span class="n">stages</span><span class="p">[</span><span class="n">live</span><span class="p">])</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h1 id="flow-chart">Flow Chart</h1>
+<p><img src="hangman.png" alt="hangman"></p>
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">PawPaw</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">
+        2024-09-14
+        
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/pawpaw_coding.github.io/tags/python/">python</a>
+          <a href="/pawpaw_coding.github.io/tags/100-days/">100-days</a>
+          </div>
+      <nav class="post-nav">
+        <a class="prev" href="/pawpaw_coding.github.io/post/python/python-100days/day8/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">[Python] Python-100days - Day8</span>
+            <span class="prev-text nav-mobile">Prev</span>
+          </a>
+        <a class="next" href="/pawpaw_coding.github.io/post/python/python-100days/day6/">
+            <span class="next-text nav-default">[Python] Python-100days - Day6</span>
+            <span class="next-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="https://github.com/PawXQ/pawpaw.github.io" class="iconfont icon-github" title="github"></a>
+  <a href="https://pawxq.github.io/pawpaw_coding.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2024<span class="heart"><i class="iconfont icon-heart"></i></span><span>PawPaw</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/pawpaw_coding.github.io/js/main.min.4ae89da218555efa0e7093a20b92017d2e1202b66fff9fc2edf4cb8d44b44c6e.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>

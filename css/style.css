@@ -1,0 +1,5 @@
+pre code {
+  white-space: pre-wrap; /* 允许换行 */
+  word-wrap: break-word; /* 断行 */
+  overflow-wrap: break-word; /* 断行 */
+}
