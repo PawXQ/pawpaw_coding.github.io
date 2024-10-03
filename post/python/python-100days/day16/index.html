@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>[Python] Python-100days - Day16 - Even - A super concise theme for Hugo</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="PawPaw" /><meta name="description" content="" /><meta name="keywords" content="Hugo, theme, even" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.108.0 with theme even" />
+
+
+<link rel="canonical" href="https://pawxq.github.io/pawpaw_coding.github.io/post/python/python-100days/day16/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/pawpaw_coding.github.io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/pawpaw_coding.github.io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/pawpaw_coding.github.io/favicon-16x16.png">
+<link rel="manifest" href="/pawpaw_coding.github.io/manifest.json">
+<link rel="mask-icon" href="/pawpaw_coding.github.io/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/pawpaw_coding.github.io/sass/main.min.f92fd13721ddf72129410fd8250e73152cc6f2438082b6c0208dc24ee7c13fc4.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/style.css">
+
+
+<meta property="og:title" content="[Python] Python-100days - Day16" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://pawxq.github.io/pawpaw_coding.github.io/post/python/python-100days/day16/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2024-10-03T14:23:58+00:00" />
+<meta property="article:modified_time" content="2024-10-03T14:23:58+00:00" />
+<meta itemprop="name" content="[Python] Python-100days - Day16">
+<meta itemprop="description" content=""><meta itemprop="datePublished" content="2024-10-03T14:23:58+00:00" />
+<meta itemprop="dateModified" content="2024-10-03T14:23:58+00:00" />
+<meta itemprop="wordCount" content="984">
+<meta itemprop="keywords" content="python,100-days," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="[Python] Python-100days - Day16"/>
+<meta name="twitter:description" content=""/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">PawPaw_coding</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/pawpaw_coding.github.io/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/pawpaw_coding.github.io/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/pawpaw_coding.github.io/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/pawpaw_coding.github.io/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">PawPaw_coding</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/pawpaw_coding.github.io/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/pawpaw_coding.github.io/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/pawpaw_coding.github.io/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/pawpaw_coding.github.io/categories/">Categories</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">[Python] Python-100days - Day16</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2024-10-03 </span>
+        <div class="post-category">
+            <a href="/pawpaw_coding.github.io/categories/python/"> python </a>
+            </div>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#ref">REF</a></li>
+    <li><a href="#procedural-programming">Procedural Programming</a></li>
+    <li><a href="#object-oriented-programmingoop">Object-Oriented Programming(OOP)</a>
+      <ul>
+        <li><a href="#core-concept">Core Concept</a></li>
+        <li><a href="#main-components">Main components</a></li>
+        <li><a href="#basic-syntax">Basic Syntax</a></li>
+      </ul>
+    </li>
+    <li><a href="#hw">HW</a>
+      <ul>
+        <li><a href="#coffee-machineoop">Coffee Machine(OOP)</a></li>
+        <li><a href="#menupy">menu.py</a></li>
+        <li><a href="#money_machinepy">money_machine.py</a></li>
+        <li><a href="#coffee_makerpy">coffee_maker.py</a></li>
+        <li><a href="#mainpy">main.py</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <h1 id="ref">REF</h1>
+<p>紀錄學習 <a href="https://www.udemy.com/course/100-days-of-code/?couponCode=KEEPLEARNING">Udemy-Python-100days of code</a></p>
+<p>Day 16 - Intermediate - Object Oritented Programming(OOP)</p>
+<h1 id="procedural-programming">Procedural Programming</h1>
+<p><code>程序式程式設計(Procedural Programming)</code></p>
+<ul>
+<li>
+<p>常見的傳統 coding 方式, program 由上到下依序執行</p>
+</li>
+<li>
+<p>重度共享各種 variable, 當 program 變得越來越複雜, 會變得越來越不可控</p>
+</li>
+</ul>
+<h1 id="object-oriented-programmingoop">Object-Oriented Programming(OOP)</h1>
+<p><code>物件導向程式設計(Object-Oriented Programming)</code></p>
+<h2 id="core-concept">Core Concept</h2>
+<ul>
+<li>
+<p>基於物件(object)概念的開發方式, 能提高程式的模組化, 重複性, 擴展性</p>
+</li>
+<li>
+<p><code>最小知識原則</code>:</p>
+<ul>
+<li>將大型 project 拆解為方便管理的小 function</li>
+</ul>
+</li>
+<li>
+<p><code>最小化單一可執行函數</code>:</p>
+<ul>
+<li>每個 function 可以獨立開發和重用</li>
+<li>每個 function 只負責特定功能</li>
+</ul>
+</li>
+<li>
+<p><code>單一職責</code>:</p>
+<ul>
+<li>簡化代碼關係, 使項目更易於擴展</li>
+<li>每個 function 只負責特定功能, 透過組合各個 function 達成最終目標</li>
+</ul>
+</li>
+</ul>
+<h2 id="main-components">Main components</h2>
+<ol>
+<li>
+<p>類別 (<code>Class</code>): 物件的藍圖, 定義屬性(<code>attribute</code>)和方法(<code>method</code>)</p>
+</li>
+<li>
+<p>物件 (<code>Object</code>): 類別的實例</p>
+</li>
+<li>
+<p>屬性(<code>attribute</code>): 該 object 有的特徵, 就是一般說的 <code>variable</code></p>
+</li>
+<li>
+<p>方法(<code>method</code>): 該 object 可執行的動作, 就是一般說的 <code>function</code></p>
+</li>
+<li>
+<p>類別(Class)是物件的藍圖, 定義物件的屬性和方法</p>
+</li>
+<li>
+<p>物件(Object)是從類別創建的實例</p>
+</li>
+</ol>
+<h2 id="basic-syntax">Basic Syntax</h2>
+<p>基本使用方式</p>
+<ul>
+<li>
+<p>建物件的語法:</p>
+<ul>
+<li><code>object_name = class_name()</code></li>
+<li>class_name 通常使用 <code>Pascal case</code> (每個單詞首字母大寫)</li>
+</ul>
+</li>
+<li>
+<p>使用 module 和 class 的方法:</p>
+<ul>
+<li><code>import module_name</code></li>
+<li><code>from module_name import class_name</code></li>
+</ul>
+</li>
+<li>
+<p>存取 object attribute 語法:</p>
+<ul>
+<li><code>object_name.attribute_name</code></li>
+</ul>
+</li>
+<li>
+<p>呼叫 object method 語法:</p>
+<ul>
+<li><code>object_name.method_name()</code></li>
+</ul>
+</li>
+</ul>
+<h1 id="hw">HW</h1>
+<p>把 Day 15 的 coffee machine 變成 OOP</p>
+<p><a href="Coffee+Machine+Classes+Documentation.pdf">Coffee+Machine+Classes+Documentation</a></p>
+<p><a href="Coffee+Machine+Program+Requirements.pdf">Coffee+Machine+Program+Requirements</a></p>
+<h2 id="coffee-machineoop">Coffee Machine(OOP)</h2>
+<h2 id="menupy">menu.py</h2>
+<details>
+  <summary style="cursor: pointer; font-weight: bold;">&#x25B6; menu.py</summary>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">MenuItem</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;&#34;&#34;Models each Menu Item.&#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">water</span><span class="p">,</span> <span class="n">milk</span><span class="p">,</span> <span class="n">coffee</span><span class="p">,</span> <span class="n">cost</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="n">name</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">cost</span> <span class="o">=</span> <span class="n">cost</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">ingredients</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="s2">&#34;water&#34;</span><span class="p">:</span> <span class="n">water</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="s2">&#34;milk&#34;</span><span class="p">:</span> <span class="n">milk</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="s2">&#34;coffee&#34;</span><span class="p">:</span> <span class="n">coffee</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">Menu</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;&#34;&#34;Models the Menu with drinks.&#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">menu</span> <span class="o">=</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">            <span class="n">MenuItem</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&#34;latte&#34;</span><span class="p">,</span> <span class="n">water</span><span class="o">=</span><span class="mi">200</span><span class="p">,</span> <span class="n">milk</span><span class="o">=</span><span class="mi">150</span><span class="p">,</span> <span class="n">coffee</span><span class="o">=</span><span class="mi">24</span><span class="p">,</span> <span class="n">cost</span><span class="o">=</span><span class="mf">2.5</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">            <span class="n">MenuItem</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&#34;espresso&#34;</span><span class="p">,</span> <span class="n">water</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span> <span class="n">milk</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">coffee</span><span class="o">=</span><span class="mi">18</span><span class="p">,</span> <span class="n">cost</span><span class="o">=</span><span class="mf">1.5</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">            <span class="n">MenuItem</span><span class="p">(</span><span class="n">name</span><span class="o">=</span><span class="s2">&#34;cappuccino&#34;</span><span class="p">,</span> <span class="n">water</span><span class="o">=</span><span class="mi">250</span><span class="p">,</span> <span class="n">milk</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span> <span class="n">coffee</span><span class="o">=</span><span class="mi">24</span><span class="p">,</span> <span class="n">cost</span><span class="o">=</span><span class="mi">3</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">        <span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">get_items</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;&#34;&#34;Returns all the names of the available menu items&#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">options</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">menu</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">options</span> <span class="o">+=</span> <span class="sa">f</span><span class="s2">&#34;</span><span class="si">{</span><span class="n">item</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2">/&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">options</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">find_drink</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">order_name</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;&#34;&#34;Searches the menu for a particular drink by name. Returns that item if it exists, otherwise returns None&#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">menu</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="n">item</span><span class="o">.</span><span class="n">name</span> <span class="o">==</span> <span class="n">order_name</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="k">return</span> <span class="n">item</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Sorry that item is not available.&#34;</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></details>
+<h2 id="money_machinepy">money_machine.py</h2>
+<details>
+  <summary style="cursor: pointer; font-weight: bold;">&#x25B6; money_machine.py</summary>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">MoneyMachine</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">CURRENCY</span> <span class="o">=</span> <span class="s2">&#34;$&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">COIN_VALUES</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;quarters&#34;</span><span class="p">:</span> <span class="mf">0.25</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;dimes&#34;</span><span class="p">:</span> <span class="mf">0.10</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;nickles&#34;</span><span class="p">:</span> <span class="mf">0.05</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;pennies&#34;</span><span class="p">:</span> <span class="mf">0.01</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">profit</span> <span class="o">=</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">money_received</span> <span class="o">=</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">report</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;&#34;&#34;Prints the current profit&#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;Money: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">CURRENCY</span><span class="si">}{</span><span class="bp">self</span><span class="o">.</span><span class="n">profit</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">process_coins</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;&#34;&#34;Returns the total calculated from coins inserted.&#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Please insert coins.&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">coin</span> <span class="ow">in</span> <span class="bp">self</span><span class="o">.</span><span class="n">COIN_VALUES</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="bp">self</span><span class="o">.</span><span class="n">money_received</span> <span class="o">+=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;How many </span><span class="si">{</span><span class="n">coin</span><span class="si">}</span><span class="s2">?: &#34;</span><span class="p">))</span> <span class="o">*</span> <span class="bp">self</span><span class="o">.</span><span class="n">COIN_VALUES</span><span class="p">[</span><span class="n">coin</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">money_received</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">make_payment</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">cost</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;&#34;&#34;Returns True when payment is accepted, or False if insufficient.&#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">process_coins</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="bp">self</span><span class="o">.</span><span class="n">money_received</span> <span class="o">&gt;=</span> <span class="n">cost</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">change</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">money_received</span> <span class="o">-</span> <span class="n">cost</span><span class="p">,</span> <span class="mi">2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;Here is </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">CURRENCY</span><span class="si">}{</span><span class="n">change</span><span class="si">}</span><span class="s2"> in change.&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="bp">self</span><span class="o">.</span><span class="n">profit</span> <span class="o">+=</span> <span class="n">cost</span>
+</span></span><span class="line"><span class="cl">            <span class="bp">self</span><span class="o">.</span><span class="n">money_received</span> <span class="o">=</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="kc">True</span>
+</span></span><span class="line"><span class="cl">        <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="nb">print</span><span class="p">(</span><span class="s2">&#34;Sorry that&#39;s not enough money. Money refunded.&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="bp">self</span><span class="o">.</span><span class="n">money_received</span> <span class="o">=</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="kc">False</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></details>
+<h2 id="coffee_makerpy">coffee_maker.py</h2>
+<details>
+  <summary style="cursor: pointer; font-weight: bold;">&#x25B6; coffee_maker.py</summary>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">CoffeeMaker</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;&#34;&#34;Models the machine that makes the coffee&#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">resources</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="s2">&#34;water&#34;</span><span class="p">:</span> <span class="mi">300</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="s2">&#34;milk&#34;</span><span class="p">:</span> <span class="mi">200</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="s2">&#34;coffee&#34;</span><span class="p">:</span> <span class="mi">100</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">report</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;&#34;&#34;Prints a report of all resources.&#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;Water: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">resources</span><span class="p">[</span><span class="s1">&#39;water&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">ml&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;Milk: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">resources</span><span class="p">[</span><span class="s1">&#39;milk&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">ml&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;Coffee: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">resources</span><span class="p">[</span><span class="s1">&#39;coffee&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">g&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">is_resource_sufficient</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">drink</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;&#34;&#34;Returns True when order can be made, False if ingredients are insufficient.&#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">can_make</span> <span class="o">=</span> <span class="kc">True</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">drink</span><span class="o">.</span><span class="n">ingredients</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="n">drink</span><span class="o">.</span><span class="n">ingredients</span><span class="p">[</span><span class="n">item</span><span class="p">]</span> <span class="o">&gt;</span> <span class="bp">self</span><span class="o">.</span><span class="n">resources</span><span class="p">[</span><span class="n">item</span><span class="p">]:</span>
+</span></span><span class="line"><span class="cl">                <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;Sorry there is not enough </span><span class="si">{</span><span class="n">item</span><span class="si">}</span><span class="s2">.&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">                <span class="n">can_make</span> <span class="o">=</span> <span class="kc">False</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">can_make</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">make_coffee</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">order</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;&#34;&#34;Deducts the required ingredients from the resources.&#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">order</span><span class="o">.</span><span class="n">ingredients</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="bp">self</span><span class="o">.</span><span class="n">resources</span><span class="p">[</span><span class="n">item</span><span class="p">]</span> <span class="o">-=</span> <span class="n">order</span><span class="o">.</span><span class="n">ingredients</span><span class="p">[</span><span class="n">item</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;Here is your </span><span class="si">{</span><span class="n">order</span><span class="o">.</span><span class="n">name</span><span class="si">}</span><span class="s2"> ☕️. Enjoy!&#34;</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></details>
+<h2 id="mainpy">main.py</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">menu</span> <span class="kn">import</span> <span class="n">Menu</span><span class="p">,</span> <span class="n">MenuItem</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">coffee_maker</span> <span class="kn">import</span> <span class="n">CoffeeMaker</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">money_machine</span> <span class="kn">import</span> <span class="n">MoneyMachine</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">menu</span> <span class="o">=</span> <span class="n">Menu</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">coffeemaker</span> <span class="o">=</span> <span class="n">CoffeeMaker</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">moneymachine</span> <span class="o">=</span> <span class="n">MoneyMachine</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">options</span> <span class="o">=</span> <span class="n">menu</span><span class="o">.</span><span class="n">get_items</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">user_input</span> <span class="o">=</span> <span class="nb">input</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;What would you like? (</span><span class="si">{</span><span class="n">options</span><span class="si">}</span><span class="s2">): &#34;</span><span class="p">)</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">user_input</span> <span class="o">==</span> <span class="s1">&#39;report&#39;</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">coffeemaker</span><span class="o">.</span><span class="n">report</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">        <span class="n">moneymachine</span><span class="o">.</span><span class="n">report</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">        <span class="k">continue</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">user_input</span> <span class="o">==</span> <span class="s1">&#39;off&#39;</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">break</span>
+</span></span><span class="line"><span class="cl">    <span class="n">coffee</span> <span class="o">=</span> <span class="n">menu</span><span class="o">.</span><span class="n">find_drink</span><span class="p">(</span><span class="n">user_input</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">coffeemaker</span><span class="o">.</span><span class="n">is_resource_sufficient</span><span class="p">(</span><span class="n">coffee</span><span class="p">)</span> <span class="ow">and</span> <span class="n">moneymachine</span><span class="o">.</span><span class="n">make_payment</span><span class="p">(</span><span class="n">coffee</span><span class="o">.</span><span class="n">cost</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="n">coffeemaker</span><span class="o">.</span><span class="n">make_coffee</span><span class="p">(</span><span class="n">coffee</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">PawPaw</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">
+        2024-10-03
+        
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/pawpaw_coding.github.io/tags/python/">python</a>
+          <a href="/pawpaw_coding.github.io/tags/100-days/">100-days</a>
+          </div>
+      <nav class="post-nav">
+        
+        <a class="next" href="/pawpaw_coding.github.io/post/python/python-100days/day15/">
+            <span class="next-text nav-default">[Python] Python-100days - Day15</span>
+            <span class="next-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="https://github.com/PawXQ/pawpaw.github.io" class="iconfont icon-github" title="github"></a>
+  <a href="https://pawxq.github.io/pawpaw_coding.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2024<span class="heart"><i class="iconfont icon-heart"></i></span><span>PawPaw</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/pawpaw_coding.github.io/js/main.min.4ae89da218555efa0e7093a20b92017d2e1202b66fff9fc2edf4cb8d44b44c6e.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>
