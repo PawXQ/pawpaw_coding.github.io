@@ -1,0 +1,928 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>[Python] Python-100days - Day18 - Even - A super concise theme for Hugo</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="PawPaw" /><meta name="description" content="" /><meta name="keywords" content="Hugo, theme, even" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.108.0 with theme even" />
+
+
+<link rel="canonical" href="https://pawxq.github.io/pawpaw_coding.github.io/post/python/python-100days/day18/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/pawpaw_coding.github.io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/pawpaw_coding.github.io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/pawpaw_coding.github.io/favicon-16x16.png">
+<link rel="manifest" href="/pawpaw_coding.github.io/manifest.json">
+<link rel="mask-icon" href="/pawpaw_coding.github.io/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/pawpaw_coding.github.io/sass/main.min.f92fd13721ddf72129410fd8250e73152cc6f2438082b6c0208dc24ee7c13fc4.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/style.css">
+
+
+<meta property="og:title" content="[Python] Python-100days - Day18" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://pawxq.github.io/pawpaw_coding.github.io/post/python/python-100days/day18/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2024-10-10T16:17:37+00:00" />
+<meta property="article:modified_time" content="2024-10-10T16:17:37+00:00" />
+<meta itemprop="name" content="[Python] Python-100days - Day18">
+<meta itemprop="description" content=""><meta itemprop="datePublished" content="2024-10-10T16:17:37+00:00" />
+<meta itemprop="dateModified" content="2024-10-10T16:17:37+00:00" />
+<meta itemprop="wordCount" content="1209">
+<meta itemprop="keywords" content="python,100-days," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="[Python] Python-100days - Day18"/>
+<meta name="twitter:description" content=""/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">PawPaw_coding</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/pawpaw_coding.github.io/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/pawpaw_coding.github.io/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/pawpaw_coding.github.io/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/pawpaw_coding.github.io/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">PawPaw_coding</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/pawpaw_coding.github.io/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/pawpaw_coding.github.io/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/pawpaw_coding.github.io/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/pawpaw_coding.github.io/categories/">Categories</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">[Python] Python-100days - Day18</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2024-10-10 </span>
+        <div class="post-category">
+            <a href="/pawpaw_coding.github.io/categories/python/"> python </a>
+            </div>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#ref">REF</a></li>
+    <li><a href="#module">Module</a>
+      <ul>
+        <li><a href="#module-導入方式">module 導入方式</a></li>
+      </ul>
+    </li>
+    <li><a href="#turtle-module">turtle module</a>
+      <ul>
+        <li><a href="#set-env">Set ENV</a></li>
+        <li><a href="#基本操作">基本操作</a>
+          <ul>
+            <li><a href="#外觀控制">外觀控制</a></li>
+            <li><a href="#移動控制">移動控制</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#colorgram-module">colorgram module</a>
+      <ul>
+        <li>
+          <ul>
+            <li><a href="#提取顏色">提取顏色</a></li>
+          </ul>
+        </li>
+        <li><a href="#顏色物件屬性">顏色物件屬性</a></li>
+        <li><a href="#取得-rgb-值">取得 RGB 值</a></li>
+      </ul>
+    </li>
+    <li><a href="#challenge1-draw_a_squarepy">challenge1-draw_a_square.py</a></li>
+    <li><a href="#challenge2-draw_a_dashed_linepy">challenge2-draw_a_dashed_line.py</a></li>
+    <li><a href="#challenge3-draw_different_shapespy">challenge3-draw_different_shapes.py</a></li>
+    <li><a href="#challenge4-draw_a_random_walkpy">challenge4-draw_a_random_walk.py</a></li>
+    <li><a href="#challenge5-draw_a_spirographpy">challenge5-draw_a_spirograph.py</a></li>
+    <li><a href="#hw">HW</a>
+      <ul>
+        <li><a href="#hirst_spot_painting">hirst_spot_painting</a>
+          <ul>
+            <li><a href="#取顏色">取顏色</a></li>
+            <li><a href="#畫圖">畫圖</a></li>
+            <li><a href="#generate">Generate</a></li>
+            <li><a href="#source">Source</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <h1 id="ref">REF</h1>
+<p>紀錄學習 <a href="https://www.udemy.com/course/100-days-of-code/?couponCode=KEEPLEARNING">Udemy-Python-100days of code</a></p>
+<p>Day 18 - Intermediate - Turtle &amp; the Graphical User Interface (GUI)</p>
+<h1 id="module">Module</h1>
+<h2 id="module-導入方式">module 導入方式</h2>
+<p>一般 import: <code>import module_name</code></p>
+<p>指定 import: <code>from module_name import specific_function_or_class</code></p>
+<p>全部 import: <code>from module_name import *</code> (不推薦, 會不知道哪個 <code>function</code>, <code>class</code> 是哪個 <code>module</code> 來的)</p>
+<p>別名 import: <code>import module_name as alias</code> (為 module 使用別名, 方便辨認)</p>
+<p><del>乖乖使用<code>一般</code>和<code>指定</code>就好, 不過體感還是一般好用</del></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># 一般 import</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">math</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 指定 import</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="n">sqrt</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 全部 import</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">math</span> <span class="kn">import</span> <span class="o">*</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 別名 import</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h1 id="turtle-module">turtle module</h1>
+<ul>
+<li>
+<p>turtle module 用於繪製圖形</p>
+</li>
+<li>
+<p>可以想像成一隻帶筆的小烏龜, 移動時留下軌跡</p>
+</li>
+</ul>
+<h2 id="set-env">Set ENV</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">turtle</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">timmy</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">Turtle</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">screen</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">Screen</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">screen</span><span class="o">.</span><span class="n">exitonclick</span><span class="p">()</span> 
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="基本操作">基本操作</h2>
+<h3 id="外觀控制">外觀控制</h3>
+<ul>
+<li>
+<p><code>shape()</code>: 設置烏龜形狀(arrow, turtle, circle等)</p>
+</li>
+<li>
+<p><code>color()</code>: 設置顏色</p>
+</li>
+</ul>
+<h3 id="移動控制">移動控制</h3>
+<ul>
+<li>
+<p><code>forward()</code>: 向前移動</p>
+</li>
+<li>
+<p><code>backward()</code>: 向後移動</p>
+</li>
+<li>
+<p><code>right()</code>: 向右轉</p>
+</li>
+<li>
+<p><code>left()</code>: 向左轉</p>
+</li>
+</ul>
+<h1 id="colorgram-module">colorgram module</h1>
+<p>colorgram 是一個 Python module, 用來從圖像中提取顏色. 它能夠分析圖像並傳回最常出現的顏色.</p>
+<p>使用 pip 安装：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">pip install colorgram.py
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="提取顏色">提取顏色</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">colors</span> <span class="o">=</span> <span class="n">colorgram</span><span class="o">.</span><span class="n">extract</span><span class="p">(</span><span class="s1">&#39;image.jpg&#39;</span><span class="p">,</span> <span class="mi">6</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>
+<p>1st parameter：圖片路徑</p>
+</li>
+<li>
+<p>2nd parameter：要提取的顏色數量</p>
+</li>
+</ul>
+<h2 id="顏色物件屬性">顏色物件屬性</h2>
+<p>每個提取的顏色都是一個 object, 具有以下 attribute：</p>
+<ol>
+<li><code>rgb</code>: RGB 值(紅、綠、藍)</li>
+<li><code>hsl</code>: HSL 值(色相、飽和度、亮度)</li>
+<li><code>proportion</code>: 該顏色在影像中的比例</li>
+</ol>
+<h2 id="取得-rgb-值">取得 RGB 值</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">for</span> <span class="n">color</span> <span class="ow">in</span> <span class="n">colors</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl"> <span class="n">r</span> <span class="o">=</span> <span class="n">color</span><span class="o">.</span><span class="n">rgb</span><span class="o">.</span><span class="n">r</span>
+</span></span><span class="line"><span class="cl"> <span class="n">g</span> <span class="o">=</span> <span class="n">color</span><span class="o">.</span><span class="n">rgb</span><span class="o">.</span><span class="n">g</span>
+</span></span><span class="line"><span class="cl"> <span class="n">b</span> <span class="o">=</span> <span class="n">color</span><span class="o">.</span><span class="n">rgb</span><span class="o">.</span><span class="n">b</span>
+</span></span><span class="line"><span class="cl"> <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;RGB: (</span><span class="si">{</span><span class="n">r</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="n">g</span><span class="si">}</span><span class="s2">, </span><span class="si">{</span><span class="n">b</span><span class="si">}</span><span class="s2">)&#34;</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h1 id="challenge1-draw_a_squarepy">challenge1-draw_a_square.py</h1>
+<p>畫一個正方形</p>
+<details>
+  <summary style="cursor: pointer; font-weight: bold;">&#x25B6; challenge1-draw_a_square.py</summary>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">turtle</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">screen</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">Screen</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">screen</span><span class="o">.</span><span class="n">bgcolor</span><span class="p">(</span><span class="s2">&#34;black&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">timmy</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">Turtle</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">timmy</span><span class="o">.</span><span class="n">color</span><span class="p">(</span><span class="s2">&#34;yellow&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">timmy</span><span class="o">.</span><span class="n">penup</span><span class="p">()</span>  
+</span></span><span class="line"><span class="cl"><span class="n">timmy</span><span class="o">.</span><span class="n">goto</span><span class="p">(</span><span class="o">-</span><span class="mi">50</span><span class="p">,</span> <span class="o">-</span><span class="mi">50</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">timmy</span><span class="o">.</span><span class="n">pendown</span><span class="p">()</span>  
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">timmy</span><span class="o">.</span><span class="n">fd</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">timmy</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">timmy</span><span class="o">.</span><span class="n">fd</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">timmy</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">timmy</span><span class="o">.</span><span class="n">fd</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">timmy</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">timmy</span><span class="o">.</span><span class="n">fd</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">timmy</span><span class="o">.</span><span class="n">left</span><span class="p">(</span><span class="mi">90</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">screen</span><span class="o">.</span><span class="n">exitonclick</span><span class="p">()</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></details>
+<p><img src="challenge1-draw_a_square.jpg" alt="challenge1-draw_a_square"></p>
+<h1 id="challenge2-draw_a_dashed_linepy">challenge2-draw_a_dashed_line.py</h1>
+<p>畫一條虛線</p>
+<details>
+  <summary style="cursor: pointer; font-weight: bold;">&#x25B6; challenge2-draw_a_dashed_line.py</summary>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">turtle</span> <span class="kn">import</span> <span class="n">Turtle</span><span class="p">,</span> <span class="n">Screen</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">screen</span> <span class="o">=</span> <span class="n">Screen</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">screen</span><span class="o">.</span><span class="n">bgcolor</span><span class="p">(</span><span class="s2">&#34;black&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">timmy</span> <span class="o">=</span> <span class="n">Turtle</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">timmy</span><span class="o">.</span><span class="n">color</span><span class="p">(</span><span class="s2">&#34;yellow&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">total_segments</span> <span class="o">=</span> <span class="mi">15</span>
+</span></span><span class="line"><span class="cl"><span class="n">segment_length</span> <span class="o">=</span> <span class="mi">15</span>
+</span></span><span class="line"><span class="cl"><span class="n">total_length</span> <span class="o">=</span> <span class="n">total_segments</span> <span class="o">*</span> <span class="n">segment_length</span> <span class="o">*</span> <span class="mi">2</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">timmy</span><span class="o">.</span><span class="n">penup</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">timmy</span><span class="o">.</span><span class="n">goto</span><span class="p">(</span><span class="o">-</span><span class="n">total_length</span> <span class="o">/</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">timmy</span><span class="o">.</span><span class="n">pendown</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">15</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">timmy</span><span class="o">.</span><span class="n">fd</span><span class="p">(</span><span class="mi">15</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">timmy</span><span class="o">.</span><span class="n">penup</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="n">timmy</span><span class="o">.</span><span class="n">fd</span><span class="p">(</span><span class="mi">15</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">timmy</span><span class="o">.</span><span class="n">pendown</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">screen</span><span class="o">.</span><span class="n">exitonclick</span><span class="p">()</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></details>
+<p><img src="challenge2-draw_a_dashed_line.jpg" alt="challenge2-draw_a_dashed_line"></p>
+<h1 id="challenge3-draw_different_shapespy">challenge3-draw_different_shapes.py</h1>
+<p>畫不同的形狀</p>
+<details>
+  <summary style="cursor: pointer; font-weight: bold;">&#x25B6; challenge3-draw_different_shapes.py</summary>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">random</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">turtle</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">shape</span> <span class="o">=</span> <span class="mi">10</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">turtle</span><span class="o">.</span><span class="n">colormode</span><span class="p">(</span><span class="mi">255</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">screen</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">Screen</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">screen</span><span class="o">.</span><span class="n">bgcolor</span><span class="p">(</span><span class="s2">&#34;black&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">timmy</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">Turtle</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">DrawShape</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">degree</span> <span class="o">=</span> <span class="mi">360</span><span class="o">/</span><span class="n">num</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">num</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="n">timmy</span><span class="o">.</span><span class="n">fd</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">timmy</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="n">degree</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">generate_random_colors</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">    <span class="n">r</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">g</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">b</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">color_tuple</span> <span class="o">=</span> <span class="p">(</span><span class="n">r</span><span class="p">,</span> <span class="n">g</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">color_tuple</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">timmy</span><span class="o">.</span><span class="n">penup</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">timmy</span><span class="o">.</span><span class="n">goto</span><span class="p">(</span><span class="o">-</span><span class="mi">50</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">timmy</span><span class="o">.</span><span class="n">pendown</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="n">shape</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">color</span> <span class="o">=</span> <span class="n">generate_random_colors</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="n">timmy</span><span class="o">.</span><span class="n">color</span><span class="p">(</span><span class="n">color</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">DrawShape</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">screen</span><span class="o">.</span><span class="n">exitonclick</span><span class="p">()</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></details>
+<p><img src="challenge3-draw_different_shapes.jpg" alt="challenge3-draw_different_shapes"></p>
+<h1 id="challenge4-draw_a_random_walkpy">challenge4-draw_a_random_walk.py</h1>
+<p>隨機移動</p>
+<details>
+  <summary style="cursor: pointer; font-weight: bold;">&#x25B6; challenge4-draw_a_random_walk.py</summary>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">random</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">turtle</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">generate_random_colors</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">    <span class="n">r</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">g</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">b</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">color_tuple</span> <span class="o">=</span> <span class="p">(</span><span class="n">r</span><span class="p">,</span> <span class="n">g</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">color_tuple</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">RandomDegree</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">    <span class="n">degree_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">90</span><span class="p">,</span> <span class="mi">180</span><span class="p">,</span> <span class="mi">270</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="n">random_degree</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">degree_list</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">random_degree</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">move_step</span> <span class="o">=</span> <span class="mi">200</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">turtle</span><span class="o">.</span><span class="n">colormode</span><span class="p">(</span><span class="mi">255</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">screen</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">Screen</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">screen</span><span class="o">.</span><span class="n">bgcolor</span><span class="p">(</span><span class="s2">&#34;black&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">timmy</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">Turtle</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">timmy</span><span class="o">.</span><span class="n">speed</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">move_step</span> <span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">color_tuple</span> <span class="o">=</span> <span class="n">generate_random_colors</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="n">timmy</span><span class="o">.</span><span class="n">color</span><span class="p">(</span><span class="n">color_tuple</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">degree</span> <span class="o">=</span> <span class="n">RandomDegree</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="n">timmy</span><span class="o">.</span><span class="n">setheading</span><span class="p">(</span><span class="n">degree</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">timmy</span><span class="o">.</span><span class="n">fd</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">screen</span><span class="o">.</span><span class="n">exitonclick</span><span class="p">()</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></details>
+<p><img src="challenge4-draw_a_random_walk.jpg" alt=" challenge4-draw_a_random_walk"></p>
+<h1 id="challenge5-draw_a_spirographpy">challenge5-draw_a_spirograph.py</h1>
+<p>畫圓形萬花尺</p>
+<p><del>我也不知道為啥叫萬花尺</del></p>
+<details>
+  <summary style="cursor: pointer; font-weight: bold;">&#x25B6; challenge5-draw_a_spirograph.py</summary>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">turtle</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">random</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">generate_random_colors</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">    <span class="n">r</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">g</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">b</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">color_tuple</span> <span class="o">=</span> <span class="p">(</span><span class="n">r</span><span class="p">,</span> <span class="n">g</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">color_tuple</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">RandomDegree</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">    <span class="n">degree_list</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">90</span><span class="p">,</span> <span class="mi">180</span><span class="p">,</span> <span class="mi">270</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="n">random_degree</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">degree_list</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">random_degree</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">GenerateRandomAngle</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">    <span class="n">random_angle</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">360</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">random_angle</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">screen</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">Screen</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">screen</span><span class="o">.</span><span class="n">bgcolor</span><span class="p">(</span><span class="s2">&#34;black&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">turtle</span><span class="o">.</span><span class="n">colormode</span><span class="p">(</span><span class="mi">255</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">timmy</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">Turtle</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">timmy</span><span class="o">.</span><span class="n">speed</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">angle</span> <span class="o">=</span> <span class="n">GenerateRandomAngle</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">angle</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">color</span> <span class="o">=</span> <span class="n">generate_random_colors</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="n">timmy</span><span class="o">.</span><span class="n">color</span><span class="p">(</span><span class="n">color</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">angle_step</span> <span class="o">=</span> <span class="mi">360</span><span class="o">/</span><span class="n">angle</span>
+</span></span><span class="line"><span class="cl">    <span class="n">timmy</span><span class="o">.</span><span class="n">circle</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">timmy</span><span class="o">.</span><span class="n">right</span><span class="p">(</span><span class="n">angle_step</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">screen</span><span class="o">.</span><span class="n">exitonclick</span><span class="p">()</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></details>
+<p><img src="challenge5-draw_a_spirograph.jpg" alt=" challenge5-draw_a_spirograph"></p>
+<h1 id="hw">HW</h1>
+<h2 id="hirst_spot_painting">hirst_spot_painting</h2>
+<p>畫一個隨機顏色的點陣圖, 10*10</p>
+<p>分兩段, 先取出一張圖片常出現的顏色, 再依照顏色的列表畫圖, 當然也可以隨機產出不用根據特定圖片的多數顏色</p>
+<h3 id="取顏色">取顏色</h3>
+<p>使用 <code>colorgram module</code> 取得特定圖片最常出現的顏色, 然後存成 list</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">colorgram</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">colors</span> <span class="o">=</span> <span class="n">colorgram</span><span class="o">.</span><span class="n">extract</span><span class="p">(</span><span class="s1">&#39;hirst_spot_painting_source.jpg&#39;</span><span class="p">,</span> <span class="mi">30</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">rgb_colors_list</span> <span class="o">=</span> <span class="p">[]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">color</span> <span class="ow">in</span> <span class="n">colors</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">r</span> <span class="o">=</span> <span class="n">color</span><span class="o">.</span><span class="n">rgb</span><span class="o">.</span><span class="n">r</span>
+</span></span><span class="line"><span class="cl">    <span class="n">g</span> <span class="o">=</span> <span class="n">color</span><span class="o">.</span><span class="n">rgb</span><span class="o">.</span><span class="n">g</span>
+</span></span><span class="line"><span class="cl">    <span class="n">b</span> <span class="o">=</span> <span class="n">color</span><span class="o">.</span><span class="n">rgb</span><span class="o">.</span><span class="n">b</span>
+</span></span><span class="line"><span class="cl">    <span class="n">color_tuple</span> <span class="o">=</span> <span class="p">(</span><span class="n">r</span><span class="p">,</span> <span class="n">g</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">rgb_colors_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">color_tuple</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="畫圖">畫圖</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">random</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">turtle</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">color_list</span> <span class="o">=</span> <span class="p">[(</span><span class="mi">228</span><span class="p">,</span> <span class="mi">235</span><span class="p">,</span> <span class="mi">231</span><span class="p">),</span> <span class="p">(</span><span class="mi">199</span><span class="p">,</span> <span class="mi">162</span><span class="p">,</span> <span class="mi">100</span><span class="p">),</span> <span class="p">(</span><span class="mi">62</span><span class="p">,</span> <span class="mi">91</span><span class="p">,</span> <span class="mi">128</span><span class="p">),</span> <span class="p">(</span><span class="mi">140</span><span class="p">,</span> <span class="mi">170</span><span class="p">,</span> <span class="mi">192</span><span class="p">),</span> <span class="p">(</span><span class="mi">139</span><span class="p">,</span> <span class="mi">90</span><span class="p">,</span> <span class="mi">48</span><span class="p">),</span> <span class="p">(</span><span class="mi">219</span><span class="p">,</span> <span class="mi">206</span><span class="p">,</span> <span class="mi">119</span><span class="p">),</span> <span class="p">(</span><span class="mi">135</span><span class="p">,</span> <span class="mi">27</span><span class="p">,</span> <span class="mi">52</span><span class="p">),</span> <span class="p">(</span><span class="mi">32</span><span class="p">,</span> <span class="mi">41</span><span class="p">,</span> <span class="mi">67</span><span class="p">),</span> <span class="p">(</span><span class="mi">78</span><span class="p">,</span> <span class="mi">16</span><span class="p">,</span> <span class="mi">36</span><span class="p">),</span> <span class="p">(</span><span class="mi">149</span><span class="p">,</span> <span class="mi">59</span><span class="p">,</span> <span class="mi">85</span><span class="p">),</span> <span class="p">(</span><span class="mi">167</span><span class="p">,</span> <span class="mi">154</span><span class="p">,</span> <span class="mi">49</span><span class="p">),</span> <span class="p">(</span><span class="mi">187</span><span class="p">,</span> <span class="mi">143</span><span class="p">,</span> <span class="mi">162</span><span class="p">),</span> <span class="p">(</span><span class="mi">134</span><span class="p">,</span> <span class="mi">183</span><span class="p">,</span> <span class="mi">147</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">              <span class="p">(</span><span class="mi">46</span><span class="p">,</span> <span class="mi">55</span><span class="p">,</span> <span class="mi">100</span><span class="p">),</span> <span class="p">(</span><span class="mi">181</span><span class="p">,</span> <span class="mi">95</span><span class="p">,</span> <span class="mi">107</span><span class="p">),</span> <span class="p">(</span><span class="mi">56</span><span class="p">,</span> <span class="mi">39</span><span class="p">,</span> <span class="mi">27</span><span class="p">),</span> <span class="p">(</span><span class="mi">96</span><span class="p">,</span> <span class="mi">118</span><span class="p">,</span> <span class="mi">167</span><span class="p">),</span> <span class="p">(</span><span class="mi">80</span><span class="p">,</span> <span class="mi">150</span><span class="p">,</span> <span class="mi">159</span><span class="p">),</span> <span class="p">(</span><span class="mi">89</span><span class="p">,</span> <span class="mi">152</span><span class="p">,</span> <span class="mi">92</span><span class="p">),</span> <span class="p">(</span><span class="mi">71</span><span class="p">,</span> <span class="mi">118</span><span class="p">,</span> <span class="mi">93</span><span class="p">),</span> <span class="p">(</span><span class="mi">220</span><span class="p">,</span> <span class="mi">175</span><span class="p">,</span> <span class="mi">187</span><span class="p">),</span> <span class="p">(</span><span class="mi">169</span><span class="p">,</span> <span class="mi">207</span><span class="p">,</span> <span class="mi">163</span><span class="p">),</span> <span class="p">(</span><span class="mi">161</span><span class="p">,</span> <span class="mi">202</span><span class="p">,</span> <span class="mi">215</span><span class="p">),</span> <span class="p">(</span><span class="mi">192</span><span class="p">,</span> <span class="mi">95</span><span class="p">,</span> <span class="mi">74</span><span class="p">),</span> <span class="p">(</span><span class="mi">178</span><span class="p">,</span> <span class="mi">187</span><span class="p">,</span> <span class="mi">213</span><span class="p">),</span> <span class="p">(</span><span class="mi">46</span><span class="p">,</span> <span class="mi">73</span><span class="p">,</span> <span class="mi">75</span><span class="p">),</span> <span class="p">(</span><span class="mi">76</span><span class="p">,</span> <span class="mi">69</span><span class="p">,</span> <span class="mi">44</span><span class="p">)]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">random_color</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">random</span><span class="o">.</span><span class="n">choice</span><span class="p">(</span><span class="n">color_list</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">screen</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">Screen</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">screen</span><span class="o">.</span><span class="n">bgcolor</span><span class="p">(</span><span class="s2">&#34;black&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">turtle</span><span class="o">.</span><span class="n">colormode</span><span class="p">(</span><span class="mi">255</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">timmy</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">Turtle</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">timmy</span><span class="o">.</span><span class="n">hideturtle</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">timmy</span><span class="o">.</span><span class="n">speed</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">timmy</span><span class="o">.</span><span class="n">penup</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="n">timmy</span><span class="o">.</span><span class="n">goto</span><span class="p">(</span><span class="o">-</span><span class="mi">250</span><span class="p">,</span> <span class="o">-</span><span class="mi">250</span> <span class="o">+</span> <span class="n">i</span> <span class="o">*</span> <span class="mi">50</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">10</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="n">timmy</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="mi">20</span><span class="p">,</span> <span class="n">random_color</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl">        <span class="n">timmy</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">screen</span><span class="o">.</span><span class="n">exitonclick</span><span class="p">()</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="generate">Generate</h3>
+<p><img src="hirst_spot_painting_generate.jpg" alt=" hirst_spot_painting_generate"></p>
+<h3 id="source">Source</h3>
+<p><img src="hirst_spot_painting_source.jpg" alt=" hirst_spot_painting_source"></p>
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">PawPaw</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">
+        2024-10-10
+        
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/pawpaw_coding.github.io/tags/python/">python</a>
+          <a href="/pawpaw_coding.github.io/tags/100-days/">100-days</a>
+          </div>
+      <nav class="post-nav">
+        
+        <a class="next" href="/pawpaw_coding.github.io/post/python/python-100days/day17/">
+            <span class="next-text nav-default">[Python] Python-100days - Day17</span>
+            <span class="next-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="https://github.com/PawXQ/pawpaw.github.io" class="iconfont icon-github" title="github"></a>
+  <a href="https://pawxq.github.io/pawpaw_coding.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2024<span class="heart"><i class="iconfont icon-heart"></i></span><span>PawPaw</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/pawpaw_coding.github.io/js/main.min.4ae89da218555efa0e7093a20b92017d2e1202b66fff9fc2edf4cb8d44b44c6e.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>
