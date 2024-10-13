@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>[Python] Python-100days - Day19 - Even - A super concise theme for Hugo</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="PawPaw" /><meta name="description" content="" /><meta name="keywords" content="Hugo, theme, even" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.108.0 with theme even" />
+
+
+<link rel="canonical" href="https://pawxq.github.io/pawpaw_coding.github.io/post/python/python-100days/day19/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/pawpaw_coding.github.io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/pawpaw_coding.github.io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/pawpaw_coding.github.io/favicon-16x16.png">
+<link rel="manifest" href="/pawpaw_coding.github.io/manifest.json">
+<link rel="mask-icon" href="/pawpaw_coding.github.io/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/pawpaw_coding.github.io/sass/main.min.f92fd13721ddf72129410fd8250e73152cc6f2438082b6c0208dc24ee7c13fc4.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/style.css">
+
+
+<meta property="og:title" content="[Python] Python-100days - Day19" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://pawxq.github.io/pawpaw_coding.github.io/post/python/python-100days/day19/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2024-10-13T02:52:14+00:00" />
+<meta property="article:modified_time" content="2024-10-13T02:52:14+00:00" />
+<meta itemprop="name" content="[Python] Python-100days - Day19">
+<meta itemprop="description" content=""><meta itemprop="datePublished" content="2024-10-13T02:52:14+00:00" />
+<meta itemprop="dateModified" content="2024-10-13T02:52:14+00:00" />
+<meta itemprop="wordCount" content="625">
+<meta itemprop="keywords" content="python,100-days," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="[Python] Python-100days - Day19"/>
+<meta name="twitter:description" content=""/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">PawPaw_coding</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/pawpaw_coding.github.io/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/pawpaw_coding.github.io/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/pawpaw_coding.github.io/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/pawpaw_coding.github.io/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">PawPaw_coding</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/pawpaw_coding.github.io/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/pawpaw_coding.github.io/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/pawpaw_coding.github.io/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/pawpaw_coding.github.io/categories/">Categories</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">[Python] Python-100days - Day19</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2024-10-13 </span>
+        <div class="post-category">
+            <a href="/pawpaw_coding.github.io/categories/python/"> python </a>
+            </div>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#ref">REF</a></li>
+    <li><a href="#高階函數higher-order-functions">高階函數(Higher Order Functions)</a>
+      <ul>
+        <li><a href="#function-as-inputs">Function as Inputs</a></li>
+        <li><a href="#example">Example</a>
+          <ul>
+            <li><a href="#function-as-parameter">Function as Parameter</a></li>
+            <li><a href="#return-function">Return Function</a></li>
+            <li><a href="#event-listener">Event Listener</a></li>
+            <li><a href="#map-function">map() Function</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#multiple-instance">Multiple Instance</a>
+      <ul>
+        <li><a href="#basic-multiple-instance">Basic Multiple Instance</a></li>
+        <li><a href="#batch-manage-multiple-instance">Batch manage Multiple Instance</a></li>
+      </ul>
+    </li>
+    <li><a href="#turtle-module">Turtle Module</a>
+      <ul>
+        <li><a href="#event-listener-1">Event Listener</a></li>
+        <li><a href="#turtle-coordinate-system">Turtle Coordinate system</a></li>
+      </ul>
+    </li>
+    <li><a href="#hw">HW</a>
+      <ul>
+        <li><a href="#turtle-race">Turtle race</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <h1 id="ref">REF</h1>
+<p>紀錄學習 <a href="https://www.udemy.com/course/100-days-of-code/?couponCode=KEEPLEARNING">Udemy-Python-100days of code</a></p>
+<p>Day 19 - Intermediate - Instances, State and Higher Order Functions</p>
+<h1 id="高階函數higher-order-functions">高階函數(Higher Order Functions)</h1>
+<p>定義</p>
+<ul>
+<li>
+<p>可以接受 function 作為 parameter</p>
+</li>
+<li>
+<p>可以返回 function 作為 result</p>
+</li>
+</ul>
+<p>把 function 當作另一個 function 的 input 的時候不需要添加 ()</p>
+<h2 id="function-as-inputs">Function as Inputs</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">function_a</span><span class="p">(</span><span class="n">somethig</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># Do this with something</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># Then do this</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># Finally do this</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">function_b</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># Do this</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">function_a</span><span class="p">(</span><span class="n">function_b</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="example">Example</h2>
+<h3 id="function-as-parameter">Function as Parameter</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">apply</span><span class="p">(</span><span class="n">func</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">func</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">square</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">x</span> <span class="o">*</span> <span class="n">x</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">result</span> <span class="o">=</span> <span class="n">apply</span><span class="p">(</span><span class="n">square</span><span class="p">,</span> <span class="mi">5</span><span class="p">)</span>  <span class="c1"># result: 25</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="return-function">Return Function</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">multiplier</span><span class="p">(</span><span class="n">n</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">multiply</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">x</span> <span class="o">*</span> <span class="n">n</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">multiply</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">double</span> <span class="o">=</span> <span class="n">multiplier</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">result</span> <span class="o">=</span> <span class="n">double</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>  <span class="c1"># result: 10</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="event-listener">Event Listener</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">screen</span><span class="o">.</span><span class="n">onkey</span><span class="p">(</span><span class="n">move_forwards</span><span class="p">,</span> <span class="s2">&#34;space&#34;</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="map-function">map() Function</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">squared</span> <span class="o">=</span> <span class="nb">list</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="p">,</span> <span class="n">numbers</span><span class="p">))</span>  <span class="c1"># result: [1, 4, 9, 16]</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h1 id="multiple-instance">Multiple Instance</h1>
+<ul>
+<li>
+<p>使用 class 可以建立出多個 instance</p>
+</li>
+<li>
+<p>每一個 instance 都是獨立的 object</p>
+</li>
+<li>
+<p>instance 在記憶體中有各自存放的位置</p>
+</li>
+<li>
+<p>每個實例擁有獨立的 state, 包括 attributes 和 methods</p>
+</li>
+</ul>
+<p>特點</p>
+<ul>
+<li>
+<p>instance 間相互獨立</p>
+</li>
+<li>
+<p>可以有不同的 attribute</p>
+</li>
+<li>
+<p>method 調用互不影響</p>
+</li>
+</ul>
+<h2 id="basic-multiple-instance">Basic Multiple Instance</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">turtle</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Create two independent Turtle instances</span>
+</span></span><span class="line"><span class="cl"><span class="n">tim</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">Turtle</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">tom</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">Turtle</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Set a different color for each instance</span>
+</span></span><span class="line"><span class="cl"><span class="n">tim</span><span class="o">.</span><span class="n">color</span><span class="p">(</span><span class="s2">&#34;green&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">tom</span><span class="o">.</span><span class="n">color</span><span class="p">(</span><span class="s2">&#34;blue&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">tim</span><span class="o">.</span><span class="n">pencolor</span><span class="p">())</span>  <span class="c1"># output: green</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">tom</span><span class="o">.</span><span class="n">pencolor</span><span class="p">())</span>  <span class="c1"># output: blue</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="batch-manage-multiple-instance">Batch manage Multiple Instance</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">turtle</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">all_turtle</span> <span class="o">=</span> <span class="p">[]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">2</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">new_turtle</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">Turtle</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="n">new_turtle</span><span class="o">.</span><span class="n">color</span><span class="p">(</span><span class="s2">&#34;black&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">all_turtle</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">new_turtle</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Modify the color of the first instance</span>
+</span></span><span class="line"><span class="cl"><span class="n">all_turtle</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">color</span><span class="p">(</span><span class="s2">&#34;yellow&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Verify the independence of each instance</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">all_turtle</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">pencolor</span><span class="p">())</span>  <span class="c1"># result: yellow</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">all_turtle</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">.</span><span class="n">pencolor</span><span class="p">())</span>  <span class="c1"># result: black</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h1 id="turtle-module">Turtle Module</h1>
+<h2 id="event-listener-1">Event Listener</h2>
+<ul>
+<li>
+<p>使用 <code>screen.listen()</code>開始監聽事件</p>
+</li>
+<li>
+<p>使用 <code>screen.onkey(function, key)</code> 綁定按鍵對應事件</p>
+</li>
+</ul>
+<p>範例:</p>
+<p>使用 space 鍵控制</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">turtle</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">tim</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">Turtle</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">screen</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">Screen</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">move_forwards</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl"> <span class="n">tim</span><span class="o">.</span><span class="n">forward</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">screen</span><span class="o">.</span><span class="n">listen</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">screen</span><span class="o">.</span><span class="n">onkey</span><span class="p">(</span><span class="n">move_forwards</span><span class="p">,</span> <span class="s2">&#34;space&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">screen</span><span class="o">.</span><span class="n">exitonclick</span><span class="p">()</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="turtle-coordinate-system">Turtle Coordinate system</h2>
+<ul>
+<li>
+<p>原點(0,0)在螢幕中心</p>
+</li>
+<li>
+<p>x軸: 左負右正</p>
+</li>
+<li>
+<p>y軸: 下負上正</p>
+</li>
+</ul>
+<h1 id="hw">HW</h1>
+<h2 id="turtle-race">Turtle race</h2>
+<p>烏龜賽跑比賽</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">turtle</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">random</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">turtle_race</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">turtle</span> <span class="ow">in</span> <span class="n">turtle_list</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="n">turtle</span><span class="o">.</span><span class="n">xcor</span><span class="p">()</span> <span class="o">&gt;</span> <span class="mi">200</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">winning_color</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">pencolor</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="n">winning_color</span> <span class="o">==</span> <span class="n">user_bet</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;You win!&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;You lose winning color is </span><span class="si">{</span><span class="n">winning_color</span><span class="si">}</span><span class="s2">.&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="kc">False</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="n">random_move</span> <span class="o">=</span> <span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">turtle</span><span class="o">.</span><span class="n">fd</span><span class="p">(</span><span class="n">random_move</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="kc">True</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">colors</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&#34;red&#34;</span><span class="p">,</span> <span class="s2">&#34;orange&#34;</span><span class="p">,</span> <span class="s2">&#34;yellow&#34;</span><span class="p">,</span> <span class="s2">&#34;green&#34;</span><span class="p">,</span> <span class="s2">&#34;blue&#34;</span><span class="p">,</span> <span class="s2">&#34;purple&#34;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="n">distance</span> <span class="o">=</span> <span class="mi">300</span><span class="o">/</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">colors</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">turtle_list</span> <span class="o">=</span> <span class="p">[]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">screen</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">Screen</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">screen</span><span class="o">.</span><span class="n">setup</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="mi">500</span><span class="p">,</span> <span class="n">height</span><span class="o">=</span><span class="mi">400</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">screen</span><span class="o">.</span><span class="n">bgcolor</span><span class="p">(</span><span class="s2">&#34;black&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">user_bet</span> <span class="o">=</span> <span class="n">screen</span><span class="o">.</span><span class="n">textinput</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s2">&#34;Make your bet&#34;</span><span class="p">,</span> <span class="n">prompt</span><span class="o">=</span><span class="s2">&#34;Which turtle willl win the race? Enter a color: &#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">colors</span><span class="p">)):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">new_turtle</span> <span class="o">=</span> <span class="n">turtle</span><span class="o">.</span><span class="n">Turtle</span><span class="p">(</span><span class="s2">&#34;turtle&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">new_turtle</span><span class="o">.</span><span class="n">penup</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="n">new_turtle</span><span class="o">.</span><span class="n">color</span><span class="p">(</span><span class="n">colors</span><span class="p">[</span><span class="n">i</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">    <span class="n">new_turtle</span><span class="o">.</span><span class="n">goto</span><span class="p">(</span><span class="o">-</span><span class="mi">230</span><span class="p">,</span> <span class="o">-</span><span class="mi">150</span> <span class="o">+</span> <span class="n">i</span> <span class="o">*</span> <span class="n">distance</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">turtle_list</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">new_turtle</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">race_is_on</span> <span class="o">=</span> <span class="kc">False</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="n">user_bet</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">race_is_on</span> <span class="o">=</span> <span class="kc">True</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">while</span> <span class="n">race_is_on</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">race_is_on</span> <span class="o">=</span> <span class="n">turtle_race</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">screen</span><span class="o">.</span><span class="n">exitonclick</span><span class="p">()</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">PawPaw</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">
+        2024-10-13
+        
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/pawpaw_coding.github.io/tags/python/">python</a>
+          <a href="/pawpaw_coding.github.io/tags/100-days/">100-days</a>
+          </div>
+      <nav class="post-nav">
+        
+        <a class="next" href="/pawpaw_coding.github.io/post/python/python-100days/day18/">
+            <span class="next-text nav-default">[Python] Python-100days - Day18</span>
+            <span class="next-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="https://github.com/PawXQ/pawpaw.github.io" class="iconfont icon-github" title="github"></a>
+  <a href="https://pawxq.github.io/pawpaw_coding.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2024<span class="heart"><i class="iconfont icon-heart"></i></span><span>PawPaw</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/pawpaw_coding.github.io/js/main.min.4ae89da218555efa0e7093a20b92017d2e1202b66fff9fc2edf4cb8d44b44c6e.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>
