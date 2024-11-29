@@ -2,56 +2,70 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://pawxq.github.io/pawpaw_coding.github.io/post/python/python-100days/day27/</loc>
-    <lastmod>2024-11-04T16:12:31+00:00</lastmod>
+    <loc>https://pawxq.github.io/pawpaw_coding.github.io/post/python/python-100days/day29/</loc>
+    <lastmod>2024-11-29T12:59:09+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://pawxq.github.io/pawpaw_coding.github.io/tags/100-days/</loc>
-    <lastmod>2024-11-04T16:12:31+00:00</lastmod>
+    <lastmod>2024-11-29T12:59:09+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://pawxq.github.io/pawpaw_coding.github.io/categories/</loc>
-    <lastmod>2024-11-04T16:12:31+00:00</lastmod>
+    <lastmod>2024-11-29T12:59:09+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://pawxq.github.io/pawpaw_coding.github.io/</loc>
-    <lastmod>2024-11-04T16:12:31+00:00</lastmod>
+    <lastmod>2024-11-29T12:59:09+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://pawxq.github.io/pawpaw_coding.github.io/post/</loc>
-    <lastmod>2024-11-04T16:12:31+00:00</lastmod>
+    <lastmod>2024-11-29T12:59:09+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://pawxq.github.io/pawpaw_coding.github.io/tags/python/</loc>
-    <lastmod>2024-11-04T16:12:31+00:00</lastmod>
+    <lastmod>2024-11-29T12:59:09+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://pawxq.github.io/pawpaw_coding.github.io/categories/python/</loc>
-    <lastmod>2024-11-04T16:12:31+00:00</lastmod>
+    <lastmod>2024-11-29T12:59:09+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://pawxq.github.io/pawpaw_coding.github.io/tags/</loc>
+    <lastmod>2024-11-29T12:59:09+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://pawxq.github.io/pawpaw_coding.github.io/post/python/python-100days/day28/</loc>
+    <lastmod>2024-11-29T12:58:45+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://pawxq.github.io/pawpaw_coding.github.io/post/python/python-100days/day27/</loc>
     <lastmod>2024-11-04T16:12:31+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
