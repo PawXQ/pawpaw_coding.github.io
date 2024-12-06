@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>[Python] Python-100days - Day29 - Even - A super concise theme for Hugo</title>
+  <title>[Python] Python-100days - Day30 - Even - A super concise theme for Hugo</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -26,7 +26,7 @@
 <meta name="generator" content="Hugo 0.108.0 with theme even" />
 
 
-<link rel="canonical" href="https://pawxq.github.io/pawpaw_coding.github.io/post/python/python-100days/day29/" />
+<link rel="canonical" href="https://pawxq.github.io/pawpaw_coding.github.io/post/python/python-100days/day30/" />
 <link rel="apple-touch-icon" sizes="180x180" href="/pawpaw_coding.github.io/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/pawpaw_coding.github.io/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/pawpaw_coding.github.io/favicon-16x16.png">
@@ -40,18 +40,18 @@
 <link rel="stylesheet" href="/css/style.css">
 
 
-<meta property="og:title" content="[Python] Python-100days - Day29" />
+<meta property="og:title" content="[Python] Python-100days - Day30" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://pawxq.github.io/pawpaw_coding.github.io/post/python/python-100days/day29/" /><meta property="article:section" content="post" />
-<meta property="article:published_time" content="2024-11-29T12:59:09+00:00" />
-<meta property="article:modified_time" content="2024-11-29T12:59:09+00:00" />
-<meta itemprop="name" content="[Python] Python-100days - Day29">
-<meta itemprop="description" content=""><meta itemprop="datePublished" content="2024-11-29T12:59:09+00:00" />
-<meta itemprop="dateModified" content="2024-11-29T12:59:09+00:00" />
-<meta itemprop="wordCount" content="1052">
+<meta property="og:url" content="https://pawxq.github.io/pawpaw_coding.github.io/post/python/python-100days/day30/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2024-12-06T13:47:06+00:00" />
+<meta property="article:modified_time" content="2024-12-06T13:47:06+00:00" />
+<meta itemprop="name" content="[Python] Python-100days - Day30">
+<meta itemprop="description" content=""><meta itemprop="datePublished" content="2024-12-06T13:47:06+00:00" />
+<meta itemprop="dateModified" content="2024-12-06T13:47:06+00:00" />
+<meta itemprop="wordCount" content="1247">
 <meta itemprop="keywords" content="python,100-days," /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="[Python] Python-100days - Day29"/>
+<meta name="twitter:title" content="[Python] Python-100days - Day30"/>
 <meta name="twitter:description" content=""/>
 
 <!--[if lte IE 9]>
@@ -125,10 +125,10 @@
           <article class="post">
     
     <header class="post-header">
-      <h1 class="post-title">[Python] Python-100days - Day29</h1>
+      <h1 class="post-title">[Python] Python-100days - Day30</h1>
 
       <div class="post-meta">
-        <span class="post-time"> 2024-11-29 </span>
+        <span class="post-time"> 2024-12-06 </span>
         <div class="post-category">
             <a href="/pawpaw_coding.github.io/categories/python/"> python </a>
             </div>
@@ -142,36 +142,22 @@
     <nav id="TableOfContents">
   <ul>
     <li><a href="#ref">REF</a></li>
-    <li><a href="#grid">Grid</a></li>
-    <li><a href="#entry-widget">Entry Widget</a>
+    <li><a href="#catching-exception">Catching Exception</a>
       <ul>
-        <li><a href="#keyword-pattern">Keyword Pattern</a></li>
-        <li><a href="#method-keywords">Method Keywords</a></li>
-        <li><a href="#entry-widget-core-feature">Entry Widget core feature</a></li>
+        <li><a href="#constructure">constructure</a></li>
+        <li><a href="#custom-exception">Custom exception</a></li>
       </ul>
     </li>
-    <li><a href="#tkinter-messagebox">Tkinter MessageBox</a>
+    <li><a href="#json-data-process">Json data process</a>
       <ul>
-        <li><a href="#keyword-pattern-1">Keyword Pattern</a></li>
-        <li><a href="#method-keywords-1">Method Keywords</a></li>
-        <li><a href="#基本實作">基本實作</a></li>
-        <li><a href="#核心功能">核心功能</a></li>
-        <li><a href="#對話框類型">對話框類型</a></li>
+        <li><a href="#jsondump">json.dump()</a></li>
+        <li><a href="#jsonload">json.load()</a></li>
+        <li><a href="#jsonupdate">json.update()</a></li>
       </ul>
     </li>
-    <li><a href="#join-method">Join method</a>
-      <ul>
-        <li><a href="#常見用法">常見用法</a></li>
-      </ul>
-    </li>
-    <li><a href="#pyperclip-module">Pyperclip module</a></li>
     <li><a href="#hw">HW</a>
       <ul>
-        <li><a href="#password-manager-gui">Password Manager Gui</a>
-          <ul>
-            <li><a href="#mainpy">main.py</a></li>
-          </ul>
-        </li>
+        <li><a href="#mainpy">main.py</a></li>
       </ul>
     </li>
   </ul>
@@ -181,123 +167,11 @@
     <div class="post-content">
       <h1 id="ref">REF</h1>
 <p>紀錄學習 <a href="https://www.udemy.com/course/100-days-of-code/?couponCode=KEEPLEARNING">Udemy-Python-100days of code</a></p>
-<p>Day 29 - Intermediate - Building a Password Manager Gui App with Tkinter</p>
-<h1 id="grid">Grid</h1>
-<p>每個 component 都可以通過指定 row 和 column 參數放置在網格中特定位置, 當需要讓元件橫跨多 column 時, 不是調整寬度(width) 而是使用 <code>columnspan</code> parameter</p>
-<p>syntax:</p>
-<p><code>widget.grid(row=x, column=y, columnspan=z)</code></p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># 基本 grid 定位</span>
-</span></span><span class="line"><span class="cl"><span class="n">label_red</span> <span class="o">=</span> <span class="n">Label</span><span class="p">(</span><span class="n">background</span><span class="o">=</span><span class="s2">&#34;red&#34;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">label_red</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">row</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">column</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">label_green</span> <span class="o">=</span> <span class="n">Label</span><span class="p">(</span><span class="n">background</span><span class="o">=</span><span class="s2">&#34;green&#34;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">label_green</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">row</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">column</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># 使用 columnspan </span>
-</span></span><span class="line"><span class="cl"><span class="n">label_blue</span> <span class="o">=</span> <span class="n">Label</span><span class="p">(</span><span class="n">background</span><span class="o">=</span><span class="s2">&#34;blue&#34;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">label_blue</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">row</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">column</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">columnspan</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>  <span class="c1"># 跨越兩列</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h1 id="entry-widget">Entry Widget</h1>
-<h2 id="keyword-pattern">Keyword Pattern</h2>
-<ul>
-<li>Focus control: <code>focus()</code></li>
-<li>Text manipulation: <code>insert()</code>, <code>delete()</code></li>
-<li>Index types: <code>0</code>, <code>'end'</code></li>
-<li>Constants: <code>tkinter.END</code></li>
-</ul>
-<p>索引位置</p>
-<ul>
-<li>0: 開始位置</li>
-<li>&rsquo;end&rsquo;: 結束位置</li>
-<li>END: tkinter 常數</li>
-</ul>
-<p><code>END</code> 和 <code>end</code> 基本上一樣, 愛用哪個就用哪個</p>
-<h2 id="method-keywords">Method Keywords</h2>
-<ol>
-<li>
-<p>游標控制</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">entry</span><span class="o">.</span><span class="n">focus</span><span class="p">()</span>  <span class="c1"># 設置游標位置</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div></li>
-<li>
-<p>文字操作</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">entry</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="s2">&#34;default text&#34;</span><span class="p">)</span>  <span class="c1"># 插入文字於開頭</span>
-</span></span><span class="line"><span class="cl"><span class="n">entry</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="n">END</span><span class="p">,</span> <span class="s2">&#34;text&#34;</span><span class="p">)</span>    <span class="c1"># 插入文字於結尾</span>
-</span></span><span class="line"><span class="cl"><span class="n">entry</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;end&#39;</span><span class="p">)</span>      <span class="c1"># 清除全部內容</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div></li>
-</ol>
-<h2 id="entry-widget-core-feature">Entry Widget core feature</h2>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span></code></pre></td>
-<td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># 自動聚焦與預設值設定</span>
-</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">initialize_form</span><span class="p">():</span>
-</span></span><span class="line"><span class="cl">    <span class="n">website_entry</span> <span class="o">=</span> <span class="n">Entry</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl">    <span class="n">website_entry</span><span class="o">.</span><span class="n">focus</span><span class="p">()</span>  <span class="c1"># 程式啟動時自動聚焦</span>
-</span></span><span class="line"><span class="cl">    
-</span></span><span class="line"><span class="cl">    <span class="n">email_entry</span> <span class="o">=</span> <span class="n">Entry</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl">    <span class="n">email_entry</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="s2">&#34;default@email.com&#34;</span><span class="p">)</span>  <span class="c1"># 預設值</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># 清除輸入內容</span>
-</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">clear_entries</span><span class="p">():</span>
-</span></span><span class="line"><span class="cl">    <span class="n">website_entry</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;end&#39;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="n">password_entry</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;end&#39;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="c1"># email_entry 保留不清除</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h1 id="tkinter-messagebox">Tkinter MessageBox</h1>
-<p>Tkinter 的對話框</p>
-<h2 id="keyword-pattern-1">Keyword Pattern</h2>
-<ul>
-<li>Dialog types: <code>showinfo</code>, <code>showwarning</code>, <code>showerror</code></li>
-<li>Dialog buttons: <code>askokcancel</code>, <code>askretrycancel</code>, <code>askyesno</code></li>
-</ul>
-<h2 id="method-keywords-1">Method Keywords</h2>
-<p>MessageBox Methods</p>
+<p>Day 30 - Intermediate - Errors, Exceptions and JSON Data: Improving the Password</p>
+<h1 id="catching-exception">Catching Exception</h1>
+<p>當異常或錯誤出現時, 可以使用以下 <code>try</code>, <code>except</code>, <code>else</code>, <code>finally</code> 搭配來處理</p>
+<p>但是避免使用空的 <code>except</code> (bare except) 因為這樣所有的 error 都會被處理</p>
+<p>指定具體的異常類型而非捕獲所有異常, 避免有沒考慮到的狀況也被處理</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -305,16 +179,20 @@
 </span><span class="lnt">3
 </span><span class="lnt">4
 </span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">messagebox</span><span class="o">.</span><span class="n">showinfo</span><span class="p">(</span><span class="n">title</span><span class="p">,</span> <span class="n">message</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">messagebox</span><span class="o">.</span><span class="n">showwarning</span><span class="p">(</span><span class="n">title</span><span class="p">,</span> <span class="n">message</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">messagebox</span><span class="o">.</span><span class="n">showerror</span><span class="p">(</span><span class="n">title</span><span class="p">,</span> <span class="n">message</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">messagebox</span><span class="o">.</span><span class="n">askokcancel</span><span class="p">(</span><span class="n">title</span><span class="p">,</span> <span class="n">message</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl"><span class="n">messagebox</span><span class="o">.</span><span class="n">askyesno</span><span class="p">(</span><span class="n">title</span><span class="p">,</span> <span class="n">message</span><span class="p">)</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">try</span><span class="p">:</span> <span class="c1"># Something that might cause an exception</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">except</span><span class="p">:</span> <span class="c1"># Do this if there was an exception</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">else</span><span class="p">:</span> <span class="c1"># Do this if there were no exceptions</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">finally</span><span class="p">:</span> <span class="c1"># Do this no matter what happens</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="基本實作">基本實作</h2>
+</div><h2 id="constructure">constructure</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt"> 1
@@ -334,80 +212,119 @@
 </span><span class="lnt">15
 </span><span class="lnt">16
 </span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
-</span><span class="lnt">20
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">tkinter</span> <span class="kn">import</span> <span class="n">messagebox</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">save</span><span class="p">():</span>
-</span></span><span class="line"><span class="cl">    <span class="c1"># 資料驗證</span>
-</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">website</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">or</span> <span class="nb">len</span><span class="p">(</span><span class="n">password</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">        <span class="n">messagebox</span><span class="o">.</span><span class="n">showinfo</span><span class="p">(</span>
-</span></span><span class="line"><span class="cl">            <span class="n">title</span><span class="o">=</span><span class="s2">&#34;Oops&#34;</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="n">message</span><span class="o">=</span><span class="s2">&#34;Please make sure you haven&#39;t left any fields empty!&#34;</span>
-</span></span><span class="line"><span class="cl">        <span class="p">)</span>
-</span></span><span class="line"><span class="cl">    <span class="k">else</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">        <span class="c1"># 確認儲存</span>
-</span></span><span class="line"><span class="cl">        <span class="n">is_ok</span> <span class="o">=</span> <span class="n">messagebox</span><span class="o">.</span><span class="n">askokcancel</span><span class="p">(</span>
-</span></span><span class="line"><span class="cl">            <span class="n">title</span><span class="o">=</span><span class="n">website</span><span class="p">,</span>
-</span></span><span class="line"><span class="cl">            <span class="n">message</span><span class="o">=</span><span class="sa">f</span><span class="s2">&#34;These are the details entered:</span><span class="se">\n</span><span class="s2">&#34;</span>
-</span></span><span class="line"><span class="cl">                    <span class="sa">f</span><span class="s2">&#34;Email: </span><span class="si">{</span><span class="n">email</span><span class="si">}</span><span class="se">\n</span><span class="s2">&#34;</span>
-</span></span><span class="line"><span class="cl">                    <span class="sa">f</span><span class="s2">&#34;Password: </span><span class="si">{</span><span class="n">password</span><span class="si">}</span><span class="se">\n</span><span class="s2">&#34;</span>
-</span></span><span class="line"><span class="cl">                    <span class="sa">f</span><span class="s2">&#34;Is it ok to save?&#34;</span>
-</span></span><span class="line"><span class="cl">        <span class="p">)</span>
-</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="n">is_ok</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">            <span class="c1"># 執行儲存程序</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">try</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># 可能產生異常的代碼</span>
+</span></span><span class="line"><span class="cl">    <span class="n">file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&#34;data.txt&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">dict_value</span> <span class="o">=</span> <span class="n">my_dict</span><span class="p">[</span><span class="s2">&#34;key&#34;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl"><span class="k">except</span> <span class="ne">FileNotFoundError</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># 處理文件不存在的情況</span>
+</span></span><span class="line"><span class="cl">    <span class="n">file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&#34;data.txt&#34;</span><span class="p">,</span> <span class="s2">&#34;w&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">except</span> <span class="ne">KeyError</span> <span class="k">as</span> <span class="n">error_message</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># 處理 key error 並獲取錯誤信息</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;The key </span><span class="si">{</span><span class="n">error_message</span><span class="si">}</span><span class="s2"> does not exit.&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># 當 try 區塊成功執行時運行</span>
+</span></span><span class="line"><span class="cl">    <span class="n">content</span> <span class="o">=</span> <span class="n">file</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">content</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">finally</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># 總是執行的清理代碼</span>
+</span></span><span class="line"><span class="cl">    <span class="n">file</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="核心功能">核心功能</h2>
-<ol>
-<li>
-<p>表單驗證</p>
-<ul>
-<li>空欄位檢查</li>
-<li>格式驗證</li>
-</ul>
-</li>
-<li>
-<p>使用者確認</p>
-<ul>
-<li>資料確認對話框</li>
-<li>錯誤提示對話框</li>
-</ul>
-</li>
-<li>
-<p>回傳值處理</p>
-<ul>
-<li>OK/Cancel: Boolean</li>
-<li>Yes/No: Boolean</li>
-</ul>
-</li>
-</ol>
-<h2 id="對話框類型">對話框類型</h2>
-<ul>
-<li>信息: <code>showinfo</code></li>
-<li>警告: <code>showwarning</code></li>
-<li>錯誤: <code>showerror</code></li>
-<li>確認: <code>askokcancel</code></li>
-<li>詢問: <code>askyesno</code></li>
-</ul>
-<h1 id="join-method">Join method</h1>
-<ul>
-<li>字串方法用於合併可 itrial object</li>
-<li>比 for 循環更有效率的字串連接方式</li>
-</ul>
-<p>Suntax:</p>
+</div><h2 id="custom-exception">Custom exception</h2>
+<p>可以透過 <code>raise</code> 自定義 error</p>
+<p><code>raise</code> syntax</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">separator</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">iterable</span><span class="p">)</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">raise</span> <span class="n">ExceptionType</span><span class="p">(</span><span class="s2">&#34;錯誤訊息&#34;</span><span class="p">)</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h2 id="常見用法">常見用法</h2>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">calculate_bmi</span><span class="p">(</span><span class="n">height</span><span class="p">,</span> <span class="n">weight</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># 檢查身高是否合理</span>
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">height</span> <span class="o">&gt;</span> <span class="mi">3</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&#34;Human height should not be over 3 meters&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">    <span class="c1"># 計算 BMI</span>
+</span></span><span class="line"><span class="cl">    <span class="n">bmi</span> <span class="o">=</span> <span class="n">weight</span> <span class="o">/</span> <span class="p">(</span><span class="n">height</span> <span class="o">**</span> <span class="mi">2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">bmi</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># use case</span>
+</span></span><span class="line"><span class="cl"><span class="k">try</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">height</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&#34;Enter height in meters: &#34;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">    <span class="n">weight</span> <span class="o">=</span> <span class="nb">int</span><span class="p">(</span><span class="nb">input</span><span class="p">(</span><span class="s2">&#34;Enter weight in kg: &#34;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">    <span class="n">bmi</span> <span class="o">=</span> <span class="n">calculate_bmi</span><span class="p">(</span><span class="n">height</span><span class="p">,</span> <span class="n">weight</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;BMI: </span><span class="si">{</span><span class="n">bmi</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="k">except</span> <span class="ne">ValueError</span> <span class="k">as</span> <span class="n">error</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;Error: </span><span class="si">{</span><span class="n">error</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h1 id="json-data-process">Json data process</h1>
+<h2 id="jsondump">json.dump()</h2>
+<p><code>json.dump()</code> 的作用是把 Python 的資料存進檔案</p>
+<p>basic syntax:</p>
+<p><code>json.dump(data, data_file, indent=None, sort_keys=False)</code></p>
+<ul>
+<li><code>data</code>(資料): 要序列化的 Python 物件</li>
+<li><code>data_file</code>(檔案物件): 檔案物件</li>
+<li><code>indent</code>: 縮排格式</li>
+<li><code>sort_keys</code>: 是否排序 key value</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">json</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">new_data</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;website&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;email&#34;</span><span class="p">:</span> <span class="n">email_value</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;password&#34;</span><span class="p">:</span> <span class="n">password_value</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&#34;data.json&#34;</span><span class="p">,</span> <span class="s2">&#34;w&#34;</span><span class="p">)</span> <span class="k">as</span> <span class="n">data_file</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">json</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">new_data</span><span class="p">,</span> <span class="n">data_file</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="jsonload">json.load()</h2>
+<p><code>json.load()</code> 的功能是從檔案裡讀取 JSON 資料, 並轉回 Python 的資料型態(通常是<code>dict</code>)</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">1
@@ -416,48 +333,49 @@
 </span><span class="lnt">4
 </span><span class="lnt">5
 </span><span class="lnt">6
-</span><span class="lnt">7
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># 基本用法</span>
-</span></span><span class="line"><span class="cl"><span class="n">names</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&#34;John&#34;</span><span class="p">,</span> <span class="s2">&#34;Peter&#34;</span><span class="p">,</span> <span class="s2">&#34;Vicky&#34;</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl"><span class="n">result</span> <span class="o">=</span> <span class="s2">&#34;#&#34;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">names</span><span class="p">)</span>  <span class="c1"># &#34;John#Peter#Vicky&#34;</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># syntaxx</span>
+</span></span><span class="line"><span class="cl"><span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">檔案物件</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># 空字串連接</span>
-</span></span><span class="line"><span class="cl"><span class="n">password_list</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&#34;A&#34;</span><span class="p">,</span> <span class="s2">&#34;1&#34;</span><span class="p">,</span> <span class="s2">&#34;@&#34;</span><span class="p">,</span> <span class="s2">&#34;b&#34;</span><span class="p">]</span>
-</span></span><span class="line"><span class="cl"><span class="n">password</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">password_list</span><span class="p">)</span>  <span class="c1"># &#34;A1@b&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 從檔案中讀取資料</span>
+</span></span><span class="line"><span class="cl"><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&#34;data.json&#34;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">data</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">f</span><span class="p">)</span>  <span class="c1"># 這裡的 data 會是一個字典</span>
 </span></span></code></pre></td></tr></table>
 </div>
-</div><h1 id="pyperclip-module">Pyperclip module</h1>
-<ul>
-<li>跨平台剪貼板操作模組</li>
-<li>提供簡單的複製貼上功能</li>
-</ul>
+</div><h2 id="jsonupdate">json.update()</h2>
+<p><code>json.update()</code> 是用來更新 json data, 因為存放 json data 的 file 無法像一般檔案直接用 file mode=<code>&quot;a&quot;</code> 寫入</p>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
-<pre tabindex="0" class="chroma"><code><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
 </span></code></pre></td>
 <td class="lntd">
-<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">pyperclip</span>
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># 1. 讀取現有資料</span>
+</span></span><span class="line"><span class="cl"><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&#34;data.json&#34;</span><span class="p">,</span> <span class="s2">&#34;r&#34;</span><span class="p">)</span> <span class="k">as</span> <span class="n">data_file</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">data</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">data_file</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl"><span class="c1"># 2. 更新資料</span>
+</span></span><span class="line"><span class="cl"><span class="n">data</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">new_data</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># 複製到剪貼板</span>
-</span></span><span class="line"><span class="cl"><span class="n">pyperclip</span><span class="o">.</span><span class="n">copy</span><span class="p">(</span><span class="s2">&#34;text&#34;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="c1"># 從剪貼板貼上</span>
-</span></span><span class="line"><span class="cl"><span class="n">text</span> <span class="o">=</span> <span class="n">pyperclip</span><span class="o">.</span><span class="n">paste</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 3. 寫回檔案</span>
+</span></span><span class="line"><span class="cl"><span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&#34;data.json&#34;</span><span class="p">,</span> <span class="s2">&#34;w&#34;</span><span class="p">)</span> <span class="k">as</span> <span class="n">data_file</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">json</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">data_file</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h1 id="hw">HW</h1>
-<h2 id="password-manager-gui">Password Manager Gui</h2>
-<p>建立一個密碼產生和儲存的 Gui</p>
-<p><del>請忽略 angela email</del></p>
-<h3 id="mainpy">main.py</h3>
+<p>這次是在昨天的密碼產生器上加上尋找特定 &ldquo;website&rdquo; 的 &ldquo;email&rdquo;, &ldquo;password&rdquo;</p>
+<p>另外需要將寫入紀錄密碼檔案的格式換成 json</p>
+<p>搭配使用 <code>try</code>, <code>except</code>, <code>else</code>, <code>finally</code> 來處理最一開始沒有密碼檔案時可能會產生的錯誤</p>
+<h2 id="mainpy">main.py</h2>
 <div class="highlight"><div class="chroma">
 <table class="lntable"><tr><td class="lntd">
 <pre tabindex="0" class="chroma"><code><span class="lnt">  1
@@ -560,15 +478,61 @@
 </span><span class="lnt"> 98
 </span><span class="lnt"> 99
 </span><span class="lnt">100
+</span><span class="lnt">101
+</span><span class="lnt">102
+</span><span class="lnt">103
+</span><span class="lnt">104
+</span><span class="lnt">105
+</span><span class="lnt">106
+</span><span class="lnt">107
+</span><span class="lnt">108
+</span><span class="lnt">109
+</span><span class="lnt">110
+</span><span class="lnt">111
+</span><span class="lnt">112
+</span><span class="lnt">113
+</span><span class="lnt">114
+</span><span class="lnt">115
+</span><span class="lnt">116
+</span><span class="lnt">117
+</span><span class="lnt">118
+</span><span class="lnt">119
+</span><span class="lnt">120
+</span><span class="lnt">121
+</span><span class="lnt">122
+</span><span class="lnt">123
+</span><span class="lnt">124
+</span><span class="lnt">125
+</span><span class="lnt">126
+</span><span class="lnt">127
+</span><span class="lnt">128
+</span><span class="lnt">129
+</span><span class="lnt">130
+</span><span class="lnt">131
+</span><span class="lnt">132
+</span><span class="lnt">133
+</span><span class="lnt">134
+</span><span class="lnt">135
+</span><span class="lnt">136
+</span><span class="lnt">137
+</span><span class="lnt">138
+</span><span class="lnt">139
+</span><span class="lnt">140
+</span><span class="lnt">141
 </span></code></pre></td>
 <td class="lntd">
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">tkinter</span>
 </span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">tkinter.messagebox</span>
 </span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">random</span>
 </span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">pyperclip</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">json</span>
+</span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1"># ---------------------------- PASSWORD GENERATOR ------------------------------- #</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">generate_password</span><span class="p">():</span>
-</span></span><span class="line"><span class="cl">    <span class="n">letters</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">,</span> <span class="s1">&#39;d&#39;</span><span class="p">,</span> <span class="s1">&#39;e&#39;</span><span class="p">,</span> <span class="s1">&#39;f&#39;</span><span class="p">,</span> <span class="s1">&#39;g&#39;</span><span class="p">,</span> <span class="s1">&#39;h&#39;</span><span class="p">,</span> <span class="s1">&#39;i&#39;</span><span class="p">,</span> <span class="s1">&#39;j&#39;</span><span class="p">,</span> <span class="s1">&#39;k&#39;</span><span class="p">,</span> <span class="s1">&#39;l&#39;</span><span class="p">,</span> <span class="s1">&#39;m&#39;</span><span class="p">,</span> <span class="s1">&#39;n&#39;</span><span class="p">,</span> <span class="s1">&#39;o&#39;</span><span class="p">,</span> <span class="s1">&#39;p&#39;</span><span class="p">,</span> <span class="s1">&#39;q&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="s1">&#39;s&#39;</span><span class="p">,</span> <span class="s1">&#39;t&#39;</span><span class="p">,</span> <span class="s1">&#39;u&#39;</span><span class="p">,</span> <span class="s1">&#39;v&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">,</span> <span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="s1">&#39;y&#39;</span><span class="p">,</span> <span class="s1">&#39;z&#39;</span><span class="p">,</span> <span class="s1">&#39;A&#39;</span><span class="p">,</span> <span class="s1">&#39;B&#39;</span><span class="p">,</span> <span class="s1">&#39;C&#39;</span><span class="p">,</span> <span class="s1">&#39;D&#39;</span><span class="p">,</span> <span class="s1">&#39;E&#39;</span><span class="p">,</span> <span class="s1">&#39;F&#39;</span><span class="p">,</span> <span class="s1">&#39;G&#39;</span><span class="p">,</span> <span class="s1">&#39;H&#39;</span><span class="p">,</span> <span class="s1">&#39;I&#39;</span><span class="p">,</span> <span class="s1">&#39;J&#39;</span><span class="p">,</span> <span class="s1">&#39;K&#39;</span><span class="p">,</span> <span class="s1">&#39;L&#39;</span><span class="p">,</span> <span class="s1">&#39;M&#39;</span><span class="p">,</span> <span class="s1">&#39;N&#39;</span><span class="p">,</span> <span class="s1">&#39;O&#39;</span><span class="p">,</span> <span class="s1">&#39;P&#39;</span><span class="p">,</span> <span class="s1">&#39;Q&#39;</span><span class="p">,</span> <span class="s1">&#39;R&#39;</span><span class="p">,</span> <span class="s1">&#39;S&#39;</span><span class="p">,</span> <span class="s1">&#39;T&#39;</span><span class="p">,</span> <span class="s1">&#39;U&#39;</span><span class="p">,</span> <span class="s1">&#39;V&#39;</span><span class="p">,</span> <span class="s1">&#39;W&#39;</span><span class="p">,</span> <span class="s1">&#39;X&#39;</span><span class="p">,</span> <span class="s1">&#39;Y&#39;</span><span class="p">,</span> <span class="s1">&#39;Z&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="n">letters</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;a&#39;</span><span class="p">,</span> <span class="s1">&#39;b&#39;</span><span class="p">,</span> <span class="s1">&#39;c&#39;</span><span class="p">,</span> <span class="s1">&#39;d&#39;</span><span class="p">,</span> <span class="s1">&#39;e&#39;</span><span class="p">,</span> <span class="s1">&#39;f&#39;</span><span class="p">,</span> <span class="s1">&#39;g&#39;</span><span class="p">,</span> <span class="s1">&#39;h&#39;</span><span class="p">,</span> <span class="s1">&#39;i&#39;</span><span class="p">,</span> <span class="s1">&#39;j&#39;</span><span class="p">,</span> <span class="s1">&#39;k&#39;</span><span class="p">,</span> <span class="s1">&#39;l&#39;</span><span class="p">,</span> <span class="s1">&#39;m&#39;</span><span class="p">,</span> <span class="s1">&#39;n&#39;</span><span class="p">,</span> <span class="s1">&#39;o&#39;</span><span class="p">,</span> <span class="s1">&#39;p&#39;</span><span class="p">,</span> <span class="s1">&#39;q&#39;</span><span class="p">,</span> <span class="s1">&#39;r&#39;</span><span class="p">,</span> <span class="s1">&#39;s&#39;</span><span class="p">,</span> <span class="s1">&#39;t&#39;</span><span class="p">,</span> <span class="s1">&#39;u&#39;</span><span class="p">,</span> <span class="s1">&#39;v&#39;</span><span class="p">,</span> <span class="s1">&#39;w&#39;</span><span class="p">,</span> <span class="s1">&#39;x&#39;</span><span class="p">,</span> <span class="s1">&#39;y&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">               <span class="s1">&#39;z&#39;</span><span class="p">,</span> <span class="s1">&#39;A&#39;</span><span class="p">,</span> <span class="s1">&#39;B&#39;</span><span class="p">,</span> <span class="s1">&#39;C&#39;</span><span class="p">,</span> <span class="s1">&#39;D&#39;</span><span class="p">,</span> <span class="s1">&#39;E&#39;</span><span class="p">,</span> <span class="s1">&#39;F&#39;</span><span class="p">,</span> <span class="s1">&#39;G&#39;</span><span class="p">,</span> <span class="s1">&#39;H&#39;</span><span class="p">,</span> <span class="s1">&#39;I&#39;</span><span class="p">,</span> <span class="s1">&#39;J&#39;</span><span class="p">,</span> <span class="s1">&#39;K&#39;</span><span class="p">,</span> <span class="s1">&#39;L&#39;</span><span class="p">,</span> <span class="s1">&#39;M&#39;</span><span class="p">,</span> <span class="s1">&#39;N&#39;</span><span class="p">,</span> <span class="s1">&#39;O&#39;</span><span class="p">,</span> <span class="s1">&#39;P&#39;</span><span class="p">,</span> <span class="s1">&#39;Q&#39;</span><span class="p">,</span> <span class="s1">&#39;R&#39;</span><span class="p">,</span> <span class="s1">&#39;S&#39;</span><span class="p">,</span> <span class="s1">&#39;T&#39;</span><span class="p">,</span> <span class="s1">&#39;U&#39;</span><span class="p">,</span> <span class="s1">&#39;V&#39;</span><span class="p">,</span> <span class="s1">&#39;W&#39;</span><span class="p">,</span> <span class="s1">&#39;X&#39;</span><span class="p">,</span> <span class="s1">&#39;Y&#39;</span><span class="p">,</span> <span class="s1">&#39;Z&#39;</span><span class="p">]</span>
 </span></span><span class="line"><span class="cl">    <span class="n">numbers</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;0&#39;</span><span class="p">,</span> <span class="s1">&#39;1&#39;</span><span class="p">,</span> <span class="s1">&#39;2&#39;</span><span class="p">,</span> <span class="s1">&#39;3&#39;</span><span class="p">,</span> <span class="s1">&#39;4&#39;</span><span class="p">,</span> <span class="s1">&#39;5&#39;</span><span class="p">,</span> <span class="s1">&#39;6&#39;</span><span class="p">,</span> <span class="s1">&#39;7&#39;</span><span class="p">,</span> <span class="s1">&#39;8&#39;</span><span class="p">,</span> <span class="s1">&#39;9&#39;</span><span class="p">]</span>
 </span></span><span class="line"><span class="cl">    <span class="n">symbols</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;!&#39;</span><span class="p">,</span> <span class="s1">&#39;#&#39;</span><span class="p">,</span> <span class="s1">&#39;$&#39;</span><span class="p">,</span> <span class="s1">&#39;%&#39;</span><span class="p">,</span> <span class="s1">&#39;&amp;&#39;</span><span class="p">,</span> <span class="s1">&#39;(&#39;</span><span class="p">,</span> <span class="s1">&#39;)&#39;</span><span class="p">,</span> <span class="s1">&#39;*&#39;</span><span class="p">,</span> <span class="s1">&#39;+&#39;</span><span class="p">]</span>
 </span></span><span class="line"><span class="cl">
@@ -581,7 +545,7 @@
 </span></span><span class="line"><span class="cl">    <span class="n">password</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">password_list</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">    <span class="n">entry_password</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">password</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">    <span class="n">pyperclip</span><span class="o">.</span><span class="n">copy</span><span class="p">(</span><span class="n">password</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1"># ---------------------------- SAVE PASSWORD ------------------------------- #</span>
@@ -592,27 +556,60 @@
 </span></span><span class="line"><span class="cl">    <span class="n">email_username_text</span> <span class="o">=</span> <span class="n">entry_email_username</span><span class="o">.</span><span class="n">get</span><span class="p">()</span>
 </span></span><span class="line"><span class="cl">    <span class="n">password_text</span> <span class="o">=</span> <span class="n">entry_password</span><span class="o">.</span><span class="n">get</span><span class="p">()</span>
 </span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">new_data</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">website_text</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="s2">&#34;email&#34;</span><span class="p">:</span> <span class="n">email_username_text</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="s2">&#34;password&#34;</span><span class="p">:</span> <span class="n">password_text</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">    <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">website_text</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span> <span class="ow">or</span> <span class="nb">len</span><span class="p">(</span><span class="n">password_text</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
 </span></span><span class="line"><span class="cl">        <span class="n">tkinter</span><span class="o">.</span><span class="n">messagebox</span><span class="o">.</span><span class="n">showinfo</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s2">&#34;Oops&#34;</span><span class="p">,</span> <span class="n">message</span><span class="o">=</span><span class="s2">&#34;Please don&#39;t leave any field empty&#34;</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">        <span class="n">clear_entry</span><span class="p">(</span><span class="n">entry_website</span><span class="p">,</span> <span class="n">entry_password</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">        <span class="k">return</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="n">input_result</span> <span class="o">=</span> <span class="n">tkinter</span><span class="o">.</span><span class="n">messagebox</span><span class="o">.</span><span class="n">askokcancel</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s2">&#34;website&#34;</span><span class="p">,</span> 
-</span></span><span class="line"><span class="cl">                                                  <span class="n">message</span><span class="o">=</span><span class="sa">f</span><span class="s2">&#34;These are the details entered: </span><span class="se">\n</span><span class="s2">&#34;</span>
-</span></span><span class="line"><span class="cl">                                                          <span class="sa">f</span><span class="s2">&#34;Email: </span><span class="si">{</span><span class="n">email_username_text</span><span class="si">}</span><span class="se">\n</span><span class="s2">&#34;</span>
-</span></span><span class="line"><span class="cl">                                                          <span class="sa">f</span><span class="s2">&#34;Password: </span><span class="si">{</span><span class="n">password_text</span><span class="si">}</span><span class="s2"> </span><span class="se">\n</span><span class="s2">Is it ok to save?&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">try</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&#34;password-manager-start/passwd.json&#34;</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s2">&#34;r&#34;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">data</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">file</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">except</span> <span class="ne">FileNotFoundError</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&#34;password-manager-start/passwd.json&#34;</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s2">&#34;w&#34;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">json</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">new_data</span><span class="p">,</span> <span class="n">file</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">data</span><span class="o">.</span><span class="n">update</span><span class="p">(</span><span class="n">new_data</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&#34;password-manager-start/passwd.json&#34;</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s2">&#34;w&#34;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">json</span><span class="o">.</span><span class="n">dump</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">file</span><span class="p">,</span> <span class="n">indent</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">finally</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">clear_entry</span><span class="p">(</span><span class="n">entry_website</span><span class="p">,</span> <span class="n">entry_password</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">input_result</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&#34;password-manager-start/passwd.txt&#34;</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s2">&#34;a&#34;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
-</span></span><span class="line"><span class="cl">            <span class="n">file</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="sa">f</span><span class="s2">&#34;</span><span class="si">{</span><span class="n">website_text</span><span class="si">}</span><span class="s2"> | </span><span class="si">{</span><span class="n">email_username_text</span><span class="si">}</span><span class="s2"> | </span><span class="si">{</span><span class="n">password_text</span><span class="si">}</span><span class="se">\n</span><span class="s2">&#34;</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">            <span class="n">clear_entry</span><span class="p">(</span><span class="n">entry_website</span><span class="p">,</span> <span class="n">entry_password</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">            
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">clear_entry</span><span class="p">(</span><span class="o">*</span><span class="n">entries</span><span class="p">):</span>
 </span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">entry</span> <span class="ow">in</span> <span class="n">entries</span><span class="p">:</span>
 </span></span><span class="line"><span class="cl">        <span class="n">entry</span><span class="o">.</span><span class="n">delete</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">tkinter</span><span class="o">.</span><span class="n">END</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">entries</span><span class="p">:</span>
 </span></span><span class="line"><span class="cl">        <span class="n">entries</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">focus</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># ---------------------------- FIND PASSWORD -------------------------- #</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">find_password</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">    <span class="n">website_text</span> <span class="o">=</span> <span class="n">entry_website</span><span class="o">.</span><span class="n">get</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">website_text</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">tkinter</span><span class="o">.</span><span class="n">messagebox</span><span class="o">.</span><span class="n">showinfo</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s2">&#34;Oops&#34;</span><span class="p">,</span> <span class="n">message</span><span class="o">=</span><span class="s2">&#34;Please don&#39;t leave any website field empty&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">try</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">&#34;password-manager-start/passwd.json&#34;</span><span class="p">,</span> <span class="n">mode</span><span class="o">=</span><span class="s2">&#34;r&#34;</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">data</span> <span class="o">=</span> <span class="n">json</span><span class="o">.</span><span class="n">load</span><span class="p">(</span><span class="n">file</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="n">email_text</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="n">website_text</span><span class="p">][</span><span class="s1">&#39;email&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">            <span class="n">password_text</span> <span class="o">=</span> <span class="n">data</span><span class="p">[</span><span class="n">website_text</span><span class="p">][</span><span class="s1">&#39;password&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="k">except</span> <span class="ne">FileNotFoundError</span> <span class="k">as</span> <span class="n">message</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">tkinter</span><span class="o">.</span><span class="n">messagebox</span><span class="o">.</span><span class="n">showinfo</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s2">&#34;Error&#34;</span><span class="p">,</span> <span class="n">message</span><span class="o">=</span><span class="sa">f</span><span class="s2">&#34;No Data File Found.&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">except</span> <span class="ne">KeyError</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">tkinter</span><span class="o">.</span><span class="n">messagebox</span><span class="o">.</span><span class="n">showinfo</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="s2">&#34;Error&#34;</span><span class="p">,</span> <span class="n">message</span><span class="o">=</span><span class="sa">f</span><span class="s2">&#34;No details for </span><span class="si">{</span><span class="n">website_text</span><span class="si">}</span><span class="s2"> exists.&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">else</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">tkinter</span><span class="o">.</span><span class="n">messagebox</span><span class="o">.</span><span class="n">showinfo</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="n">website_text</span><span class="p">,</span> <span class="n">message</span><span class="o">=</span><span class="sa">f</span><span class="s2">&#34;Email: </span><span class="si">{</span><span class="n">email_text</span><span class="si">}</span><span class="se">\n</span><span class="s2">Password: </span><span class="si">{</span><span class="n">password_text</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1"># ---------------------------- UI SETUP ------------------------------- #</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">
@@ -641,9 +638,9 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1"># Entry sort by rows</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">entry_website</span> <span class="o">=</span> <span class="n">tkinter</span><span class="o">.</span><span class="n">Entry</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="mi">50</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">entry_website</span> <span class="o">=</span> <span class="n">tkinter</span><span class="o">.</span><span class="n">Entry</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="mi">32</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="n">entry_website</span><span class="o">.</span><span class="n">focus</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl"><span class="n">entry_website</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">row</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">column</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">columnspan</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">entry_website</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">row</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">column</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">entry_email_username</span> <span class="o">=</span> <span class="n">tkinter</span><span class="o">.</span><span class="n">Entry</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="mi">50</span><span class="p">,)</span>
@@ -655,6 +652,9 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1"># Button sort by rows</span>
 </span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">button_search</span> <span class="o">=</span> <span class="n">tkinter</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">text</span><span class="o">=</span><span class="s2">&#34;Search&#34;</span><span class="p">,</span> <span class="n">width</span><span class="o">=</span><span class="mi">14</span><span class="p">,</span> <span class="n">bg</span><span class="o">=</span><span class="s2">&#34;gray&#34;</span><span class="p">,</span> <span class="n">command</span><span class="o">=</span><span class="n">find_password</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">button_search</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">row</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">column</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">button_generate_password</span> <span class="o">=</span> <span class="n">tkinter</span><span class="o">.</span><span class="n">Button</span><span class="p">(</span><span class="n">text</span><span class="o">=</span><span class="s2">&#34;Generate Password&#34;</span><span class="p">,</span> <span class="n">bg</span><span class="o">=</span><span class="s2">&#34;gray&#34;</span><span class="p">,</span> <span class="n">command</span><span class="o">=</span><span class="n">generate_password</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="n">button_generate_password</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="n">row</span><span class="o">=</span><span class="mi">3</span><span class="p">,</span> <span class="n">column</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">
@@ -665,6 +665,7 @@
 </span></span></code></pre></td></tr></table>
 </div>
 </div><p><img src="password_manager_gui.jpg" alt="password_manager_gui"></p>
+<p><img src="password_manager_data.jpg" alt="password_manager_data"></p>
     </div>
 
     <div class="post-copyright">
@@ -675,7 +676,7 @@
   <p class="copyright-item">
     <span class="item-title">LastMod</span>
     <span class="item-content">
-        2024-11-29
+        2024-12-06
         
     </span>
   </p>
@@ -688,13 +689,9 @@
           <a href="/pawpaw_coding.github.io/tags/100-days/">100-days</a>
           </div>
       <nav class="post-nav">
-        <a class="prev" href="/pawpaw_coding.github.io/post/python/python-100days/day30/">
-            <i class="iconfont icon-left"></i>
-            <span class="prev-text nav-default">[Python] Python-100days - Day30</span>
-            <span class="prev-text nav-mobile">Prev</span>
-          </a>
-        <a class="next" href="/pawpaw_coding.github.io/post/python/python-100days/day28/">
-            <span class="next-text nav-default">[Python] Python-100days - Day28</span>
+        
+        <a class="next" href="/pawpaw_coding.github.io/post/python/python-100days/day29/">
+            <span class="next-text nav-default">[Python] Python-100days - Day29</span>
             <span class="next-text nav-mobile">Next</span>
             <i class="iconfont icon-right"></i>
           </a>
