@@ -49,7 +49,7 @@
 <meta itemprop="name" content="[Python] Python-100days - Day32">
 <meta itemprop="description" content=""><meta itemprop="datePublished" content="2024-12-15T15:39:03+00:00" />
 <meta itemprop="dateModified" content="2024-12-15T15:39:03+00:00" />
-<meta itemprop="wordCount" content="582">
+<meta itemprop="wordCount" content="581">
 <meta itemprop="keywords" content="python,100-days," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="[Python] Python-100days - Day32"/>
 <meta name="twitter:description" content=""/>
@@ -163,7 +163,7 @@
     <div class="post-content">
       <h1 id="ref">REF</h1>
 <p>紀錄學習 <a href="https://www.udemy.com/course/100-days-of-code/?couponCode=KEEPLEARNING">Udemy-Python-100days of code</a></p>
-<p>Day 32 - Intermediate+ - Send Email (smtplib) &amp; Manage Dates (datetime)</p>
+<p>Day 32 - Intermediate+ Send Email (smtplib) &amp; Manage Dates (datetime)</p>
 <h1 id="os-module">os module</h1>
 <p>用來處理 path 和 file</p>
 <div class="highlight"><div class="chroma">
@@ -186,7 +186,7 @@
 <pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">os</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1"># 取得當前工作目錄</span>
-</span></span><span class="line"><span class="cl"><span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">()</span>  
+</span></span><span class="line"><span class="cl"><span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">()</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1"># 組合路徑</span>
 </span></span><span class="line"><span class="cl"><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="s2">&#34;dir&#34;</span><span class="p">,</span> <span class="s2">&#34;file.txt&#34;</span><span class="p">)</span>  <span class="c1"># dir/file.txt</span>
@@ -232,7 +232,7 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1"># 條件過濾</span>
 </span></span><span class="line"><span class="cl"><span class="n">filtered_data</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span>
-</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&#34;column1&#34;</span><span class="p">]</span> <span class="o">==</span> <span class="n">value1</span><span class="p">)</span> <span class="o">&amp;</span> 
+</span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&#34;column1&#34;</span><span class="p">]</span> <span class="o">==</span> <span class="n">value1</span><span class="p">)</span> <span class="o">&amp;</span>
 </span></span><span class="line"><span class="cl">    <span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s2">&#34;column2&#34;</span><span class="p">]</span> <span class="o">==</span> <span class="n">value2</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl"><span class="p">]</span>
 </span></span><span class="line"><span class="cl">
@@ -305,10 +305,10 @@
 </span></span><span class="line"><span class="cl"><span class="k">with</span> <span class="n">smtplib</span><span class="o">.</span><span class="n">SMTP</span><span class="p">(</span><span class="s2">&#34;smtp.gmail.com&#34;</span><span class="p">)</span> <span class="k">as</span> <span class="n">connection</span><span class="p">:</span>
 </span></span><span class="line"><span class="cl">    <span class="c1"># 啟用加密</span>
 </span></span><span class="line"><span class="cl">    <span class="n">connection</span><span class="o">.</span><span class="n">starttls</span><span class="p">()</span>
-</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">    <span class="c1"># 登入</span>
 </span></span><span class="line"><span class="cl">    <span class="n">connection</span><span class="o">.</span><span class="n">login</span><span class="p">(</span><span class="n">username</span><span class="p">,</span> <span class="n">password</span><span class="p">)</span>
-</span></span><span class="line"><span class="cl">    
+</span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">    <span class="c1"># 發送郵件</span>
 </span></span><span class="line"><span class="cl">    <span class="n">connection</span><span class="o">.</span><span class="n">sendmail</span><span class="p">(</span>
 </span></span><span class="line"><span class="cl">        <span class="n">from_addr</span><span class="o">=</span><span class="s2">&#34;sender@gmail.com&#34;</span><span class="p">,</span>
@@ -336,8 +336,8 @@
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="c1"># 實際例子</span>
 </span></span><span class="line"><span class="cl"><span class="n">files</span> <span class="o">=</span> <span class="p">[</span>
-</span></span><span class="line"><span class="cl">    <span class="n">file</span> 
-</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">file</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">path</span><span class="p">)</span> 
+</span></span><span class="line"><span class="cl">    <span class="n">file</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">file</span> <span class="ow">in</span> <span class="n">os</span><span class="o">.</span><span class="n">listdir</span><span class="p">(</span><span class="n">path</span><span class="p">)</span>
 </span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">isfile</span><span class="p">(</span><span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">path</span><span class="p">,</span> <span class="n">file</span><span class="p">))</span>
 </span></span><span class="line"><span class="cl"><span class="p">]</span>
 </span></span></code></pre></td></tr></table>
