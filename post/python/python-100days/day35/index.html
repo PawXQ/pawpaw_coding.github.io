@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>[Python] Python-100days - Day34 - Even - A super concise theme for Hugo</title>
+  <title>[Python] Python-100days - Day35 - Even - A super concise theme for Hugo</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -40,18 +40,18 @@
 <link rel="stylesheet" href="/css/style.css">
 
 
-<meta property="og:title" content="[Python] Python-100days - Day34" />
+<meta property="og:title" content="[Python] Python-100days - Day35" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://pawxq.github.io/pawpaw_coding.github.io/post/python/python-100days/day35/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2024-12-28T15:48:18+00:00" />
 <meta property="article:modified_time" content="2024-12-28T15:48:18+00:00" />
-<meta itemprop="name" content="[Python] Python-100days - Day34">
+<meta itemprop="name" content="[Python] Python-100days - Day35">
 <meta itemprop="description" content=""><meta itemprop="datePublished" content="2024-12-28T15:48:18+00:00" />
 <meta itemprop="dateModified" content="2024-12-28T15:48:18+00:00" />
-<meta itemprop="wordCount" content="0">
+<meta itemprop="wordCount" content="447">
 <meta itemprop="keywords" content="python,100-days," /><meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="[Python] Python-100days - Day34"/>
+<meta name="twitter:title" content="[Python] Python-100days - Day35"/>
 <meta name="twitter:description" content=""/>
 
 <!--[if lte IE 9]>
@@ -125,7 +125,7 @@
           <article class="post">
     
     <header class="post-header">
-      <h1 class="post-title">[Python] Python-100days - Day34</h1>
+      <h1 class="post-title">[Python] Python-100days - Day35</h1>
 
       <div class="post-meta">
         <span class="post-time"> 2024-12-28 </span>
@@ -139,11 +139,227 @@
     <div class="post-toc" id="post-toc">
   <h2 class="post-toc-title">Contents</h2>
   <div class="post-toc-content always-active">
-    <nav id="TableOfContents"></nav>
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#ref">REF</a></li>
+    <li><a href="#twilio-api">Twilio API</a></li>
+    <li><a href="#env">ENV</a></li>
+    <li><a href="#weather-project">Weather project</a></li>
+  </ul>
+</nav>
   </div>
 </div>
     <div class="post-content">
-      
+      <h1 id="ref">REF</h1>
+<p>紀錄學習 <a href="https://www.udemy.com/course/100-days-of-code/?couponCode=KEEPLEARNING">Udemy-Python-100days of code</a></p>
+<p>Day 35 - Intermediate+ - Keys, Authentication &amp; Environment Variables: Send SMS</p>
+<h1 id="twilio-api">Twilio API</h1>
+<p>Twilio API 是一個通訊服務平台, 可用於發送簡訊, 撥打電話等功能</p>
+<p>提供試用額度($10)讓開發者測試功能</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">twilio.rest</span> <span class="kn">import</span> <span class="n">Client</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 認證資訊</span>
+</span></span><span class="line"><span class="cl"><span class="n">account_sid</span> <span class="o">=</span> <span class="s2">&#34;your_account_sid&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">auth_token</span> <span class="o">=</span> <span class="s2">&#34;your_auth_token&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 建立客戶端</span>
+</span></span><span class="line"><span class="cl"><span class="n">client</span> <span class="o">=</span> <span class="n">Client</span><span class="p">(</span><span class="n">account_sid</span><span class="p">,</span> <span class="n">auth_token</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 發送簡訊</span>
+</span></span><span class="line"><span class="cl"><span class="n">message</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">messages</span><span class="o">.</span><span class="n">create</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">    <span class="n">body</span><span class="o">=</span><span class="s2">&#34;It&#39;s going to rain today. Remember to bring an umbrella! ☔️&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">from_</span><span class="o">=</span><span class="s2">&#34;your_twilio_number&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="n">to</span><span class="o">=</span><span class="s2">&#34;your_verified_number&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">message</span><span class="o">.</span><span class="n">status</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h1 id="env">ENV</h1>
+<p>環境變數是在系統環境中設置的 key value pair, 可通過 <code>os.environ</code> 在程式中讀取</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">os</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 設置環境變數</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># export OWM_API_KEY=your_api_key</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># export AUTH_TOKEN=your_auth_token</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># 讀取環境變數</span>
+</span></span><span class="line"><span class="cl"><span class="n">api_key</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&#34;OWM_API_KEY&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">auth_token</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&#34;AUTH_TOKEN&#34;</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h1 id="weather-project">Weather project</h1>
+<p>透過從 openweathermap api 拿到的資料, 判斷未來一天會不會下雨, 並進行簡訊發送(用 smtp 也行)</p>
+<p>現在外部環境 <code>export env</code>, 之後再 script 中讀取</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-bash" data-lang="bash"><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">FROM_NUMBER</span><span class="o">=</span>your_phone_number
+</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">TO_NUMBER</span><span class="o">=</span>sned_phone_number
+</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">OWM_API_KEY</span><span class="o">=</span>your_api_key
+</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">LAT</span><span class="o">=</span>yout_lat
+</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">LON</span><span class="o">=</span>your_lon
+</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">TWILIO_ACCOUNT_SID</span><span class="o">=</span>your_account_sid
+</span></span><span class="line"><span class="cl"><span class="nb">export</span> <span class="nv">TWILIO_AUTH_TOKEN</span><span class="o">=</span>your_auth_token
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">requests</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">twilio.rest</span> <span class="kn">import</span> <span class="n">Client</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">FROM_NUMBER</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&#34;FROM_NUMBER&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">TO_NUMBER</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&#34;TO_NUMBER&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">API_URL</span> <span class="o">=</span> <span class="s2">&#34;https://api.openweathermap.org/data/2.5/forecast&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">API_KEY</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&#34;OWM_API_KEY&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">LAT</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&#34;LAT&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">LON</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&#34;LON&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">ACCOUNT_SID</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&#34;TWILIO_ACCOUNT_SID&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">AUTH_TOKEN</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">environ</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&#34;TWILIO_AUTH_TOKEN&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">client</span> <span class="o">=</span> <span class="n">Client</span><span class="p">(</span><span class="n">ACCOUNT_SID</span><span class="p">,</span> <span class="n">AUTH_TOKEN</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">PARAMETER</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;lat&#34;</span><span class="p">:</span> <span class="n">LAT</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;lon&#34;</span><span class="p">:</span> <span class="n">LON</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;appid&#34;</span><span class="p">:</span> <span class="n">API_KEY</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;cnt&#34;</span><span class="p">:</span> <span class="s2">&#34;8&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">send_sms</span><span class="p">(</span><span class="n">body</span><span class="p">,</span> <span class="n">from_number</span><span class="p">,</span> <span class="n">to_number</span><span class="p">,</span> <span class="n">account_sid</span><span class="p">,</span> <span class="n">auth_token</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">client</span> <span class="o">=</span> <span class="n">Client</span><span class="p">(</span><span class="n">account_sid</span><span class="p">,</span> <span class="n">auth_token</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">message</span> <span class="o">=</span> <span class="n">client</span><span class="o">.</span><span class="n">messages</span><span class="o">.</span><span class="n">create</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">        <span class="n">body</span><span class="o">=</span><span class="n">body</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="n">from_</span><span class="o">=</span><span class="n">from_number</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="n">to</span><span class="o">=</span><span class="n">to_number</span>
+</span></span><span class="line"><span class="cl">    <span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">message</span><span class="o">.</span><span class="n">sid</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">message</span><span class="o">.</span><span class="n">status</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="o">=</span><span class="n">API_URL</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">PARAMETER</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">response</span><span class="o">.</span><span class="n">raise_for_status</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">weather_data</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">weather_data_id_list</span> <span class="o">=</span> <span class="p">[</span><span class="n">weather_data_list</span><span class="p">[</span><span class="s2">&#34;weather&#34;</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="s2">&#34;id&#34;</span><span class="p">]</span> <span class="k">for</span> <span class="n">weather_data_list</span> <span class="ow">in</span> <span class="n">weather_data</span><span class="p">[</span><span class="s2">&#34;list&#34;</span><span class="p">]]</span>
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="nb">any</span><span class="p">(</span><span class="n">i</span> <span class="o">&lt;</span> <span class="mi">800</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">weather_data_id_list</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">notification_body</span> <span class="o">=</span> <span class="s2">&#34;It&#39;s going to rain today. Remember to bring an ☂️.&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">send_sms</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">        <span class="n">body</span><span class="o">=</span><span class="n">notification_body</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="n">account_sid</span><span class="o">=</span><span class="n">ACCOUNT_SID</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="n">auth_token</span><span class="o">=</span><span class="n">AUTH_TOKEN</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="n">from_number</span><span class="o">=</span><span class="n">FROM_NUMBER</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="n">to_number</span><span class="o">=</span><span class="n">TO_NUMBER</span>
+</span></span><span class="line"><span class="cl">    <span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>
     </div>
 
     <div class="post-copyright">
