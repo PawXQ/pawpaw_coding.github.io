@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>[Python] Python-100days - Day36 - Even - A super concise theme for Hugo</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="PawPaw" /><meta name="description" content="" /><meta name="keywords" content="Hugo, theme, even" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.108.0 with theme even" />
+
+
+<link rel="canonical" href="https://pawxq.github.io/pawpaw_coding.github.io/post/python/python-100days/day36/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/pawpaw_coding.github.io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/pawpaw_coding.github.io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/pawpaw_coding.github.io/favicon-16x16.png">
+<link rel="manifest" href="/pawpaw_coding.github.io/manifest.json">
+<link rel="mask-icon" href="/pawpaw_coding.github.io/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/pawpaw_coding.github.io/sass/main.min.f92fd13721ddf72129410fd8250e73152cc6f2438082b6c0208dc24ee7c13fc4.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/style.css">
+
+
+<meta property="og:title" content="[Python] Python-100days - Day36" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://pawxq.github.io/pawpaw_coding.github.io/post/python/python-100days/day36/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2024-12-31T15:29:24+00:00" />
+<meta property="article:modified_time" content="2024-12-31T15:29:24+00:00" />
+<meta itemprop="name" content="[Python] Python-100days - Day36">
+<meta itemprop="description" content=""><meta itemprop="datePublished" content="2024-12-31T15:29:24+00:00" />
+<meta itemprop="dateModified" content="2024-12-31T15:29:24+00:00" />
+<meta itemprop="wordCount" content="1351">
+<meta itemprop="keywords" content="python,100-days," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="[Python] Python-100days - Day36"/>
+<meta name="twitter:description" content=""/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">PawPaw_coding</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/pawpaw_coding.github.io/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/pawpaw_coding.github.io/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/pawpaw_coding.github.io/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/pawpaw_coding.github.io/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">PawPaw_coding</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/pawpaw_coding.github.io/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/pawpaw_coding.github.io/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/pawpaw_coding.github.io/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/pawpaw_coding.github.io/categories/">Categories</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">[Python] Python-100days - Day36</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2024-12-31 </span>
+        <div class="post-category">
+            <a href="/pawpaw_coding.github.io/categories/python/"> python </a>
+            </div>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#ref">REF</a></li>
+    <li><a href="#python-mail-mime">Python mail MIME</a>
+      <ul>
+        <li><a href="#郵件標頭與投遞">郵件標頭與投遞</a>
+          <ul>
+            <li><a href="#標頭-headers">標頭 (Headers)</a></li>
+          </ul>
+        </li>
+        <li><a href="#mimetext-參數說明">MIMEText 參數說明</a></li>
+        <li><a href="#完整程式碼結構">完整程式碼結構</a></li>
+        <li><a href="#send-方式差異">send 方式差異</a>
+          <ul>
+            <li><a href="#簡單對比">簡單對比：</a></li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li><a href="#hw">HW</a>
+      <ul>
+        <li><a href="#api--document">API / DOCUMENT</a>
+          <ul>
+            <li><a href="#alphavantage">ALPHAVANTAGE</a></li>
+            <li><a href="#news">NEWS</a></li>
+          </ul>
+        </li>
+        <li><a href="#mainpy">main.py</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <h1 id="ref">REF</h1>
+<p>紀錄學習 <a href="https://www.udemy.com/course/100-days-of-code/?couponCode=KEEPLEARNING">Udemy-Python-100days of code</a></p>
+<p>Day 36 - Intermediate+ Stock Trading News Alert Project</p>
+<h1 id="python-mail-mime">Python mail MIME</h1>
+<p>MIME (Multipurpose Internet Mail Extensions)</p>
+<ul>
+<li>主要組件：
+<ul>
+<li>MIMEText: 文字內容</li>
+<li>MIMEMultipart: 多部分郵件 <del>(沒用到不清楚)</del></li>
+<li>MIMEImage: 圖片 <del>(沒用到不清楚)</del></li>
+<li>MIMEBase: 其他類型檔案 <del>(沒用到不清楚)</del></li>
+</ul>
+</li>
+</ul>
+<h2 id="郵件標頭與投遞">郵件標頭與投遞</h2>
+<h3 id="標頭-headers">標頭 (Headers)</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">msg</span><span class="p">[</span><span class="s1">&#39;From&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">username</span>        <span class="c1"># 顯示用發件人</span>
+</span></span><span class="line"><span class="cl"><span class="n">msg</span><span class="p">[</span><span class="s1">&#39;To&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">recipient_email</span>   <span class="c1"># 顯示用收件人</span>
+</span></span><span class="line"><span class="cl"><span class="n">msg</span><span class="p">[</span><span class="s1">&#39;Subject&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&#34;主旨&#34;</span>       <span class="c1"># 郵件主旨</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="mimetext-參數說明">MIMEText 參數說明</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">MIMEText</span><span class="p">(</span><span class="n">email_body</span><span class="p">,</span> <span class="s1">&#39;plain&#39;</span><span class="p">,</span> <span class="s1">&#39;utf-8&#39;</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li>email_body: 郵件內容</li>
+<li>&lsquo;plain&rsquo;: 純文字格式(另有 &lsquo;html&rsquo; 選項)</li>
+<li>&lsquo;utf-8&rsquo;: 字符編碼, 支援多語言和表情符號</li>
+</ul>
+<h2 id="完整程式碼結構">完整程式碼結構</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">send_email</span><span class="p">(</span><span class="n">recipient_email</span><span class="p">,</span> <span class="n">email_body</span><span class="p">,</span> <span class="n">username</span><span class="p">,</span> <span class="n">password</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">msg</span> <span class="o">=</span> <span class="n">MIMEMultipart</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="n">msg</span><span class="p">[</span><span class="s1">&#39;From&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">username</span>
+</span></span><span class="line"><span class="cl">    <span class="n">msg</span><span class="p">[</span><span class="s1">&#39;To&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">recipient_email</span>
+</span></span><span class="line"><span class="cl">    <span class="n">msg</span><span class="p">[</span><span class="s1">&#39;Subject&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&#34;主旨&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">msg</span><span class="o">.</span><span class="n">attach</span><span class="p">(</span><span class="n">MIMEText</span><span class="p">(</span><span class="n">email_body</span><span class="p">,</span> <span class="s1">&#39;plain&#39;</span><span class="p">,</span> <span class="s1">&#39;utf-8&#39;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">with</span> <span class="n">smtplib</span><span class="o">.</span><span class="n">SMTP</span><span class="p">(</span><span class="s2">&#34;smtp.gmail.com&#34;</span><span class="p">)</span> <span class="k">as</span> <span class="n">connection</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">connection</span><span class="o">.</span><span class="n">starttls</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">        <span class="n">connection</span><span class="o">.</span><span class="n">login</span><span class="p">(</span><span class="n">username</span><span class="p">,</span> <span class="n">password</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">connection</span><span class="o">.</span><span class="n">send_message</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>  <span class="c1"># 簡化的發送方式</span>
+</span></span><span class="line"><span class="cl">        <span class="c1"># connection.sendmail(from_addr=username, to_addrs=recipient_email, msg=msg.as_string()) # 原始方式</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="send-方式差異">send 方式差異</h2>
+<p><code>send_message()</code> 可以自動將要發送的 <code>msg</code>(如 <code>MIMEMultipart</code>) 轉成可發送的格式</p>
+<p><code>sendmail()</code> 需要手動將 <code>msg</code> 透過 <code>as_string()</code> 轉成可發送的格式</p>
+<h3 id="簡單對比">簡單對比：</h3>
+<ul>
+<li>
+<p><strong><code>sendmail()</code></strong>:
+需要手動轉換為字符串：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">connection</span><span class="o">.</span><span class="n">sendmail</span><span class="p">(</span><span class="n">from_addr</span><span class="o">=</span><span class="n">username</span><span class="p">,</span> <span class="n">to_addrs</span><span class="o">=</span><span class="n">recipient_email</span><span class="p">,</span> <span class="n">msg</span><span class="o">=</span><span class="n">msg</span><span class="o">.</span><span class="n">as_string</span><span class="p">())</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p><strong><code>send_message()</code></strong>:
+自動處理轉換：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">connection</span><span class="o">.</span><span class="n">send_message</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+<h1 id="hw">HW</h1>
+<p>功能概述</p>
+<ol>
+<li>股票價格變動檢測：</li>
+</ol>
+<ul>
+<li>利用 Alpha Vantage API 獲取 Tesla 每日股票數據</li>
+<li>當昨日與前日的股票價格變動超過 ±2% 時觸發通知</li>
+</ul>
+<ol start="2">
+<li>新聞抓取：</li>
+</ol>
+<ul>
+<li>利用 News API 獲取 Tesla 相關新聞</li>
+<li>提取標題, 摘要與連結, 最多三篇新聞</li>
+</ul>
+<ol start="3">
+<li>通知與推送：</li>
+</ol>
+<ul>
+<li>發送含變動百分比與新聞摘要的電子郵件通知</li>
+</ul>
+<h2 id="api--document">API / DOCUMENT</h2>
+<h3 id="alphavantage">ALPHAVANTAGE</h3>
+<p><a href="https://www.alphavantage.co/documentation/">ALPHAVANTAGE DOCUMENT</a></p>
+<p>API URL:</p>
+<ul>
+<li><code>ALPHAVANTAGE_URL = &quot;https://www.alphavantage.co/query&quot;</code></li>
+</ul>
+<h3 id="news">NEWS</h3>
+<p><a href="https://newsapi.org/docs">NEWS DOCUMENT</a></p>
+<p>API URL:</p>
+<ul>
+<li><code>NEWS_API_URL = &quot;https://newsapi.org/v2/everything&quot;</code></li>
+</ul>
+<h2 id="mainpy">main.py</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">  1
+</span><span class="lnt">  2
+</span><span class="lnt">  3
+</span><span class="lnt">  4
+</span><span class="lnt">  5
+</span><span class="lnt">  6
+</span><span class="lnt">  7
+</span><span class="lnt">  8
+</span><span class="lnt">  9
+</span><span class="lnt"> 10
+</span><span class="lnt"> 11
+</span><span class="lnt"> 12
+</span><span class="lnt"> 13
+</span><span class="lnt"> 14
+</span><span class="lnt"> 15
+</span><span class="lnt"> 16
+</span><span class="lnt"> 17
+</span><span class="lnt"> 18
+</span><span class="lnt"> 19
+</span><span class="lnt"> 20
+</span><span class="lnt"> 21
+</span><span class="lnt"> 22
+</span><span class="lnt"> 23
+</span><span class="lnt"> 24
+</span><span class="lnt"> 25
+</span><span class="lnt"> 26
+</span><span class="lnt"> 27
+</span><span class="lnt"> 28
+</span><span class="lnt"> 29
+</span><span class="lnt"> 30
+</span><span class="lnt"> 31
+</span><span class="lnt"> 32
+</span><span class="lnt"> 33
+</span><span class="lnt"> 34
+</span><span class="lnt"> 35
+</span><span class="lnt"> 36
+</span><span class="lnt"> 37
+</span><span class="lnt"> 38
+</span><span class="lnt"> 39
+</span><span class="lnt"> 40
+</span><span class="lnt"> 41
+</span><span class="lnt"> 42
+</span><span class="lnt"> 43
+</span><span class="lnt"> 44
+</span><span class="lnt"> 45
+</span><span class="lnt"> 46
+</span><span class="lnt"> 47
+</span><span class="lnt"> 48
+</span><span class="lnt"> 49
+</span><span class="lnt"> 50
+</span><span class="lnt"> 51
+</span><span class="lnt"> 52
+</span><span class="lnt"> 53
+</span><span class="lnt"> 54
+</span><span class="lnt"> 55
+</span><span class="lnt"> 56
+</span><span class="lnt"> 57
+</span><span class="lnt"> 58
+</span><span class="lnt"> 59
+</span><span class="lnt"> 60
+</span><span class="lnt"> 61
+</span><span class="lnt"> 62
+</span><span class="lnt"> 63
+</span><span class="lnt"> 64
+</span><span class="lnt"> 65
+</span><span class="lnt"> 66
+</span><span class="lnt"> 67
+</span><span class="lnt"> 68
+</span><span class="lnt"> 69
+</span><span class="lnt"> 70
+</span><span class="lnt"> 71
+</span><span class="lnt"> 72
+</span><span class="lnt"> 73
+</span><span class="lnt"> 74
+</span><span class="lnt"> 75
+</span><span class="lnt"> 76
+</span><span class="lnt"> 77
+</span><span class="lnt"> 78
+</span><span class="lnt"> 79
+</span><span class="lnt"> 80
+</span><span class="lnt"> 81
+</span><span class="lnt"> 82
+</span><span class="lnt"> 83
+</span><span class="lnt"> 84
+</span><span class="lnt"> 85
+</span><span class="lnt"> 86
+</span><span class="lnt"> 87
+</span><span class="lnt"> 88
+</span><span class="lnt"> 89
+</span><span class="lnt"> 90
+</span><span class="lnt"> 91
+</span><span class="lnt"> 92
+</span><span class="lnt"> 93
+</span><span class="lnt"> 94
+</span><span class="lnt"> 95
+</span><span class="lnt"> 96
+</span><span class="lnt"> 97
+</span><span class="lnt"> 98
+</span><span class="lnt"> 99
+</span><span class="lnt">100
+</span><span class="lnt">101
+</span><span class="lnt">102
+</span><span class="lnt">103
+</span><span class="lnt">104
+</span><span class="lnt">105
+</span><span class="lnt">106
+</span><span class="lnt">107
+</span><span class="lnt">108
+</span><span class="lnt">109
+</span><span class="lnt">110
+</span><span class="lnt">111
+</span><span class="lnt">112
+</span><span class="lnt">113
+</span><span class="lnt">114
+</span><span class="lnt">115
+</span><span class="lnt">116
+</span><span class="lnt">117
+</span><span class="lnt">118
+</span><span class="lnt">119
+</span><span class="lnt">120
+</span><span class="lnt">121
+</span><span class="lnt">122
+</span><span class="lnt">123
+</span><span class="lnt">124
+</span><span class="lnt">125
+</span><span class="lnt">126
+</span><span class="lnt">127
+</span><span class="lnt">128
+</span><span class="lnt">129
+</span><span class="lnt">130
+</span><span class="lnt">131
+</span><span class="lnt">132
+</span><span class="lnt">133
+</span><span class="lnt">134
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">email.mime.multipart</span> <span class="kn">import</span> <span class="n">MIMEMultipart</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">email.mime.text</span> <span class="kn">import</span> <span class="n">MIMEText</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">smtplib</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">requests</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># STEP 1: Use https://www.alphavantage.co</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># When STOCK price increase/decreases by 5% between yesterday and the day before yesterday then print(&#34;Get News&#34;).</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># STEP 2: Use https://newsapi.org</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Instead of printing (&#34;Get News&#34;), actually get the first 3 news pieces for the COMPANY_NAME.</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># STEP 3: Use https://www.twilio.com</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># Send a seperate message with the percentage change and each article&#39;s title and description to your phone number.</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1"># Optional: Format the SMS message like this:</span>
+</span></span><span class="line"><span class="cl"><span class="s2">&#34;&#34;&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s2">TSLA: 🔺2%
+</span></span></span><span class="line"><span class="cl"><span class="s2">Headline: Were Hedge Funds Right About Piling Into Tesla Inc. (TSLA)?.
+</span></span></span><span class="line"><span class="cl"><span class="s2">Brief: We at Insider Monkey have gone over 821 13F filings that hedge funds and prominent investors are required to file by the SEC The 13F filings show the funds&#39; and investors&#39; portfolio positions as of March 31st, near the height of the coronavirus market crash.
+</span></span></span><span class="line"><span class="cl"><span class="s2">or
+</span></span></span><span class="line"><span class="cl"><span class="s2">&#34;TSLA: 🔻5%
+</span></span></span><span class="line"><span class="cl"><span class="s2">Headline: Were Hedge Funds Right About Piling Into Tesla Inc. (TSLA)?.
+</span></span></span><span class="line"><span class="cl"><span class="s2">Brief: We at Insider Monkey have gone over 821 13F filings that hedge funds and prominent investors are required to file by the SEC The 13F filings show the funds&#39; and investors&#39; portfolio positions as of March 31st, near the height of the coronavirus market crash.
+</span></span></span><span class="line"><span class="cl"><span class="s2">&#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">MAIL_USERNAME</span> <span class="o">=</span> <span class="s2">&#34;aaa@gmail.com&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">MAIL_PASSWORD</span> <span class="o">=</span> <span class="s2">&#34;bbb&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">STOCK</span> <span class="o">=</span> <span class="s2">&#34;TSLA&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">COMPANY_NAME</span> <span class="o">=</span> <span class="s2">&#34;Tesla Inc&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">ALPHAVANTAGE_STOCK_API_KEY</span> <span class="o">=</span> <span class="s2">&#34;ccc&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">ALPHAVANTAGE_URL</span> <span class="o">=</span> <span class="s2">&#34;https://www.alphavantage.co/query&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">ALPHAVANTAGE_PARAMETER</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;function&#34;</span><span class="p">:</span> <span class="s2">&#34;TIME_SERIES_DAILY&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;symbol&#34;</span><span class="p">:</span> <span class="n">STOCK</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;apikey&#34;</span><span class="p">:</span> <span class="n">ALPHAVANTAGE_STOCK_API_KEY</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">NEWS_API_KEY</span> <span class="o">=</span> <span class="s2">&#34;ddd&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">NEWS_API_URL</span> <span class="o">=</span> <span class="s2">&#34;https://newsapi.org/v2/everything&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">NEWS_PARAMETER</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;q&#34;</span><span class="p">:</span> <span class="n">COMPANY_NAME</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;apiKey&#34;</span><span class="p">:</span> <span class="n">NEWS_API_KEY</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;pageSize&#34;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;sortBy&#34;</span><span class="p">:</span> <span class="s2">&#34;publishedAt&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">tesla_calcualte_price_change</span><span class="p">(</span><span class="n">ALPHAVANTAGE_URL</span><span class="p">,</span> <span class="n">ALPHAVANTAGE_PARAMETER</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">tesla_stock_data_responses</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">ALPHAVANTAGE_URL</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">ALPHAVANTAGE_PARAMETER</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">tesla_stock_data_responses</span><span class="o">.</span><span class="n">raise_for_status</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># print(tesla_stock_data_responses.url)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">tesla_price_data</span> <span class="o">=</span> <span class="n">tesla_stock_data_responses</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="n">tesla_price_data_iterator</span> <span class="o">=</span> <span class="nb">iter</span><span class="p">(</span><span class="n">tesla_price_data</span><span class="p">[</span><span class="s2">&#34;Time Series (Daily)&#34;</span><span class="p">]</span><span class="o">.</span><span class="n">items</span><span class="p">())</span>
+</span></span><span class="line"><span class="cl">    <span class="n">tesla_yesterday_price_data</span> <span class="o">=</span> <span class="nb">next</span><span class="p">(</span><span class="n">tesla_price_data_iterator</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">tesla_day_before_yesterday_price_data</span> <span class="o">=</span> <span class="nb">next</span><span class="p">(</span><span class="n">tesla_price_data_iterator</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># print(tesla_yesterday_price_data)</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># print(tesla_day_before_yesterday_price_data)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">yesterday_close_price</span> <span class="o">=</span> <span class="n">tesla_yesterday_price_data</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="s2">&#34;4. close&#34;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="n">day_before_yesterday_close_price</span> <span class="o">=</span> <span class="n">tesla_day_before_yesterday_price_data</span><span class="p">[</span><span class="mi">1</span><span class="p">][</span><span class="s2">&#34;4. close&#34;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">    <span class="n">tesla_percentage_range</span> <span class="o">=</span> <span class="p">(</span><span class="nb">float</span><span class="p">(</span><span class="n">yesterday_close_price</span><span class="p">)</span> <span class="o">-</span> <span class="nb">float</span><span class="p">(</span><span class="n">day_before_yesterday_close_price</span><span class="p">))</span><span class="o">/</span><span class="nb">float</span><span class="p">(</span><span class="n">day_before_yesterday_close_price</span><span class="p">)</span> <span class="o">*</span> <span class="mi">100</span>
+</span></span><span class="line"><span class="cl">    <span class="n">tesla_formatted_percentage</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&#34;</span><span class="si">{</span><span class="n">tesla_percentage_range</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># tesla_formatted_percentage = -4.95</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="n">tesla_formatted_percentage</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">tesla_news_get</span><span class="p">(</span><span class="n">NEWS_API_URL</span><span class="p">,</span> <span class="n">NEWS_PARAMETER</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">tesla_news_data_responses</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">NEWS_API_URL</span><span class="p">,</span> <span class="n">params</span><span class="o">=</span><span class="n">NEWS_PARAMETER</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">tesla_news_data_responses</span><span class="o">.</span><span class="n">raise_for_status</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="n">tesla_nes_data</span> <span class="o">=</span> <span class="n">tesla_news_data_responses</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># print(tesla_news_data_responses.url)</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="p">[{</span><span class="s2">&#34;title&#34;</span><span class="p">:</span> <span class="n">article</span><span class="p">[</span><span class="s2">&#34;title&#34;</span><span class="p">],</span> <span class="s2">&#34;url&#34;</span><span class="p">:</span> <span class="n">article</span><span class="p">[</span><span class="s2">&#34;url&#34;</span><span class="p">],</span> <span class="s2">&#34;description&#34;</span><span class="p">:</span> <span class="n">article</span><span class="p">[</span><span class="s2">&#34;description&#34;</span><span class="p">]}</span> <span class="k">for</span> <span class="n">article</span> <span class="ow">in</span> <span class="n">tesla_nes_data</span><span class="p">[</span><span class="s2">&#34;articles&#34;</span><span class="p">]]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">send_email</span><span class="p">(</span><span class="n">recipient_email</span><span class="p">,</span> <span class="n">email_body</span><span class="p">,</span> <span class="n">username</span><span class="p">,</span> <span class="n">password</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">msg</span> <span class="o">=</span> <span class="n">MIMEMultipart</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="n">msg</span><span class="p">[</span><span class="s1">&#39;From&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">username</span>
+</span></span><span class="line"><span class="cl">    <span class="n">msg</span><span class="p">[</span><span class="s1">&#39;To&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">recipient_email</span>
+</span></span><span class="line"><span class="cl">    <span class="n">msg</span><span class="p">[</span><span class="s1">&#39;Subject&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&#34;Tesla stock attention!&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">msg</span><span class="o">.</span><span class="n">attach</span><span class="p">(</span><span class="n">MIMEText</span><span class="p">(</span><span class="n">email_body</span><span class="p">,</span> <span class="s1">&#39;plain&#39;</span><span class="p">,</span> <span class="s1">&#39;utf-8&#39;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">with</span> <span class="n">smtplib</span><span class="o">.</span><span class="n">SMTP</span><span class="p">(</span><span class="s2">&#34;smtp.gmail.com&#34;</span><span class="p">)</span> <span class="k">as</span> <span class="n">connection</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">connection</span><span class="o">.</span><span class="n">starttls</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">        <span class="n">connection</span><span class="o">.</span><span class="n">login</span><span class="p">(</span><span class="n">username</span><span class="p">,</span> <span class="n">password</span><span class="o">=</span><span class="n">password</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">connection</span><span class="o">.</span><span class="n">send_message</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>  <span class="c1"># 簡化的發送方式</span>
+</span></span><span class="line"><span class="cl">        <span class="c1"># connection.sendmail(from_addr=username, to_addrs=recipient_email, msg=msg.as_string())</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">define_send_content</span><span class="p">(</span><span class="n">stock_percentage_change</span><span class="p">,</span> <span class="n">news_data_list</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="n">send_title_text</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">if</span> <span class="n">stock_percentage_change</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">icon</span> <span class="o">=</span> <span class="s2">&#34;🔻&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">elif</span> <span class="n">stock_percentage_change</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">icon</span> <span class="o">=</span> <span class="s2">&#34;🔺&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">send_title_text</span> <span class="o">+=</span> <span class="sa">f</span><span class="s2">&#34;</span><span class="si">{</span><span class="n">STOCK</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">icon</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="nb">abs</span><span class="p">(</span><span class="n">tesla_calcualte_price_change_result</span><span class="p">)</span><span class="si">}</span><span class="s2">%&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">send_content_text</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">news_item</span> <span class="ow">in</span> <span class="n">news_data_list</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">send_content_text</span> <span class="o">+=</span> <span class="sa">f</span><span class="s2">&#34;title: </span><span class="si">{</span><span class="n">news_item</span><span class="p">[</span><span class="s1">&#39;title&#39;</span><span class="p">]</span><span class="si">}</span><span class="se">\n</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">send_content_text</span> <span class="o">+=</span> <span class="sa">f</span><span class="s2">&#34;description: </span><span class="si">{</span><span class="n">news_item</span><span class="p">[</span><span class="s1">&#39;description&#39;</span><span class="p">]</span><span class="si">}</span><span class="se">\n</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">send_content_text</span> <span class="o">+=</span> <span class="sa">f</span><span class="s2">&#34;url: </span><span class="si">{</span><span class="n">news_item</span><span class="p">[</span><span class="s1">&#39;url&#39;</span><span class="p">]</span><span class="si">}</span><span class="se">\n\n</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="sa">f</span><span class="s2">&#34;</span><span class="si">{</span><span class="n">send_title_text</span><span class="si">}</span><span class="se">\n\n</span><span class="si">{</span><span class="n">send_content_text</span><span class="si">}</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">tesla_calcualte_price_change_result</span> <span class="o">=</span> <span class="n">tesla_calcualte_price_change</span><span class="p">(</span><span class="n">ALPHAVANTAGE_URL</span><span class="p">,</span> <span class="n">ALPHAVANTAGE_PARAMETER</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">tesla_news_get_result</span> <span class="o">=</span> <span class="n">tesla_news_get</span><span class="p">(</span><span class="n">NEWS_API_URL</span><span class="p">,</span> <span class="n">NEWS_PARAMETER</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># tesla_news_get_result = [{&#39;title&#39;: &#34;Ark Invest&#39;s Cathie Wood Urges Trump&#39;s Incoming Administration To Implement Retroactive Tax Cuts For Economic Boost From January 1&#34;, &#39;url&#39;: &#39;https://finance.yahoo.com/news/ark-invests-cathie-wood-urges-115812070.html&#39;, &#39;description&#39;: &#39;Cathie Wood, a well-known U.S. technology investor, is calling for clear tax policies from Donald Trump‘s incoming administration. What Happened: Wood...&#39;}, {&#39;title&#39;: &#39;BIOA INVESTOR LAWSUIT: BioAge Labs Investors with Losses are Notified of Continuing Investigation into the Company – Contact BFA Law (NASDAQ:BIOA)&#39;, &#39;url&#39;: &#39;https://www.globenewswire.com/news-release/2024/12/28/3002385/0/en/BIOA-INVESTOR-LAWSUIT-BioAge-Labs-Investors-with-Losses-are-Notified-of-Continuing-Investigation-into-the-Company-Contact-BFA-Law-NASDAQ-BIOA.html&#39;, &#39;description&#39;: &#39;BioAge Labs, Inc. investors that lost money are encouraged to contact BFA Law about its securities fraud investigation into the Company.......&#39;}, {&#39;title&#39;: &#39;SYM CLASS ACTION LAWSUIT: Symbotic Inc. Investors with Losses are Notified of February 3 Deadline in Securities Fraud Class Action – Contact BFA Law (NASDAQ:SYM)&#39;, &#39;url&#39;: &#39;https://www.globenewswire.com/news-release/2024/12/28/3002384/0/en/SYM-CLASS-ACTION-LAWSUIT-Symbotic-Inc-Investors-with-Losses-are-Notified-of-February-3-Deadline-in-Securities-Fraud-Class-Action-Contact-BFA-Law-NASDAQ-SYM.html&#39;, &#39;description&#39;: &#39;Symbotic Inc. investors that lost money are encouraged to contact BFA Law before February 3, 2025 class action deadline.......&#39;}]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">if</span> <span class="n">tesla_calcualte_price_change_result</span> <span class="o">&gt;</span> <span class="mi">2</span> <span class="ow">or</span> <span class="n">tesla_calcualte_price_change_result</span> <span class="o">&lt;</span> <span class="o">-</span><span class="mi">2</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="n">send_content_define</span> <span class="o">=</span> <span class="n">define_send_content</span><span class="p">(</span><span class="n">tesla_calcualte_price_change_result</span><span class="p">,</span> <span class="n">tesla_news_get_result</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">send_email</span><span class="p">(</span><span class="n">MAIL_USERNAME</span><span class="p">,</span> <span class="n">send_content_define</span><span class="p">,</span> <span class="n">MAIL_USERNAME</span><span class="p">,</span> <span class="n">MAIL_PASSWORD</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="s2">&#34;&#34;&#34;result
+</span></span></span><span class="line"><span class="cl"><span class="s2">TSLA 🔻 4.95%
+</span></span></span><span class="line"><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="cl"><span class="s2">title: Ark Invest&#39;s Cathie Wood Urges Trump&#39;s Incoming Administration To Implement Retroactive Tax Cuts For Economic Boost From January 1
+</span></span></span><span class="line"><span class="cl"><span class="s2">description: Cathie Wood, a well-known U.S. technology investor, is calling for clear tax policies from Donald Trump‘s incoming administration. What Happened: Wood...
+</span></span></span><span class="line"><span class="cl"><span class="s2">url: https://finance.yahoo.com/news/ark-invests-cathie-wood-urges-115812070.html
+</span></span></span><span class="line"><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="cl"><span class="s2">title: BIOA INVESTOR LAWSUIT: BioAge Labs Investors with Losses are Notified of Continuing Investigation into the Company – Contact BFA Law (NASDAQ:BIOA)
+</span></span></span><span class="line"><span class="cl"><span class="s2">description: BioAge Labs, Inc. investors that lost money are encouraged to contact BFA Law about its securities fraud investigation into the Company.......
+</span></span></span><span class="line"><span class="cl"><span class="s2">url: https://www.globenewswire.com/news-release/2024/12/28/3002385/0/en/BIOA-INVESTOR-LAWSUIT-BioAge-Labs-Investors-with-Losses-are-Notified-of-Continuing-Investigation-into-the-Company-Contact-BFA-Law-NASDAQ-BIOA.html
+</span></span></span><span class="line"><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="cl"><span class="s2">title: SYM CLASS ACTION LAWSUIT: Symbotic Inc. Investors with Losses are Notified of February 3 Deadline in Securities Fraud Class Action – Contact BFA Law (NASDAQ:SYM)
+</span></span></span><span class="line"><span class="cl"><span class="s2">description: Symbotic Inc. investors that lost money are encouraged to contact BFA Law before February 3, 2025 class action deadline.......
+</span></span></span><span class="line"><span class="cl"><span class="s2">url: https://www.globenewswire.com/news-release/2024/12/28/3002384/0/en/SYM-CLASS-ACTION-LAWSUIT-Symbotic-Inc-Investors-with-Losses-are-Notified-of-February-3-Deadline-in-Securities-Fraud-Class-Action-Contact-BFA-Law-NASDAQ-SYM.html
+</span></span></span><span class="line"><span class="cl"><span class="s2">&#34;&#34;&#34;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">PawPaw</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">
+        2024-12-31
+        
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/pawpaw_coding.github.io/tags/python/">python</a>
+          <a href="/pawpaw_coding.github.io/tags/100-days/">100-days</a>
+          </div>
+      <nav class="post-nav">
+        
+        <a class="next" href="/pawpaw_coding.github.io/post/python/python-100days/day35/">
+            <span class="next-text nav-default">[Python] Python-100days - Day35</span>
+            <span class="next-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="https://github.com/PawXQ/pawpaw.github.io" class="iconfont icon-github" title="github"></a>
+  <a href="https://pawxq.github.io/pawpaw_coding.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2024<span class="heart"><i class="iconfont icon-heart"></i></span><span>PawPaw</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/pawpaw_coding.github.io/js/main.min.4ae89da218555efa0e7093a20b92017d2e1202b66fff9fc2edf4cb8d44b44c6e.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>
