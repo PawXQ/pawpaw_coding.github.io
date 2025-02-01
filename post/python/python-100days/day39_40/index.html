@@ -1,0 +1,1306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>[Python] Python-100days - Day39_40 - Even - A super concise theme for Hugo</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="PawPaw" /><meta name="description" content="" /><meta name="keywords" content="Hugo, theme, even" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.108.0 with theme even" />
+
+
+<link rel="canonical" href="https://pawxq.github.io/pawpaw_coding.github.io/post/python/python-100days/day39_40/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/pawpaw_coding.github.io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/pawpaw_coding.github.io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/pawpaw_coding.github.io/favicon-16x16.png">
+<link rel="manifest" href="/pawpaw_coding.github.io/manifest.json">
+<link rel="mask-icon" href="/pawpaw_coding.github.io/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/pawpaw_coding.github.io/sass/main.min.f92fd13721ddf72129410fd8250e73152cc6f2438082b6c0208dc24ee7c13fc4.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/style.css">
+
+
+<meta property="og:title" content="[Python] Python-100days - Day39_40" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://pawxq.github.io/pawpaw_coding.github.io/post/python/python-100days/day39_40/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2025-02-01T10:12:14+00:00" />
+<meta property="article:modified_time" content="2025-02-01T10:12:14+00:00" />
+<meta itemprop="name" content="[Python] Python-100days - Day39_40">
+<meta itemprop="description" content=""><meta itemprop="datePublished" content="2025-02-01T10:12:14+00:00" />
+<meta itemprop="dateModified" content="2025-02-01T10:12:14+00:00" />
+<meta itemprop="wordCount" content="1710">
+<meta itemprop="keywords" content="python,100-days," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="[Python] Python-100days - Day39_40"/>
+<meta name="twitter:description" content=""/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">PawPaw_coding</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/pawpaw_coding.github.io/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/pawpaw_coding.github.io/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/pawpaw_coding.github.io/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/pawpaw_coding.github.io/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">PawPaw_coding</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/pawpaw_coding.github.io/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/pawpaw_coding.github.io/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/pawpaw_coding.github.io/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/pawpaw_coding.github.io/categories/">Categories</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">[Python] Python-100days - Day39_40</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2025-02-01 </span>
+        <div class="post-category">
+            <a href="/pawpaw_coding.github.io/categories/python/"> python </a>
+            </div>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#ref">REF</a></li>
+    <li><a href="#project">Project</a>
+      <ul>
+        <li><a href="#amedeus-api">Amedeus API</a></li>
+        <li><a href="#sheety-api">Sheety API</a></li>
+      </ul>
+    </li>
+    <li><a href="#env-的使用">ENV 的使用</a>
+      <ul>
+        <li><a href="#python-dotenv-使用說明">python-dotenv 使用說明</a></li>
+      </ul>
+    </li>
+    <li><a href="#implement">Implement</a>
+      <ul>
+        <li><a href="#env">.env</a></li>
+        <li><a href="#configpy">config.py</a></li>
+        <li><a href="#mainpy">main.py</a></li>
+        <li><a href="#datamanagerpy">datamanager.py</a></li>
+        <li><a href="#flight_datapy">flight_data.py</a></li>
+        <li><a href="#flight_searchpy">flight_search.py</a></li>
+        <li><a href="#notification_managerpy">notification_manager.py</a></li>
+        <li><a href="#pic">PIC</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <h1 id="ref">REF</h1>
+<p>紀錄學習 <a href="https://www.udemy.com/course/100-days-of-code/?couponCode=KEEPLEARNING">Udemy-Python-100days of code</a></p>
+<p>Day 39 - Intermediate+ Capstone Part 1: Flight Deal Finder
+Day 40 - Intermediate+ Capstonr Part 2: Flight Club</p>
+<h1 id="project">Project</h1>
+<p>透過 <code>Google Sheet API</code> 和 <code>Amadeus Flight Search API</code> 查詢機票價格, 如果低於設定值則發送通知, 這邊我使用 <code>SMTP</code> 作為發送工具</p>
+<p>在 google sheet 上第二頁, 紀錄多個 user 的 email 可以一次發送給多人</p>
+<h2 id="amedeus-api">Amedeus API</h2>
+<p><a href="https://developers.amadeus.com/self-service/category/flights/api-doc/flight-offers-search/api-reference">Flight Offers Search</a></p>
+<p><a href="https://developers.amadeus.com/self-service/category/destination-experiences/api-doc/city-search/api-reference">City Search</a></p>
+<h2 id="sheety-api">Sheety API</h2>
+<p><a href="https://dashboard.sheety.co/">Sheety</a></p>
+<h1 id="env-的使用">ENV 的使用</h1>
+<p>透過 <code>.env</code> 檔案搭配 library <code>os</code> <code>python-dotenv</code> 來管理 金鑰, 密碼, 環境變數 等等</p>
+<h2 id="python-dotenv-使用說明">python-dotenv 使用說明</h2>
+<ol>
+<li>安裝</li>
+</ol>
+<ul>
+<li><code>pip install python-dotenv</code></li>
+</ul>
+<ol start="2">
+<li>基本用法</li>
+</ol>
+<ul>
+<li>
+<p>創建 <code>.env</code> 文件：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-plaintext" data-lang="plaintext"><span class="line"><span class="cl">API_KEY=your_api_key
+</span></span><span class="line"><span class="cl">DATABASE_URL=your_database_url
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+<li>
+<p>載入環境變數：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">dotenv</span> <span class="kn">import</span> <span class="n">load_dotenv</span>
+</span></span><span class="line"><span class="cl"><span class="n">load_dotenv</span><span class="p">()</span>  <span class="c1"># 默認讀取 .env 文件(當前路徑)</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># 或</span>
+</span></span><span class="line"><span class="cl"><span class="n">load_dotenv</span><span class="p">(</span><span class="n">override</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>  <span class="c1"># 強制覆蓋已存在的環境變數</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ul>
+<ol start="3">
+<li>
+<p>讀取環境變數：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">os</span>
+</span></span><span class="line"><span class="cl"><span class="n">api_key</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s2">&#34;API_KEY&#34;</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></li>
+</ol>
+<h1 id="implement">Implement</h1>
+<h2 id="env">.env</h2>
+<details>
+  <summary style="cursor: pointer; font-weight: bold;">&#x25B6; .env</summary>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-text" data-lang="text"><span class="line"><span class="cl">AMADEUS_KEY = &#34;aaa&#34;
+</span></span><span class="line"><span class="cl">AMADEUS_SECRET = &#34;bbb&#34;
+</span></span><span class="line"><span class="cl">SHEET_URL = &#34;https://api.sheety.co/aaa/flightDeals/prices&#34;
+</span></span><span class="line"><span class="cl">SHEET_URL_USERS = &#34;https://api.sheety.co/bbb/flightDeals/users&#34;
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"># Email Configurations
+</span></span><span class="line"><span class="cl">MAIL_USERNAME = &#34;aaa@gmail.com&#34;
+</span></span><span class="line"><span class="cl">MAIL_PASSWORD = &#34;bbb&#34;
+</span></span></code></pre></td></tr></table>
+</div>
+</div></details>
+<h2 id="configpy">config.py</h2>
+<details>
+  <summary style="cursor: pointer; font-weight: bold;">&#x25B6; config.py</summary>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">os</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">dotenv</span> <span class="kn">import</span> <span class="n">load_dotenv</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">load_dotenv</span><span class="p">(</span><span class="n">override</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">Config</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># API Configurations</span>
+</span></span><span class="line"><span class="cl">    <span class="n">AMADEUS_KEY</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s2">&#34;AMADEUS_KEY&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">AMADEUS_SECRET</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s2">&#34;AMADEUS_SECRET&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">SHEET_URL</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s2">&#34;SHEET_URL&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">SHEET_URL_USERS</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s2">&#34;SHEET_URL_USERS&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1"># Email Configurations</span>
+</span></span><span class="line"><span class="cl">    <span class="n">MAIL_USERNAME</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s2">&#34;MAIL_USERNAME&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">MAIL_PASSWORD</span> <span class="o">=</span> <span class="n">os</span><span class="o">.</span><span class="n">getenv</span><span class="p">(</span><span class="s2">&#34;MAIL_PASSWORD&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">SMTP_SERVER</span> <span class="o">=</span> <span class="s2">&#34;smtp.gmail.com&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">SMTP_PORT</span> <span class="o">=</span> <span class="mi">587</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1"># Amadeus API Endpoints</span>
+</span></span><span class="line"><span class="cl">    <span class="n">AMADEUS_BASE_URL_V1</span> <span class="o">=</span> <span class="s2">&#34;https://test.api.amadeus.com/v1&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">AMADEUS_BASE_URL_V2</span> <span class="o">=</span> <span class="s2">&#34;https://test.api.amadeus.com/v2&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">AMADEUS_TOKEN_ENDPOINT</span> <span class="o">=</span> <span class="s2">&#34;security/oauth2/token&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">AMADEUS_CITY_ENDPOINT</span> <span class="o">=</span> <span class="s2">&#34;/reference-data/locations/cities&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">AMADEUS_FLIGHT_OFFERS_ENDPOINT</span> <span class="o">=</span> <span class="s2">&#34;/shopping/flight-offers&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1"># Flight Search Defaults</span>
+</span></span><span class="line"><span class="cl">    <span class="n">DEFAULT_CURRENCY</span> <span class="o">=</span> <span class="s2">&#34;TWD&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">DEFAULT_ADULTS</span> <span class="o">=</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">    <span class="n">DEFAULT_MAX_RESULTS</span> <span class="o">=</span> <span class="mi">1</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></details>
+<h2 id="mainpy">main.py</h2>
+<details>
+  <summary style="cursor: pointer; font-weight: bold;">&#x25B6; main.py</summary>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span><span class="lnt">51
+</span><span class="lnt">52
+</span><span class="lnt">53
+</span><span class="lnt">54
+</span><span class="lnt">55
+</span><span class="lnt">56
+</span><span class="lnt">57
+</span><span class="lnt">58
+</span><span class="lnt">59
+</span><span class="lnt">60
+</span><span class="lnt">61
+</span><span class="lnt">62
+</span><span class="lnt">63
+</span><span class="lnt">64
+</span><span class="lnt">65
+</span><span class="lnt">66
+</span><span class="lnt">67
+</span><span class="lnt">68
+</span><span class="lnt">69
+</span><span class="lnt">70
+</span><span class="lnt">71
+</span><span class="lnt">72
+</span><span class="lnt">73
+</span><span class="lnt">74
+</span><span class="lnt">75
+</span><span class="lnt">76
+</span><span class="lnt">77
+</span><span class="lnt">78
+</span><span class="lnt">79
+</span><span class="lnt">80
+</span><span class="lnt">81
+</span><span class="lnt">82
+</span><span class="lnt">83
+</span><span class="lnt">84
+</span><span class="lnt">85
+</span><span class="lnt">86
+</span><span class="lnt">87
+</span><span class="lnt">88
+</span><span class="lnt">89
+</span><span class="lnt">90
+</span><span class="lnt">91
+</span><span class="lnt">92
+</span><span class="lnt">93
+</span><span class="lnt">94
+</span><span class="lnt">95
+</span><span class="lnt">96
+</span><span class="lnt">97
+</span><span class="lnt">98
+</span><span class="lnt">99
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="c1"># This file will need to use the DataManager,FlightSearch, FlightData, NotificationManager classes to achieve the program requirements.</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">datetime</span> <span class="kn">import</span> <span class="n">datetime</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">config</span> <span class="kn">import</span> <span class="n">Config</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">data_manager</span> <span class="kn">import</span> <span class="n">DataManager</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">flight_search</span> <span class="kn">import</span> <span class="n">FlightSearch</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">flight_data</span> <span class="kn">import</span> <span class="n">FlightData</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">notification_manager</span> <span class="kn">import</span> <span class="n">NotificationManager</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="s2">&#34;&#34;&#34;Main application class for finding flight deals.&#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">data_manager</span> <span class="o">=</span> <span class="n">DataManager</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">flight_search</span> <span class="o">=</span> <span class="n">FlightSearch</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">notification_manager</span> <span class="o">=</span> <span class="n">NotificationManager</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">now_date</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&#34;%Y-%m-</span><span class="si">%d</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">departure_date</span> <span class="o">=</span> <span class="n">now_date</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">update_city_codes</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;&#34;&#34;Updates IATA codes for all cities in the database.&#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">cities</span> <span class="o">=</span> <span class="n">data_manager</span><span class="o">.</span><span class="n">get_city_list</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">city</span> <span class="ow">in</span> <span class="n">cities</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">iata_code</span> <span class="o">=</span> <span class="n">flight_search</span><span class="o">.</span><span class="n">get_city_iata</span><span class="p">(</span><span class="n">city</span><span class="p">[</span><span class="s2">&#34;city&#34;</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">        <span class="n">data_manager</span><span class="o">.</span><span class="n">update_city_iata</span><span class="p">(</span><span class="n">city</span><span class="p">[</span><span class="s2">&#34;id&#34;</span><span class="p">],</span> <span class="n">iata_code</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">update_flight_prices</span><span class="p">(</span><span class="n">depart_date</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;&#34;&#34;Updates flight prices for all destinations.&#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">cities</span> <span class="o">=</span> <span class="n">data_manager</span><span class="o">.</span><span class="n">get_city_list</span><span class="p">(</span><span class="n">include_iata</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">city</span> <span class="ow">in</span> <span class="n">cities</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">flight_info</span> <span class="o">=</span> <span class="n">flight_search</span><span class="o">.</span><span class="n">search_flights</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">            <span class="n">origin</span><span class="o">=</span><span class="s2">&#34;TPE&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="n">destination</span><span class="o">=</span><span class="n">city</span><span class="p">[</span><span class="s2">&#34;iataCode&#34;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">            <span class="n">departure_date</span><span class="o">=</span><span class="n">depart_date</span>
+</span></span><span class="line"><span class="cl">        <span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="n">flight_info</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="n">data_manager</span><span class="o">.</span><span class="n">update_flight_data</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">            <span class="n">city_id</span><span class="o">=</span><span class="n">city</span><span class="p">[</span><span class="s2">&#34;id&#34;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">            <span class="n">search_date</span><span class="o">=</span><span class="n">now_date</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="n">lastticketingdatetime</span><span class="o">=</span><span class="n">flight_info</span><span class="p">[</span><span class="s2">&#34;lastTicketingDateTime&#34;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">            <span class="n">departure_date</span><span class="o">=</span><span class="n">flight_info</span><span class="p">[</span><span class="s2">&#34;departure_date&#34;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">            <span class="n">departure_iata</span><span class="o">=</span><span class="n">flight_info</span><span class="p">[</span><span class="s2">&#34;origin&#34;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">            <span class="n">airline</span><span class="o">=</span><span class="n">flight_info</span><span class="p">[</span><span class="s2">&#34;airline&#34;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">            <span class="n">price</span><span class="o">=</span><span class="n">flight_info</span><span class="p">[</span><span class="s2">&#34;price&#34;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">            <span class="n">has_direct_flight</span><span class="o">=</span><span class="n">flight_info</span><span class="p">[</span><span class="s2">&#34;hasDirectFlight&#34;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">            <span class="n">flight_type</span><span class="o">=</span><span class="n">flight_info</span><span class="p">[</span><span class="s2">&#34;flightType&#34;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">            <span class="n">stopover_city</span><span class="o">=</span><span class="n">flight_info</span><span class="p">[</span><span class="s2">&#34;stopoverCity&#34;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">            <span class="n">stopover_count</span><span class="o">=</span><span class="n">flight_info</span><span class="p">[</span><span class="s2">&#34;stopoverCount&#34;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">check_price_alerts</span><span class="p">(</span><span class="n">recipient_email</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;&#34;&#34;Checks for price alerts and sends notifications.&#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">    <span class="n">flight_data</span> <span class="o">=</span> <span class="n">data_manager</span><span class="o">.</span><span class="n">get_flight_data</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">flight</span> <span class="ow">in</span> <span class="n">flight_data</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="nb">print</span><span class="p">(</span><span class="n">flight</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">lowest_price</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">flight</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;lowest_price&#39;</span><span class="p">,</span> <span class="nb">float</span><span class="p">(</span><span class="s1">&#39;inf&#39;</span><span class="p">)))</span>
+</span></span><span class="line"><span class="cl">        <span class="n">current_price</span> <span class="o">=</span> <span class="nb">float</span><span class="p">(</span><span class="n">flight</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;flight_price&#39;</span><span class="p">,</span> <span class="nb">float</span><span class="p">(</span><span class="s1">&#39;inf&#39;</span><span class="p">)))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="n">current_price</span> <span class="o">&lt;</span> <span class="n">lowest_price</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">flight_info</span> <span class="o">=</span> <span class="n">FlightData</span><span class="o">.</span><span class="n">from_dict</span><span class="p">(</span><span class="n">flight</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="n">message</span> <span class="o">=</span> <span class="p">(</span>
+</span></span><span class="line"><span class="cl">                <span class="sa">f</span><span class="s2">&#34;Low Price Alert!</span><span class="se">\n</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl">                <span class="sa">f</span><span class="s2">&#34;Destination: </span><span class="si">{</span><span class="n">flight</span><span class="p">[</span><span class="s1">&#39;city&#39;</span><span class="p">]</span><span class="si">}</span><span class="se">\n\n</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl">                <span class="sa">f</span><span class="s2">&#34;</span><span class="si">{</span><span class="n">flight_info</span><span class="o">.</span><span class="n">format_message</span><span class="p">()</span><span class="si">}</span><span class="se">\n\n</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl">                <span class="sa">f</span><span class="s2">&#34;Lower than expected price: </span><span class="si">{</span><span class="n">lowest_price</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">Config</span><span class="o">.</span><span class="n">DEFAULT_CURRENCY</span><span class="si">}</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl">            <span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">            <span class="n">notification_manager</span><span class="o">.</span><span class="n">send_email</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">                <span class="n">recipient_email</span><span class="o">=</span><span class="n">recipient_email</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="n">email_body</span><span class="o">=</span><span class="n">message</span>
+</span></span><span class="line"><span class="cl">            <span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">main</span><span class="p">():</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># departure_date = &#34;2025-01-27&#34;  # Could be parameterized</span>
+</span></span><span class="line"><span class="cl">    <span class="n">now_date</span> <span class="o">=</span> <span class="n">datetime</span><span class="o">.</span><span class="n">now</span><span class="p">()</span><span class="o">.</span><span class="n">strftime</span><span class="p">(</span><span class="s2">&#34;%Y-%m-</span><span class="si">%d</span><span class="s2">&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">    <span class="n">departure_date</span> <span class="o">=</span> <span class="n">now_date</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1"># recipient_email = &#34;123@gmail.com&#34;  # Could be moved to config</span>
+</span></span><span class="line"><span class="cl">    <span class="n">recipient_email_list</span> <span class="o">=</span> <span class="n">data_manager</span><span class="o">.</span><span class="n">get_receive_email_list</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">    <span class="nb">print</span><span class="p">(</span><span class="n">recipient_email_list</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1"># Update city IATA codes</span>
+</span></span><span class="line"><span class="cl">    <span class="n">update_city_codes</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1"># Update flight prices</span>
+</span></span><span class="line"><span class="cl">    <span class="n">update_flight_prices</span><span class="p">(</span><span class="n">departure_date</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c1"># Check for price alerts</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="n">recipient_email</span> <span class="ow">in</span> <span class="n">recipient_email_list</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="n">check_price_alerts</span><span class="p">(</span><span class="n">recipient_email</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">main</span><span class="p">()</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></details>
+<h2 id="datamanagerpy">datamanager.py</h2>
+<details>
+  <summary style="cursor: pointer; font-weight: bold;">&#x25B6; datamanager.py</summary>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">  1
+</span><span class="lnt">  2
+</span><span class="lnt">  3
+</span><span class="lnt">  4
+</span><span class="lnt">  5
+</span><span class="lnt">  6
+</span><span class="lnt">  7
+</span><span class="lnt">  8
+</span><span class="lnt">  9
+</span><span class="lnt"> 10
+</span><span class="lnt"> 11
+</span><span class="lnt"> 12
+</span><span class="lnt"> 13
+</span><span class="lnt"> 14
+</span><span class="lnt"> 15
+</span><span class="lnt"> 16
+</span><span class="lnt"> 17
+</span><span class="lnt"> 18
+</span><span class="lnt"> 19
+</span><span class="lnt"> 20
+</span><span class="lnt"> 21
+</span><span class="lnt"> 22
+</span><span class="lnt"> 23
+</span><span class="lnt"> 24
+</span><span class="lnt"> 25
+</span><span class="lnt"> 26
+</span><span class="lnt"> 27
+</span><span class="lnt"> 28
+</span><span class="lnt"> 29
+</span><span class="lnt"> 30
+</span><span class="lnt"> 31
+</span><span class="lnt"> 32
+</span><span class="lnt"> 33
+</span><span class="lnt"> 34
+</span><span class="lnt"> 35
+</span><span class="lnt"> 36
+</span><span class="lnt"> 37
+</span><span class="lnt"> 38
+</span><span class="lnt"> 39
+</span><span class="lnt"> 40
+</span><span class="lnt"> 41
+</span><span class="lnt"> 42
+</span><span class="lnt"> 43
+</span><span class="lnt"> 44
+</span><span class="lnt"> 45
+</span><span class="lnt"> 46
+</span><span class="lnt"> 47
+</span><span class="lnt"> 48
+</span><span class="lnt"> 49
+</span><span class="lnt"> 50
+</span><span class="lnt"> 51
+</span><span class="lnt"> 52
+</span><span class="lnt"> 53
+</span><span class="lnt"> 54
+</span><span class="lnt"> 55
+</span><span class="lnt"> 56
+</span><span class="lnt"> 57
+</span><span class="lnt"> 58
+</span><span class="lnt"> 59
+</span><span class="lnt"> 60
+</span><span class="lnt"> 61
+</span><span class="lnt"> 62
+</span><span class="lnt"> 63
+</span><span class="lnt"> 64
+</span><span class="lnt"> 65
+</span><span class="lnt"> 66
+</span><span class="lnt"> 67
+</span><span class="lnt"> 68
+</span><span class="lnt"> 69
+</span><span class="lnt"> 70
+</span><span class="lnt"> 71
+</span><span class="lnt"> 72
+</span><span class="lnt"> 73
+</span><span class="lnt"> 74
+</span><span class="lnt"> 75
+</span><span class="lnt"> 76
+</span><span class="lnt"> 77
+</span><span class="lnt"> 78
+</span><span class="lnt"> 79
+</span><span class="lnt"> 80
+</span><span class="lnt"> 81
+</span><span class="lnt"> 82
+</span><span class="lnt"> 83
+</span><span class="lnt"> 84
+</span><span class="lnt"> 85
+</span><span class="lnt"> 86
+</span><span class="lnt"> 87
+</span><span class="lnt"> 88
+</span><span class="lnt"> 89
+</span><span class="lnt"> 90
+</span><span class="lnt"> 91
+</span><span class="lnt"> 92
+</span><span class="lnt"> 93
+</span><span class="lnt"> 94
+</span><span class="lnt"> 95
+</span><span class="lnt"> 96
+</span><span class="lnt"> 97
+</span><span class="lnt"> 98
+</span><span class="lnt"> 99
+</span><span class="lnt">100
+</span><span class="lnt">101
+</span><span class="lnt">102
+</span><span class="lnt">103
+</span><span class="lnt">104
+</span><span class="lnt">105
+</span><span class="lnt">106
+</span><span class="lnt">107
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">requests</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">config</span> <span class="kn">import</span> <span class="n">Config</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">DataManager</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;&#34;&#34;Manages interactions with the Google Sheet API.&#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">sheet_url</span> <span class="o">=</span> <span class="n">Config</span><span class="o">.</span><span class="n">SHEET_URL</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">sheet_url_users</span> <span class="o">=</span> <span class="n">Config</span><span class="o">.</span><span class="n">SHEET_URL_USERS</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">city_list</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">get_city_list</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">get_receive_email_list</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">sheet_url_users</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">response</span><span class="o">.</span><span class="n">raise_for_status</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">        <span class="n">response_json</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="p">[</span><span class="n">user</span><span class="p">[</span><span class="s2">&#34;email&#34;</span><span class="p">]</span> <span class="k">for</span> <span class="n">user</span> <span class="ow">in</span> <span class="n">response_json</span><span class="p">[</span><span class="s2">&#34;users&#34;</span><span class="p">]]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">get_city_list</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">include_iata</span><span class="o">=</span><span class="kc">False</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;&#34;&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s2">        Retrieves city list from the sheet.
+</span></span></span><span class="line"><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="cl"><span class="s2">        Args:
+</span></span></span><span class="line"><span class="cl"><span class="s2">            include_iata: Whether to include IATA codes in the response
+</span></span></span><span class="line"><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="cl"><span class="s2">        Returns:
+</span></span></span><span class="line"><span class="cl"><span class="s2">            List of city dictionaries
+</span></span></span><span class="line"><span class="cl"><span class="s2">        &#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">sheet_url</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">response</span><span class="o">.</span><span class="n">raise_for_status</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">        <span class="n">data</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="n">include_iata</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">                <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                    <span class="s2">&#34;id&#34;</span><span class="p">:</span> <span class="n">item</span><span class="p">[</span><span class="s2">&#34;id&#34;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">                    <span class="s2">&#34;city&#34;</span><span class="p">:</span> <span class="n">item</span><span class="p">[</span><span class="s2">&#34;city&#34;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">                    <span class="s2">&#34;iataCode&#34;</span><span class="p">:</span> <span class="n">item</span><span class="p">[</span><span class="s2">&#34;iataCode&#34;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">                <span class="p">}</span>
+</span></span><span class="line"><span class="cl">                <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">data</span><span class="p">[</span><span class="s2">&#34;prices&#34;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">            <span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">            <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="s2">&#34;id&#34;</span><span class="p">:</span> <span class="n">item</span><span class="p">[</span><span class="s2">&#34;id&#34;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">                <span class="s2">&#34;city&#34;</span><span class="p">:</span> <span class="n">item</span><span class="p">[</span><span class="s2">&#34;city&#34;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">data</span><span class="p">[</span><span class="s2">&#34;prices&#34;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">get_flight_data</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;&#34;&#34;Retrieves complete flight data from the sheet.&#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">sheet_url</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">response</span><span class="o">.</span><span class="n">raise_for_status</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">            <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="s2">&#34;id&#34;</span><span class="p">:</span> <span class="n">item</span><span class="p">[</span><span class="s2">&#34;id&#34;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">                <span class="s2">&#34;lastTicketingDateTime&#34;</span><span class="p">:</span> <span class="n">item</span><span class="p">[</span><span class="s2">&#34;lastTicketingDateTime&#34;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">                <span class="s2">&#34;departure_date&#34;</span><span class="p">:</span> <span class="n">item</span><span class="p">[</span><span class="s2">&#34;departDate&#34;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">                <span class="s2">&#34;departure_iata&#34;</span><span class="p">:</span> <span class="n">item</span><span class="p">[</span><span class="s2">&#34;departIata&#34;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">                <span class="s2">&#34;city&#34;</span><span class="p">:</span> <span class="n">item</span><span class="p">[</span><span class="s2">&#34;city&#34;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">                <span class="s2">&#34;iata_code&#34;</span><span class="p">:</span> <span class="n">item</span><span class="p">[</span><span class="s2">&#34;iataCode&#34;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">                <span class="s2">&#34;airline&#34;</span><span class="p">:</span> <span class="n">item</span><span class="p">[</span><span class="s2">&#34;airline&#34;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">                <span class="s2">&#34;lowest_price&#34;</span><span class="p">:</span> <span class="n">item</span><span class="p">[</span><span class="s2">&#34;lowestPrice&#34;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">                <span class="s2">&#34;flight_price&#34;</span><span class="p">:</span> <span class="n">item</span><span class="p">[</span><span class="s2">&#34;flightPrice&#34;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">            <span class="k">for</span> <span class="n">item</span> <span class="ow">in</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()[</span><span class="s2">&#34;prices&#34;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">update_city_iata</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">city_id</span><span class="p">,</span> <span class="n">iata_code</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;&#34;&#34;Updates IATA code for a specific city.&#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">payload</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="s2">&#34;price&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="s2">&#34;iataCode&#34;</span><span class="p">:</span> <span class="n">iata_code</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">put</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">            <span class="n">url</span><span class="o">=</span><span class="sa">f</span><span class="s2">&#34;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">sheet_url</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">city_id</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="n">json</span><span class="o">=</span><span class="n">payload</span>
+</span></span><span class="line"><span class="cl">        <span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">response</span><span class="o">.</span><span class="n">raise_for_status</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">update_flight_data</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">city_id</span><span class="p">,</span> <span class="n">search_date</span><span class="p">,</span> <span class="n">lastticketingdatetime</span><span class="p">,</span> <span class="n">departure_date</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                           <span class="n">departure_iata</span><span class="p">,</span> <span class="n">airline</span><span class="p">,</span> <span class="n">price</span><span class="p">,</span> <span class="n">has_direct_flight</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                           <span class="n">flight_type</span><span class="o">=</span><span class="s2">&#34;DIRECT&#34;</span><span class="p">,</span> <span class="n">stopover_city</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">stopover_count</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;&#34;&#34;Updates flight information for a specific city.&#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">payload</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="s2">&#34;price&#34;</span><span class="p">:</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="s2">&#34;searchDate&#34;</span><span class="p">:</span> <span class="n">search_date</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="s2">&#34;lastTicketingDateTime&#34;</span><span class="p">:</span> <span class="n">lastticketingdatetime</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="s2">&#34;departDate&#34;</span><span class="p">:</span> <span class="n">departure_date</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="s2">&#34;departIata&#34;</span><span class="p">:</span> <span class="n">departure_iata</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="s2">&#34;airline&#34;</span><span class="p">:</span> <span class="n">airline</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="s2">&#34;flightPrice&#34;</span><span class="p">:</span> <span class="nb">str</span><span class="p">(</span><span class="n">price</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">                <span class="s2">&#34;hasDirectFlight&#34;</span><span class="p">:</span> <span class="n">has_direct_flight</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="s2">&#34;flightType&#34;</span><span class="p">:</span> <span class="n">flight_type</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="s2">&#34;stopoverCity&#34;</span><span class="p">:</span> <span class="n">stopover_city</span> <span class="k">if</span> <span class="n">stopover_city</span> <span class="k">else</span> <span class="s2">&#34;&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="s2">&#34;stopoverCount&#34;</span><span class="p">:</span> <span class="n">stopover_count</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">put</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">            <span class="n">url</span><span class="o">=</span><span class="sa">f</span><span class="s2">&#34;</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">sheet_url</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">city_id</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="n">json</span><span class="o">=</span><span class="n">payload</span>
+</span></span><span class="line"><span class="cl">        <span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">response</span><span class="o">.</span><span class="n">raise_for_status</span><span class="p">()</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></details>
+<h2 id="flight_datapy">flight_data.py</h2>
+<details>
+  <summary style="cursor: pointer; font-weight: bold;">&#x25B6; flight_data.py</summary>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span><span class="lnt">47
+</span><span class="lnt">48
+</span><span class="lnt">49
+</span><span class="lnt">50
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">config</span> <span class="kn">import</span> <span class="n">Config</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">FlightData</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">price</span><span class="p">,</span> <span class="n">origin</span><span class="p">,</span> <span class="n">destination</span><span class="p">,</span> <span class="n">last_ticket_date</span><span class="p">,</span> <span class="n">departure_date</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                 <span class="n">airline</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">has_direct_flight</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">flight_type</span><span class="o">=</span><span class="s2">&#34;DIRECT&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                 <span class="n">stopover_city</span><span class="o">=</span><span class="kc">None</span><span class="p">,</span> <span class="n">stopover_count</span><span class="o">=</span><span class="mi">0</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;&#34;&#34;Structures flight data in a consistent format.&#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">price</span> <span class="o">=</span> <span class="n">price</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">origin</span> <span class="o">=</span> <span class="n">origin</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">destination</span> <span class="o">=</span> <span class="n">destination</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">last_ticket_date</span> <span class="o">=</span> <span class="n">last_ticket_date</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">departure_date</span> <span class="o">=</span> <span class="n">departure_date</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">airline</span> <span class="o">=</span> <span class="n">airline</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">has_direct_flight</span> <span class="o">=</span> <span class="n">has_direct_flight</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">flight_type</span> <span class="o">=</span> <span class="n">flight_type</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">stopover_city</span> <span class="o">=</span> <span class="n">stopover_city</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">stopover_count</span> <span class="o">=</span> <span class="n">stopover_count</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">from_dict</span><span class="p">(</span><span class="n">data</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;&#34;&#34;Creates FlightData instance from dictionary.&#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">FlightData</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">            <span class="n">price</span><span class="o">=</span><span class="nb">float</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&#34;flight_price&#34;</span><span class="p">,</span> <span class="mi">0</span><span class="p">)),</span>
+</span></span><span class="line"><span class="cl">            <span class="n">origin</span><span class="o">=</span><span class="n">data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&#34;departure_iata&#34;</span><span class="p">,</span> <span class="s2">&#34;&#34;</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">            <span class="n">destination</span><span class="o">=</span><span class="n">data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&#34;iata_code&#34;</span><span class="p">,</span> <span class="s2">&#34;&#34;</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">            <span class="n">last_ticket_date</span><span class="o">=</span><span class="n">data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&#34;lastTicketingDateTime&#34;</span><span class="p">,</span> <span class="s2">&#34;&#34;</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">            <span class="n">departure_date</span><span class="o">=</span><span class="n">data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&#34;departure_date&#34;</span><span class="p">,</span> <span class="s2">&#34;&#34;</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">            <span class="n">airline</span><span class="o">=</span><span class="n">data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&#34;airline&#34;</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">            <span class="n">has_direct_flight</span><span class="o">=</span><span class="n">data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&#34;hasDirectFlight&#34;</span><span class="p">,</span> <span class="kc">True</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">            <span class="n">flight_type</span><span class="o">=</span><span class="n">data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&#34;flightType&#34;</span><span class="p">,</span> <span class="s2">&#34;DIRECT&#34;</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">            <span class="n">stopover_city</span><span class="o">=</span><span class="n">data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&#34;stopoverCity&#34;</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">            <span class="n">stopover_count</span><span class="o">=</span><span class="n">data</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&#34;stopoverCount&#34;</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">format_message</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;&#34;&#34;Formats flight information as a readable message.&#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">base_message</span> <span class="o">=</span> <span class="p">(</span>
+</span></span><span class="line"><span class="cl">            <span class="sa">f</span><span class="s2">&#34;Flight from </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">origin</span><span class="si">}</span><span class="s2"> to </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">destination</span><span class="si">}</span><span class="se">\n</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl">            <span class="sa">f</span><span class="s2">&#34;Departure: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">departure_date</span><span class="si">}</span><span class="se">\n</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl">            <span class="sa">f</span><span class="s2">&#34;Price: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">price</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">Config</span><span class="o">.</span><span class="n">DEFAULT_CURRENCY</span><span class="si">}</span><span class="se">\n</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl">            <span class="sa">f</span><span class="s2">&#34;Airline: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">airline</span> <span class="ow">or</span> <span class="s1">&#39;Not specified&#39;</span><span class="si">}</span><span class="se">\n</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl">            <span class="sa">f</span><span class="s2">&#34;Last Ticketing Date: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">last_ticket_date</span><span class="si">}</span><span class="se">\n</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl">            <span class="sa">f</span><span class="s2">&#34;Flight Type: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">flight_type</span><span class="si">}</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="p">)</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="ow">not</span> <span class="bp">self</span><span class="o">.</span><span class="n">has_direct_flight</span> <span class="ow">and</span> <span class="bp">self</span><span class="o">.</span><span class="n">stopover_city</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">base_message</span> <span class="o">+=</span> <span class="sa">f</span><span class="s2">&#34;</span><span class="se">\n</span><span class="s2">Stopovers: </span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">stopover_city</span><span class="si">}</span><span class="s2"> (</span><span class="si">{</span><span class="bp">self</span><span class="o">.</span><span class="n">stopover_count</span><span class="si">}</span><span class="s2"> stops)&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">base_message</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></details>
+<h2 id="flight_searchpy">flight_search.py</h2>
+<details>
+  <summary style="cursor: pointer; font-weight: bold;">&#x25B6; flight_search.py</summary>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">  1
+</span><span class="lnt">  2
+</span><span class="lnt">  3
+</span><span class="lnt">  4
+</span><span class="lnt">  5
+</span><span class="lnt">  6
+</span><span class="lnt">  7
+</span><span class="lnt">  8
+</span><span class="lnt">  9
+</span><span class="lnt"> 10
+</span><span class="lnt"> 11
+</span><span class="lnt"> 12
+</span><span class="lnt"> 13
+</span><span class="lnt"> 14
+</span><span class="lnt"> 15
+</span><span class="lnt"> 16
+</span><span class="lnt"> 17
+</span><span class="lnt"> 18
+</span><span class="lnt"> 19
+</span><span class="lnt"> 20
+</span><span class="lnt"> 21
+</span><span class="lnt"> 22
+</span><span class="lnt"> 23
+</span><span class="lnt"> 24
+</span><span class="lnt"> 25
+</span><span class="lnt"> 26
+</span><span class="lnt"> 27
+</span><span class="lnt"> 28
+</span><span class="lnt"> 29
+</span><span class="lnt"> 30
+</span><span class="lnt"> 31
+</span><span class="lnt"> 32
+</span><span class="lnt"> 33
+</span><span class="lnt"> 34
+</span><span class="lnt"> 35
+</span><span class="lnt"> 36
+</span><span class="lnt"> 37
+</span><span class="lnt"> 38
+</span><span class="lnt"> 39
+</span><span class="lnt"> 40
+</span><span class="lnt"> 41
+</span><span class="lnt"> 42
+</span><span class="lnt"> 43
+</span><span class="lnt"> 44
+</span><span class="lnt"> 45
+</span><span class="lnt"> 46
+</span><span class="lnt"> 47
+</span><span class="lnt"> 48
+</span><span class="lnt"> 49
+</span><span class="lnt"> 50
+</span><span class="lnt"> 51
+</span><span class="lnt"> 52
+</span><span class="lnt"> 53
+</span><span class="lnt"> 54
+</span><span class="lnt"> 55
+</span><span class="lnt"> 56
+</span><span class="lnt"> 57
+</span><span class="lnt"> 58
+</span><span class="lnt"> 59
+</span><span class="lnt"> 60
+</span><span class="lnt"> 61
+</span><span class="lnt"> 62
+</span><span class="lnt"> 63
+</span><span class="lnt"> 64
+</span><span class="lnt"> 65
+</span><span class="lnt"> 66
+</span><span class="lnt"> 67
+</span><span class="lnt"> 68
+</span><span class="lnt"> 69
+</span><span class="lnt"> 70
+</span><span class="lnt"> 71
+</span><span class="lnt"> 72
+</span><span class="lnt"> 73
+</span><span class="lnt"> 74
+</span><span class="lnt"> 75
+</span><span class="lnt"> 76
+</span><span class="lnt"> 77
+</span><span class="lnt"> 78
+</span><span class="lnt"> 79
+</span><span class="lnt"> 80
+</span><span class="lnt"> 81
+</span><span class="lnt"> 82
+</span><span class="lnt"> 83
+</span><span class="lnt"> 84
+</span><span class="lnt"> 85
+</span><span class="lnt"> 86
+</span><span class="lnt"> 87
+</span><span class="lnt"> 88
+</span><span class="lnt"> 89
+</span><span class="lnt"> 90
+</span><span class="lnt"> 91
+</span><span class="lnt"> 92
+</span><span class="lnt"> 93
+</span><span class="lnt"> 94
+</span><span class="lnt"> 95
+</span><span class="lnt"> 96
+</span><span class="lnt"> 97
+</span><span class="lnt"> 98
+</span><span class="lnt"> 99
+</span><span class="lnt">100
+</span><span class="lnt">101
+</span><span class="lnt">102
+</span><span class="lnt">103
+</span><span class="lnt">104
+</span><span class="lnt">105
+</span><span class="lnt">106
+</span><span class="lnt">107
+</span><span class="lnt">108
+</span><span class="lnt">109
+</span><span class="lnt">110
+</span><span class="lnt">111
+</span><span class="lnt">112
+</span><span class="lnt">113
+</span><span class="lnt">114
+</span><span class="lnt">115
+</span><span class="lnt">116
+</span><span class="lnt">117
+</span><span class="lnt">118
+</span><span class="lnt">119
+</span><span class="lnt">120
+</span><span class="lnt">121
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">requests</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">config</span> <span class="kn">import</span> <span class="n">Config</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">FlightSearch</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;&#34;&#34;Handles interactions with the Amadeus Flight Search API.&#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">access_token</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_get_access_token</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">_get_access_token</span><span class="p">(</span><span class="bp">self</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;&#34;&#34;Retrieves access token from Amadeus API.&#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">headers</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="s2">&#34;grant_type&#34;</span><span class="p">:</span> <span class="s2">&#34;client_credentials&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="s2">&#34;client_id&#34;</span><span class="p">:</span> <span class="n">Config</span><span class="o">.</span><span class="n">AMADEUS_KEY</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="s2">&#34;client_secret&#34;</span><span class="p">:</span> <span class="n">Config</span><span class="o">.</span><span class="n">AMADEUS_SECRET</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">post</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">            <span class="n">url</span><span class="o">=</span><span class="sa">f</span><span class="s2">&#34;</span><span class="si">{</span><span class="n">Config</span><span class="o">.</span><span class="n">AMADEUS_BASE_URL_V1</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">Config</span><span class="o">.</span><span class="n">AMADEUS_TOKEN_ENDPOINT</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="n">data</span><span class="o">=</span><span class="n">headers</span>
+</span></span><span class="line"><span class="cl">        <span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">response</span><span class="o">.</span><span class="n">raise_for_status</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">        <span class="n">token_data</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="sa">f</span><span class="s2">&#34;</span><span class="si">{</span><span class="n">token_data</span><span class="p">[</span><span class="s1">&#39;token_type&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2"> </span><span class="si">{</span><span class="n">token_data</span><span class="p">[</span><span class="s1">&#39;access_token&#39;</span><span class="p">]</span><span class="si">}</span><span class="s2">&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">get_city_iata</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">city_name</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;&#34;&#34;Retrieves IATA code for a given city name.&#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">headers</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&#34;Authorization&#34;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">access_token</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">        <span class="n">params</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&#34;keyword&#34;</span><span class="p">:</span> <span class="n">city_name</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">            <span class="n">url</span><span class="o">=</span><span class="sa">f</span><span class="s2">&#34;</span><span class="si">{</span><span class="n">Config</span><span class="o">.</span><span class="n">AMADEUS_BASE_URL_V1</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">Config</span><span class="o">.</span><span class="n">AMADEUS_CITY_ENDPOINT</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="n">params</span><span class="o">=</span><span class="n">params</span>
+</span></span><span class="line"><span class="cl">        <span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">response</span><span class="o">.</span><span class="n">raise_for_status</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()[</span><span class="s1">&#39;data&#39;</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="s1">&#39;iataCode&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">search_flights</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">origin</span><span class="p">,</span> <span class="n">destination</span><span class="p">,</span> <span class="n">departure_date</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                       <span class="n">adults</span><span class="o">=</span><span class="n">Config</span><span class="o">.</span><span class="n">DEFAULT_ADULTS</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                       <span class="n">currency</span><span class="o">=</span><span class="n">Config</span><span class="o">.</span><span class="n">DEFAULT_CURRENCY</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                       <span class="n">direct_only</span><span class="o">=</span><span class="kc">True</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;&#34;&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s2">        Searches for flights based on given parameters.
+</span></span></span><span class="line"><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="cl"><span class="s2">        Args:
+</span></span></span><span class="line"><span class="cl"><span class="s2">            origin: Origin city IATA code
+</span></span></span><span class="line"><span class="cl"><span class="s2">            destination: Destination city IATA code
+</span></span></span><span class="line"><span class="cl"><span class="s2">            departure_date: Departure date in YYYY-MM-DD format
+</span></span></span><span class="line"><span class="cl"><span class="s2">            adults: Number of adult passengers
+</span></span></span><span class="line"><span class="cl"><span class="s2">            currency: Currency code for prices
+</span></span></span><span class="line"><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="cl"><span class="s2">        Returns:
+</span></span></span><span class="line"><span class="cl"><span class="s2">            Dictionary containing flight information
+</span></span></span><span class="line"><span class="cl"><span class="s2">        &#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">headers</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&#34;Authorization&#34;</span><span class="p">:</span> <span class="bp">self</span><span class="o">.</span><span class="n">access_token</span><span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="n">params</span> <span class="o">=</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="s2">&#34;originLocationCode&#34;</span><span class="p">:</span> <span class="n">origin</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="s2">&#34;destinationLocationCode&#34;</span><span class="p">:</span> <span class="n">destination</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="s2">&#34;departureDate&#34;</span><span class="p">:</span> <span class="n">departure_date</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="s2">&#34;adults&#34;</span><span class="p">:</span> <span class="n">adults</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="s2">&#34;nonStop&#34;</span><span class="p">:</span> <span class="s2">&#34;true&#34;</span> <span class="k">if</span> <span class="n">direct_only</span> <span class="k">else</span> <span class="s2">&#34;false&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="s2">&#34;currencyCode&#34;</span><span class="p">:</span> <span class="n">currency</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="s2">&#34;max&#34;</span><span class="p">:</span> <span class="n">Config</span><span class="o">.</span><span class="n">DEFAULT_MAX_RESULTS</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="o">.</span><span class="n">get</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">            <span class="n">url</span><span class="o">=</span><span class="sa">f</span><span class="s2">&#34;</span><span class="si">{</span><span class="n">Config</span><span class="o">.</span><span class="n">AMADEUS_BASE_URL_V2</span><span class="si">}</span><span class="s2">/</span><span class="si">{</span><span class="n">Config</span><span class="o">.</span><span class="n">AMADEUS_FLIGHT_OFFERS_ENDPOINT</span><span class="si">}</span><span class="s2">&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="n">headers</span><span class="o">=</span><span class="n">headers</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="n">params</span><span class="o">=</span><span class="n">params</span>
+</span></span><span class="line"><span class="cl">        <span class="p">)</span>
+</span></span><span class="line"><span class="cl">        <span class="n">response</span><span class="o">.</span><span class="n">raise_for_status</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">        <span class="n">flights</span> <span class="o">=</span> <span class="n">response</span><span class="o">.</span><span class="n">json</span><span class="p">()</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s2">&#34;data&#34;</span><span class="p">,</span> <span class="p">[])</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="ow">not</span> <span class="n">flights</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="k">if</span> <span class="n">direct_only</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">                <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">search_flights</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">origin</span><span class="o">=</span><span class="n">origin</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">destination</span><span class="o">=</span><span class="n">destination</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">departure_date</span><span class="o">=</span><span class="n">departure_date</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">adults</span><span class="o">=</span><span class="n">adults</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">currency</span><span class="o">=</span><span class="n">currency</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                    <span class="n">direct_only</span><span class="o">=</span><span class="kc">False</span>
+</span></span><span class="line"><span class="cl">                <span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="kc">None</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="n">flight_data</span> <span class="o">=</span> <span class="n">flights</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">        <span class="n">segments</span> <span class="o">=</span> <span class="n">flight_data</span><span class="p">[</span><span class="s2">&#34;itineraries&#34;</span><span class="p">][</span><span class="mi">0</span><span class="p">][</span><span class="s2">&#34;segments&#34;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">segments</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">                <span class="s2">&#34;price&#34;</span><span class="p">:</span> <span class="n">flight_data</span><span class="p">[</span><span class="s2">&#34;price&#34;</span><span class="p">][</span><span class="s2">&#34;total&#34;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">                <span class="s2">&#34;origin&#34;</span><span class="p">:</span> <span class="n">segments</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s2">&#34;departure&#34;</span><span class="p">][</span><span class="s2">&#34;iataCode&#34;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">                <span class="s2">&#34;destination&#34;</span><span class="p">:</span> <span class="n">segments</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s2">&#34;arrival&#34;</span><span class="p">][</span><span class="s2">&#34;iataCode&#34;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">                <span class="s2">&#34;lastTicketingDateTime&#34;</span><span class="p">:</span> <span class="n">flight_data</span><span class="p">[</span><span class="s2">&#34;lastTicketingDateTime&#34;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">                <span class="s2">&#34;departure_date&#34;</span><span class="p">:</span> <span class="n">segments</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s2">&#34;departure&#34;</span><span class="p">][</span><span class="s2">&#34;at&#34;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">                <span class="s2">&#34;airline&#34;</span><span class="p">:</span> <span class="n">flight_data</span><span class="p">[</span><span class="s2">&#34;validatingAirlineCodes&#34;</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">                <span class="s2">&#34;hasDirectFlight&#34;</span><span class="p">:</span> <span class="kc">True</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="s2">&#34;flightType&#34;</span><span class="p">:</span> <span class="s2">&#34;DIRECT&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="s2">&#34;stopoverCity&#34;</span><span class="p">:</span> <span class="kc">None</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                <span class="s2">&#34;stopoverCount&#34;</span><span class="p">:</span> <span class="mi">0</span>
+</span></span><span class="line"><span class="cl">            <span class="p">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="n">stopovers</span> <span class="o">=</span> <span class="p">[</span><span class="n">segment</span><span class="p">[</span><span class="s2">&#34;arrival&#34;</span><span class="p">][</span><span class="s2">&#34;iataCode&#34;</span><span class="p">]</span> <span class="k">for</span> <span class="n">segment</span> <span class="ow">in</span> <span class="n">segments</span><span class="p">[:</span><span class="o">-</span><span class="mi">1</span><span class="p">]]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="s2">&#34;price&#34;</span><span class="p">:</span> <span class="n">flight_data</span><span class="p">[</span><span class="s2">&#34;price&#34;</span><span class="p">][</span><span class="s2">&#34;total&#34;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">            <span class="s2">&#34;origin&#34;</span><span class="p">:</span> <span class="n">segments</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s2">&#34;departure&#34;</span><span class="p">][</span><span class="s2">&#34;iataCode&#34;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">            <span class="s2">&#34;destination&#34;</span><span class="p">:</span> <span class="n">segments</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">][</span><span class="s2">&#34;arrival&#34;</span><span class="p">][</span><span class="s2">&#34;iataCode&#34;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">            <span class="s2">&#34;lastTicketingDateTime&#34;</span><span class="p">:</span> <span class="n">flight_data</span><span class="p">[</span><span class="s2">&#34;lastTicketingDateTime&#34;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">            <span class="s2">&#34;departure_date&#34;</span><span class="p">:</span> <span class="n">segments</span><span class="p">[</span><span class="mi">0</span><span class="p">][</span><span class="s2">&#34;departure&#34;</span><span class="p">][</span><span class="s2">&#34;at&#34;</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">            <span class="s2">&#34;airline&#34;</span><span class="p">:</span> <span class="n">flight_data</span><span class="p">[</span><span class="s2">&#34;validatingAirlineCodes&#34;</span><span class="p">][</span><span class="mi">0</span><span class="p">],</span>
+</span></span><span class="line"><span class="cl">            <span class="s2">&#34;hasDirectFlight&#34;</span><span class="p">:</span> <span class="kc">False</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="s2">&#34;flightType&#34;</span><span class="p">:</span> <span class="s2">&#34;INDIRECT&#34;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">            <span class="s2">&#34;stopoverCity&#34;</span><span class="p">:</span> <span class="s2">&#34;,&#34;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">stopovers</span><span class="p">),</span>
+</span></span><span class="line"><span class="cl">            <span class="s2">&#34;stopoverCount&#34;</span><span class="p">:</span> <span class="nb">len</span><span class="p">(</span><span class="n">segments</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span>
+</span></span><span class="line"><span class="cl">        <span class="p">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></details>
+<h2 id="notification_managerpy">notification_manager.py</h2>
+<details>
+  <summary style="cursor: pointer; font-weight: bold;">&#x25B6; notification_manager.py</summary>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">email.mime.multipart</span> <span class="kn">import</span> <span class="n">MIMEMultipart</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">email.mime.text</span> <span class="kn">import</span> <span class="n">MIMEText</span>
+</span></span><span class="line"><span class="cl"><span class="kn">import</span> <span class="nn">smtplib</span>
+</span></span><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">config</span> <span class="kn">import</span> <span class="n">Config</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="k">class</span> <span class="nc">NotificationManager</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;&#34;&#34;Handles email notifications for flight deals.&#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">sender_email</span> <span class="o">=</span> <span class="n">Config</span><span class="o">.</span><span class="n">MAIL_USERNAME</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">sender_password</span> <span class="o">=</span> <span class="n">Config</span><span class="o">.</span><span class="n">MAIL_PASSWORD</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">smtp_server</span> <span class="o">=</span> <span class="n">Config</span><span class="o">.</span><span class="n">SMTP_SERVER</span>
+</span></span><span class="line"><span class="cl">        <span class="bp">self</span><span class="o">.</span><span class="n">smtp_port</span> <span class="o">=</span> <span class="n">Config</span><span class="o">.</span><span class="n">SMTP_PORT</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="k">def</span> <span class="nf">send_email</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">recipient_email</span><span class="p">,</span> <span class="n">email_body</span><span class="p">,</span> <span class="n">subject</span><span class="o">=</span><span class="s2">&#34;Flight Deal Alert&#34;</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">        <span class="s2">&#34;&#34;&#34;
+</span></span></span><span class="line"><span class="cl"><span class="s2">        Sends email notification with flight deal information.
+</span></span></span><span class="line"><span class="cl"><span class="s2">
+</span></span></span><span class="line"><span class="cl"><span class="s2">        Args:
+</span></span></span><span class="line"><span class="cl"><span class="s2">            recipient_email: Recipient&#39;s email address
+</span></span></span><span class="line"><span class="cl"><span class="s2">            message: Email body content
+</span></span></span><span class="line"><span class="cl"><span class="s2">            subject: Email subject line
+</span></span></span><span class="line"><span class="cl"><span class="s2">        &#34;&#34;&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="n">msg</span> <span class="o">=</span> <span class="n">MIMEMultipart</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">        <span class="n">msg</span><span class="p">[</span><span class="s1">&#39;From&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">sender_email</span>
+</span></span><span class="line"><span class="cl">        <span class="n">msg</span><span class="p">[</span><span class="s1">&#39;To&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">recipient_email</span>
+</span></span><span class="line"><span class="cl">        <span class="n">msg</span><span class="p">[</span><span class="s1">&#39;Subject&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">subject</span>
+</span></span><span class="line"><span class="cl">        <span class="n">msg</span><span class="o">.</span><span class="n">attach</span><span class="p">(</span><span class="n">MIMEText</span><span class="p">(</span><span class="n">email_body</span><span class="p">,</span> <span class="s1">&#39;plain&#39;</span><span class="p">,</span> <span class="s1">&#39;utf-8&#39;</span><span class="p">))</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">        <span class="k">with</span> <span class="n">smtplib</span><span class="o">.</span><span class="n">SMTP</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">smtp_server</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">smtp_port</span><span class="p">)</span> <span class="k">as</span> <span class="n">server</span><span class="p">:</span>
+</span></span><span class="line"><span class="cl">            <span class="n">server</span><span class="o">.</span><span class="n">starttls</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl">            <span class="n">server</span><span class="o">.</span><span class="n">login</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">sender_email</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">sender_password</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl">            <span class="n">server</span><span class="o">.</span><span class="n">send_message</span><span class="p">(</span><span class="n">msg</span><span class="p">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div></details>
+<h2 id="pic">PIC</h2>
+<p>flight_price</p>
+<p><img src="flight_price.jpg" alt="flight_price"></p>
+<p>flight_email</p>
+<p><img src="flight_email.jpg" alt="flight_email"></p>
+<p>notification</p>
+<p><img src="notification.jpg" alt="notification"></p>
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">PawPaw</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">
+        2025-02-01
+        
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/pawpaw_coding.github.io/tags/python/">python</a>
+          <a href="/pawpaw_coding.github.io/tags/100-days/">100-days</a>
+          </div>
+      <nav class="post-nav">
+        
+        <a class="next" href="/pawpaw_coding.github.io/post/python/python-100days/day38/">
+            <span class="next-text nav-default">[Python] Python-100days - Day38</span>
+            <span class="next-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="https://github.com/PawXQ/pawpaw.github.io" class="iconfont icon-github" title="github"></a>
+  <a href="https://pawxq.github.io/pawpaw_coding.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2024 - 
+    2025<span class="heart"><i class="iconfont icon-heart"></i></span><span>PawPaw</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/pawpaw_coding.github.io/js/main.min.4ae89da218555efa0e7093a20b92017d2e1202b66fff9fc2edf4cb8d44b44c6e.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>
