@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>[Python] Python-100days - Day41 - Even - A super concise theme for Hugo</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="PawPaw" /><meta name="description" content="" /><meta name="keywords" content="Hugo, theme, even" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.108.0 with theme even" />
+
+
+<link rel="canonical" href="https://pawxq.github.io/pawpaw_coding.github.io/post/python/python-100days/day41/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/pawpaw_coding.github.io/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/pawpaw_coding.github.io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/pawpaw_coding.github.io/favicon-16x16.png">
+<link rel="manifest" href="/pawpaw_coding.github.io/manifest.json">
+<link rel="mask-icon" href="/pawpaw_coding.github.io/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+<link href="/pawpaw_coding.github.io/sass/main.min.f92fd13721ddf72129410fd8250e73152cc6f2438082b6c0208dc24ee7c13fc4.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+<link rel="stylesheet" href="/css/style.css">
+
+
+<meta property="og:title" content="[Python] Python-100days - Day41" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://pawxq.github.io/pawpaw_coding.github.io/post/python/python-100days/day41/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2025-02-05T15:21:54+00:00" />
+<meta property="article:modified_time" content="2025-02-05T15:21:54+00:00" />
+<meta itemprop="name" content="[Python] Python-100days - Day41">
+<meta itemprop="description" content=""><meta itemprop="datePublished" content="2025-02-05T15:21:54+00:00" />
+<meta itemprop="dateModified" content="2025-02-05T15:21:54+00:00" />
+<meta itemprop="wordCount" content="1596">
+<meta itemprop="keywords" content="python,100-days,html," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="[Python] Python-100days - Day41"/>
+<meta name="twitter:description" content=""/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">PawPaw_coding</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/pawpaw_coding.github.io/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/pawpaw_coding.github.io/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/pawpaw_coding.github.io/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/pawpaw_coding.github.io/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">PawPaw_coding</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/pawpaw_coding.github.io/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/pawpaw_coding.github.io/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/pawpaw_coding.github.io/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/pawpaw_coding.github.io/categories/">Categories</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">[Python] Python-100days - Day41</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2025-02-05 </span>
+        <div class="post-category">
+            <a href="/pawpaw_coding.github.io/categories/python/"> python </a>
+            <a href="/pawpaw_coding.github.io/categories/html/"> html </a>
+            </div>
+        
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">Contents</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li><a href="#internet">Internet</a></li>
+    <li><a href="#data-transfer">Data Transfer</a>
+      <ul>
+        <li><a href="#上網過程">上網過程</a></li>
+      </ul>
+    </li>
+    <li><a href="#website">Website</a></li>
+    <li><a href="#html">HTML</a>
+      <ul>
+        <li><a href="#組成部分解析">組成部分解析</a></li>
+      </ul>
+    </li>
+    <li><a href="#heading-element">Heading Element</a>
+      <ul>
+        <li><a href="#基本語法">基本語法</a></li>
+        <li><a href="#術語定義">術語定義</a></li>
+        <li><a href="#heading層級">Heading層級</a></li>
+        <li><a href="#使用規範">使用規範</a></li>
+        <li><a href="#參考資源">參考資源</a></li>
+      </ul>
+    </li>
+    <li><a href="#paragraph-element">Paragraph Element</a>
+      <ul>
+        <li><a href="#基本語法-1">基本語法</a></li>
+        <li><a href="#使用目的">使用目的</a></li>
+        <li><a href="#效果對比">效果對比</a></li>
+      </ul>
+    </li>
+    <li><a href="#html-void-elements">HTML Void Elements</a>
+      <ul>
+        <li><a href="#定義">定義</a></li>
+        <li><a href="#語法特點">語法特點</a></li>
+        <li><a href="#常用-void-elements">常用 Void Elements</a>
+          <ul>
+            <li><a href="#horizontal-rule-hr">Horizontal Rule (hr)</a></li>
+            <li><a href="#break-br">Break (br)</a></li>
+          </ul>
+        </li>
+        <li><a href="#最佳實踐">最佳實踐</a></li>
+      </ul>
+    </li>
+    <li><a href="#project">Project</a></li>
+    <li><a href="#indexhtml">index.html</a></li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <p>紀錄學習 <a href="https://www.udemy.com/course/100-days-of-code/?couponCode=KEEPLEARNING">Udemy-Python-100days of code</a></p>
+<p>Day 41 - Web Foundation - Introduction to HTML</p>
+<h1 id="internet">Internet</h1>
+<p>Internet 本質是上是連接全球電腦的網路, 主要組成：</p>
+<ul>
+<li>Server(服務器)：24/7在線提供數據</li>
+<li>Client(客戶端)：用戶端設備</li>
+<li>ISP(網絡服務提供商)：提供 internet 接入服務(中華)</li>
+<li>DNS Server：將網址轉換為IP地址的系統</li>
+</ul>
+<h1 id="data-transfer">Data Transfer</h1>
+<ul>
+<li>通過海底電纜連接各大洲</li>
+<li>使用光纖技術</li>
+<li>傳輸速度可達400GB/秒</li>
+<li>通過IP地址定位設備</li>
+</ul>
+<h2 id="上網過程">上網過程</h2>
+<p>輸入 url =&gt; DNS查詢IP地址 =&gt; 服務器返回HTML、CSS、JavaScript文件 =&gt; browser 解析並呈現網頁內容</p>
+<h1 id="website">Website</h1>
+<ol>
+<li>
+<p>HTML</p>
+<ul>
+<li>負責網站結構</li>
+<li>定義頁面元素（如按鈕、圖片、文本框）</li>
+</ul>
+</li>
+<li>
+<p>CSS</p>
+<ul>
+<li>控制網站外觀</li>
+<li>設定顏色、字體、佈局等視覺效果</li>
+</ul>
+</li>
+<li>
+<p>JavaScript</p>
+<ul>
+<li>實現網站功能</li>
+<li>添加互動行為</li>
+<li>處理用戶操作</li>
+</ul>
+</li>
+</ol>
+<h1 id="html">HTML</h1>
+<p>HTML (Hypertext Markup Language) 是網站的基礎語言</p>
+<p>負責定義網頁的內容和結構, 它是唯一可以單獨創建網站的語言.</p>
+<p>只有 CSS 或 JavaScript 建不出網頁</p>
+<h2 id="組成部分解析">組成部分解析</h2>
+<p>Hypertext(超文本)</p>
+<ul>
+<li>可連結到其他文件的文本</li>
+<li>通過藍色超連結呈現</li>
+<li>實現文件間的相互連接</li>
+</ul>
+<p>Markup Language（標記語言）</p>
+<ul>
+<li>使用標籤(<code>tags</code>)標記內容</li>
+<li>類似編輯標記的概念</li>
+<li>定義內容的展示方式</li>
+</ul>
+<h1 id="heading-element">Heading Element</h1>
+<h2 id="基本語法">基本語法</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>Hello World<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li><code>opening tag</code>：<code>&lt;h1&gt;</code></li>
+<li><code>closing tag</code>：<code>&lt;/h1&gt;</code>（注意斜線/）</li>
+<li><code>content</code>：放置於開始和結束標籤之間</li>
+</ul>
+<h2 id="術語定義">術語定義</h2>
+<ul>
+<li>Tag(標籤)：<code>&lt;&gt;</code>(尖括號)內的代碼，如<code>&lt;h1&gt;</code>和<code>&lt;/h1&gt;</code></li>
+<li>Element(元素)：完整結構, 包含<code>opening tag</code>、<code>closing tag</code>和 <code>content</code></li>
+</ul>
+<h2 id="heading層級">Heading層級</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>一級標題<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>二級標題<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>三級標題<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">h4</span><span class="p">&gt;</span>四級標題<span class="p">&lt;/</span><span class="nt">h4</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">h5</span><span class="p">&gt;</span>五級標題<span class="p">&lt;/</span><span class="nt">h5</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">h6</span><span class="p">&gt;</span>六級標題<span class="p">&lt;/</span><span class="nt">h6</span><span class="p">&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>特點：</p>
+<ul>
+<li>h1最大，h6最小</li>
+<li>僅支持h1-h6，無h7以上標籤</li>
+</ul>
+<h2 id="使用規範">使用規範</h2>
+<ol>
+<li>每個頁面僅使用一個h1標籤</li>
+<li>不跳過層級（如h1後直接使用h3）</li>
+<li>按層級順序使用（h1 → h2 → h3）</li>
+</ol>
+<h2 id="參考資源">參考資源</h2>
+<p><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">MDN Web Docs HEML</a></p>
+<h1 id="paragraph-element">Paragraph Element</h1>
+<h2 id="基本語法-1">基本語法</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>這是一個段落內容<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><ul>
+<li><code>opening tag</code>：<code>&lt;p&gt;</code></li>
+<li><code>closing tag</code>：<code>&lt;/p&gt;</code></li>
+<li><code>content</code>：放在標籤之間</li>
+</ul>
+<h2 id="使用目的">使用目的</h2>
+<ol>
+<li>視覺分隔：自動在段落間添加間距</li>
+<li>無障礙支持：幫助螢幕閱讀器識別段落結構</li>
+<li>避免文本擠在一起</li>
+</ol>
+<h2 id="效果對比">效果對比</h2>
+<p>純文本：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl">First paragraph content
+</span></span><span class="line"><span class="cl">Second paragraph content
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>使用段落標籤：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>First paragraph content<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Second paragraph content<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><thinking>
+讓我仔細思考這篇文章的重點：
+<p>首先,這是關於HTML void elements的教學內容。主要介紹了兩個重要的void elements: hr和br。</p>
+<p>關鍵概念:</p>
+<ol>
+<li>void elements的定義 - 不允許有內容的HTML元素</li>
+<li>void elements的獨特語法 - 自閉合標籤,前斜線位置特殊</li>
+<li>hr元素的用途 - 用於分隔內容的水平線</li>
+<li>br元素的用途 - 在段落內強制換行,如詩歌和地址</li>
+</ol>
+<p>需要特別強調的技術細節:</p>
+<ul>
+<li>標籤語法中斜線(/)的正確位置</li>
+<li>void elements只有單一標籤,沒有開始和結束標籤</li>
+<li>HTML5中結尾斜線變為可選</li>
+</ul>
+<p>最佳實踐建議:</p>
+<ul>
+<li>br應該只用於段落內部換行</li>
+<li>不同段落應使用p元素而非br</li>
+<li>建議保留結尾斜線以提高代碼可讀性</li>
+</ul>
+<p>讓我用簡潔但完整的方式組織這些信息。
+</thinking></p>
+<h1 id="html-void-elements">HTML Void Elements</h1>
+<h2 id="定義">定義</h2>
+<p>Void elements 是特殊的 HTML 元素, 不會包含任何 content</p>
+<h2 id="語法特點">語法特點</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">hr</span> <span class="p">/&gt;</span> <span class="c">&lt;!-- 推薦寫法 --&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">br</span> <span class="p">/&gt;</span> <span class="c">&lt;!-- 推薦寫法 --&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">hr</span><span class="p">&gt;</span> <span class="c">&lt;!-- HTML5也允許 --&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">br</span><span class="p">&gt;</span> <span class="c">&lt;!-- HTML5也允許 --&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="常用-void-elements">常用 Void Elements</h2>
+<h3 id="horizontal-rule-hr">Horizontal Rule (hr)</h3>
+<ul>
+<li>用途：創建水平分隔線</li>
+<li>示例：</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>第一段落<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">hr</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>第二段落<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="break-br">Break (br)</h3>
+<ul>
+<li>用途：在段落內強制換行</li>
+<li>示例：</li>
+</ul>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl">  123 Main Street<span class="p">&lt;</span><span class="nt">br</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">  New York, NY 10001<span class="p">&lt;</span><span class="nt">br</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl">  USA
+</span></span><span class="line"><span class="cl"><span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="最佳實踐">最佳實踐</h2>
+<ol>
+<li>段落分隔使用 <code>&lt;p&gt;</code> 而非 <code>&lt;br /&gt;</code></li>
+<li><code>&lt;br /&gt;</code> 僅用於段落內必要的換行</li>
+<li>建議保留結尾斜線(/)以提高代碼可讀性</li>
+<li>注意斜線方向：使用正斜線(/)而非反斜線()</li>
+</ol>
+<h1 id="project">Project</h1>
+<p>完成以下圖片目標</p>
+<p><img src="goal.png" alt="goal"></p>
+<h1 id="indexhtml">index.html</h1>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-html" data-lang="html"><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span>The Best Movies According to Angela<span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span>My top 3 movies of all-time.<span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">hr</span> <span class="p">/&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>Spirited Away<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>This is my favourite anime. I love the beautiful images.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>Ex Machina<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Really cool sci-fi movie.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">h3</span><span class="p">&gt;</span>Drive<span class="p">&lt;/</span><span class="nt">h3</span><span class="p">&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span>Super beautiful film. Really artistic.<span class="p">&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div>
+    </div>
+
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">Author</span>
+    <span class="item-content">PawPaw</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">LastMod</span>
+    <span class="item-content">
+        2025-02-05
+        
+    </span>
+  </p>
+  
+  
+</div>
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/pawpaw_coding.github.io/tags/python/">python</a>
+          <a href="/pawpaw_coding.github.io/tags/100-days/">100-days</a>
+          <a href="/pawpaw_coding.github.io/tags/html/">html</a>
+          </div>
+      <nav class="post-nav">
+        
+        <a class="next" href="/pawpaw_coding.github.io/post/python/python-100days/day39_40/">
+            <span class="next-text nav-default">[Python] Python-100days - Day39_40</span>
+            <span class="next-text nav-mobile">Next</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="https://github.com/PawXQ/pawpaw.github.io" class="iconfont icon-github" title="github"></a>
+  <a href="https://pawxq.github.io/pawpaw_coding.github.io/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    Powered by <a class="hexo-link" href="https://gohugo.io">Hugo</a>
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    Theme - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2024 - 
+    2025<span class="heart"><i class="iconfont icon-heart"></i></span><span>PawPaw</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/pawpaw_coding.github.io/js/main.min.4ae89da218555efa0e7093a20b92017d2e1202b66fff9fc2edf4cb8d44b44c6e.js"></script>
+
+
+
+
+
+
+
+
+</body>
+</html>
